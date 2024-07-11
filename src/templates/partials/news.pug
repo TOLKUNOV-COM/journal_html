@@ -1,8 +1,10 @@
 each item in newsList
     .news-item(style=item.style, data-height=item.height, data-width=item.width)
-        .news-item__tags
-            each tag in item.tags
-                a.news-item__tag= tag
-        .news-item__title=item.title
-        .news-item__counters
-            .news-item__views=item.views
+        .news-item__gradient
+        .news-item__content
+            .news-item__tags
+                each tag in item.tags
+                    a.news-item__tag= tag
+            .news-item__title=item.title
+            .news-item__counters
+                .news-item__views=item.views

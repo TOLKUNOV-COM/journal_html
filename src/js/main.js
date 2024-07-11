@@ -31,6 +31,8 @@
 //   for an individual element
 var msnry = new Packery('.news-list', {
     itemSelector: '.news-item',
+    gutter: 0,
+    fitWidth: false,
     // columnWidth: '.news-item__width',
     // gutter: '.news-item__gutter',
     // fitWidth: true,
@@ -52,5 +54,7 @@ var msnry = new Packery('.news-list', {
 //   for an individual element
 var pckry = new Packery('.grid', {
     itemSelector: '.grid-item',
+    gutter: 0,
+    fitWidth: false,
     // options
 });
