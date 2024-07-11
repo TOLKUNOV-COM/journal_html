@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<div class="container mx-auto">
+    <div class="flex flex-wrap gap-4">
+        <div class="flex-1 min-w-[calc(25%-1rem)] p-2 bg-amber-400"> <!-- Первый элемент -->
+            Элемент 1
+        </div>
+        <div class="flex-1 min-w-[calc(25%-1rem)] p-2 bg-amber-400"> <!-- Второй элемент -->
+            Элемент 2
+        </div>
+        <div class="flex-1 min-w-[calc(25%-1rem)] p-2 bg-amber-400"> <!-- Третий элемент -->
+            Элемент 3
+        </div>
+        <div class="flex-1 min-w-[calc(25%-1rem)] p-2 bg-amber-400"> <!-- Четвертый элемент -->
+            Элемент 4
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto">
+    <div class="h-20 w-full bg-blue-900"></div>
+</div>
+
+<div class="container">
+    <div class="h40 text-xl my-block" data-title-color="#000000">TEXT</div>
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item grid-item--width2">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</div>
+
+<div class="container mx-auto">
+    <div class="news splash-block">
+        <h2 class="news__title splash-block__title">Что происходит</h2>
+
+        <div class="news-list">
+            <pug src="src/templates/partials/news.pug"></pug>
+        </div>
+
+        <a href="#" class="splash-block__button">Все новости</a>
+    </div>
+</div>
+
+
+<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+    <div class="shrink-0">
+        <img class="h-12 w-12" src="img/vite.svg" alt="ChitChat Logo">
+    </div>
+    <div>
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <p class="text-slate-500">You have a new message!</p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

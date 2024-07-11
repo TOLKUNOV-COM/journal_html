@@ -1,0 +1,30 @@
+.splash-block {
+
+}
+
+.splash-block__title {
+    @apply text-blue-light font-bold lowercase text-4xl;
+    @apply mb-7;
+    font-family: Caveat, 'system-ui', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: -1.44px;
+}
+
+.splash-block__button {
+    @apply block;
+    @apply text-blue text-center text-xl font-bold;
+    @apply mt-5;
+
+
+    display: flex;
+    height: 72px;
+    padding: 15px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 14px;
+    background: #E5E3F0;
+
+    line-height: 100%; /* 20px */
+}

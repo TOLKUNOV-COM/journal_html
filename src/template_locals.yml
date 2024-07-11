@@ -1,0 +1,70 @@
+title: "Tolkunov HTML"
+newsList:
+  -
+    title: "YouTube тестирует новый инструмент для поддержки непопулярных авторов"
+    tags:
+      - youtube
+      - видео
+    views: "1 023"
+    style: "--box-shadow-color: rgba(22, 31, 106, 0.10);"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #F4F6FF; --box-shadow-color: transparent; --border: 1px solid #F4F6FF"
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #52479A; --border: 1px solid #52479A; --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent;"
+  -
+    title: "Разрешить нельзя отказать: персональные данные предложено возвращать «в один клик»"
+    tags:
+      - закон
+    views: "170"
+    style: "--background: linear-gradient(180deg, #4F2AC0 0%, rgba(79, 42, 192, 0.30) 100%), url(\"https://via.placeholder.com/300x300\"); --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent"
+  -
+    title: "«Т-Банк» запустил ИИ-помощника для детей"
+    tags:
+      - банки
+      - ИИ
+    views: "791"
+    style: "--border: 1px solid rgba(22, 31, 106, 0.20);"
+  -
+    title: "«Аськи» больше нет. Легендарный мессенджер завершил работу"
+    tags:
+      - ICQ
+      - МЕССЕНДЖЕР
+    views: "5 478"
+    style: "--background: linear-gradient(180deg, #006A0E 0%, rgba(0, 106, 14, 0.30) 100%), url(\"https://via.placeholder.com/300x300\"); --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent"
+    height: "2"
+    width: "2"
+  -
+    title: "YouTube тестирует новый инструмент для поддержки непопулярных авторов"
+    tags:
+      - youtube
+      - видео
+    views: "1 023"
+    style: "--box-shadow-color: rgba(22, 31, 106, 0.10);"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #FCEAEE; --title-color: #BA2943; --border: 1px solid #FCEAEE; --counters-color: #BA2943; --counters-opacity: 0.3; --tag-color: rgba(186, 41, 67, 0.32); --tag-border-color: rgba(186, 41, 67, 0.05);"
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
