@@ -1,0 +1,4 @@
+each item in stories
+    .story-item.swiper-slide(style=item.style, class=(item.is_viewed ? 'story-item_viewed' : ''))
+        .story-item__content
+            .story-item__title=item.title

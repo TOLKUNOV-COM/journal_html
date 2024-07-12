@@ -1,0 +1,52 @@
+.stories {
+    overflow: hidden;
+}
+
+.stories__title {
+    @apply mb-5;
+}
+
+.stories-list {
+    @apply mx-[-5px];
+}
+
+.story-item {
+    @apply inline-block;
+    @apply w-[285px] h-[285px];
+    @apply mx-[5px];
+
+    @apply cursor-pointer;
+
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(to bottom, rgba(215, 69, 96, 1), rgba(82, 71, 154, 1));
+    border-radius: 19px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    --background: transparent;
+    --title-color: #000;
+}
+
+.story-item_viewed {
+    background-image: linear-gradient(white, white), linear-gradient(to bottom, #E6EAFF, #E6EAFF);
+}
+
+.story-item__content {
+    @apply h-full;
+
+    border: 3px solid white;
+    border-radius: 19px;
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @apply px-[16px] py-[13px];
+}
+
+.story-item__title {
+    @apply font-bold text-xl;
+
+    color: var(--title-color, #000);
+    line-height: 115%;
+}

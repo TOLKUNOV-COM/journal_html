@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -34,6 +35,18 @@
 
 <div class="container">
     <div class="h40 text-xl my-block" data-title-color="#000000">TEXT</div>
+</div>
+
+<div class="stories splash-block">
+    <div class="container">
+        <h1 class="stories__title splash-block__title">главное в карточках</h1>
+
+        <div class="stories-list">
+            <div class="swiper-wrapper">
+                <pug src="src/templates/partials/stories.pug"></pug>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
@@ -71,8 +84,10 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

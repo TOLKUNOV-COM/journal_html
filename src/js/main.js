@@ -2,6 +2,7 @@
 // import App from './App.vue'
 //
 // createApp(App).mount('#app')
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -65,4 +66,10 @@ var pckry = new Packery('.grid', {
     gutter: 0,
     fitWidth: false,
     // options
+});
+
+const asd = new Swiper('.stories-list', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    // freeMode: true,
 });

@@ -1,10 +1,11 @@
 /* src/styles/main.css */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import "../fonts/stylesheet.css";
+@import "splash-block.css";
 @import "materials.css";
 @import "news.css";
 @import "articles.css";
-@import "splash-block.css";
+@import "stories.css";
 
 @tailwind base;
 @tailwind components;
@@ -59,6 +60,32 @@
 
 .grid-item--width2 {
     width: calc(50% - 10px);
+}
+
+.asd {
+
+}
+
+.asd-list {
+    @apply mx-[-5px];
+}
+
+.asd-slide {
+    display: inline-block;
+
+    width: 250px;
+    height: 250px;
+
+    @apply mx-[5px];
+}
+
+.asd-slide__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: silver;
 }
 
 

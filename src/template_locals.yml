@@ -165,3 +165,29 @@ articlesList:
     style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #C5EBFF 26.5%, rgba(197, 235, 255, 0.00) 100%); --title-color: rgba(25, 48, 131, 1); --counters-color: rgba(25, 48, 131, 1); --counters-opacity: 0.3; --tag-color: rgba(25, 48, 131, 0.8); --tag-border-color: rgba(25, 48, 131, 0.2);"
     width: 1
     height: 2
+stories:
+  -
+    title: "Наружная реклама: почему рекомендуем"
+    style: "--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(\"https://via.placeholder.com/350x350\") #1860CA; --title-color: #fff;"
+  -
+    title: "Иллюстрации в КВ: минусы и плюсы"
+    style: "--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #1860CA; --title-color: #000;"
+  -
+    title: "Рекламные извращения как источник пиара"
+    style: "--background: linear-gradient(180deg, #BB217F 0%, rgba(187, 33, 127, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #BB217F; --title-color: #fff;"
+  -
+    title: "Новые баннеры брендов за июнь"
+    is_viewed: true,
+    style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"
+  -
+    title: "Рекламные извращения как источник пиара"
+    is_viewed: true,
+    style: "--background: linear-gradient(180deg, #BB217F 0%, rgba(187, 33, 127, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #BB217F; --title-color: #fff;"
+  -
+    title: "Новые баннеры брендов за июнь"
+    is_viewed: true,
+    style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"
+  -
+    title: "Новые баннеры брендов за июнь"
+    is_viewed: true,
+    style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"

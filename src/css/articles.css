@@ -10,6 +10,19 @@
         @apply md:h-[427px];
     }
 
+
+    .materials-item[data-width="1"] {
+        .materials-item__gradient {
+            @apply sm:top-[36%];
+        }
+    }
+
+    .materials-item[data-width]:not([data-width="1"]) {
+        .materials-item__gradient {
+            @apply sm:top-[44%];
+        }
+    }
+
     .materials-item__content {
         justify-content: flex-end;
     }
