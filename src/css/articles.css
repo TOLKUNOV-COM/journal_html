@@ -1,0 +1,27 @@
+.materials_articles {
+    .materials-item {
+        @apply p-5;
+
+        @apply sm:h-[206px];
+    }
+
+    .materials-item[data-height="2"] {
+        @apply sm:h-[417px];
+        @apply md:h-[427px];
+    }
+
+    .materials-item__content {
+        justify-content: flex-end;
+    }
+
+    .materials-item__title {
+        flex: none;
+
+        @apply md:text-[1.25rem];
+        @apply lg:text-[1.25rem];
+    }
+
+    .materials-item__tags {
+        padding-bottom: 12px;
+    }
+}

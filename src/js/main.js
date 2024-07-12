@@ -29,15 +29,23 @@
 
 // element argument can be a selector string
 //   for an individual element
-var msnry = new Packery('.news-list', {
-    itemSelector: '.news-item',
-    gutter: 0,
-    fitWidth: false,
-    // columnWidth: '.news-item__width',
-    // gutter: '.news-item__gutter',
-    // fitWidth: true,
-    // percentPosition: true
-});
+let materialLists = document.querySelectorAll('.materials-list');
+
+for (let list of materialLists) {
+    var msnry = new Packery(list, {
+        itemSelector: '.materials-item',
+        gutter: 0,
+        // fitWidth: false,
+        // stagger: 0,
+        transitionDuration: 0,
+
+        // columnWidth: '.materials-item__width',
+        // gutter: '.materials-item__gutter',
+        // fitWidth: true,
+        // percentPosition: true
+    });
+}
+// window.dispatchEvent(new Event('resize'));
 
 // var msnry = new Packery( '.test', {
 //     itemSelector: '.test-block',

@@ -1,4 +1,4 @@
-each item in newsList
+each item in articlesList
     a.materials-item(style=item.style, data-height=item.height, data-width=item.width, href="#")
         .materials-item__gradient
         .materials-item__content
@@ -8,3 +8,4 @@ each item in newsList
             .materials-item__title=item.title
             .materials-item__counters
                 .materials-item__views=item.views
+                .materials-item__time=item.time

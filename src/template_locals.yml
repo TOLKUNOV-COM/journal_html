@@ -7,8 +7,6 @@ newsList:
       - видео
     views: "1 023"
     style: "--box-shadow-color: rgba(22, 31, 106, 0.10);"
-    height: "2"
-    width: "1"
   -
     title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
     tags:
@@ -17,8 +15,15 @@ newsList:
       - "+4"
     views: "5 478"
     style: "--background: #F4F6FF; --box-shadow-color: transparent; --border: 1px solid #F4F6FF"
-    height: "1"
     width: "2"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #F4F6FF; --box-shadow-color: transparent; --border: 1px solid #F4F6FF"
   -
     title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
     tags:
@@ -27,6 +32,7 @@ newsList:
       - "+1"
     views: "500"
     style: "--background: #52479A; --border: 1px solid #52479A; --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent;"
+    height: "2"
   -
     title: "Разрешить нельзя отказать: персональные данные предложено возвращать «в один клик»"
     tags:
@@ -47,9 +53,10 @@ newsList:
       - МЕССЕНДЖЕР
       - "+2"
     views: "5 478"
+#    style: "--box-shadow-color: rgba(22, 31, 106, 0.10);"
     style: "--background: url(\"https://via.placeholder.com/300x300\"); --background-gradient: linear-gradient(180deg, #006A0E 0%, rgba(0, 106, 14, 0.30) 100%); --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent"
     height: "2"
-    width: "4"
+    width: "2"
   -
     title: "YouTube тестирует новый инструмент для поддержки непопулярных авторов"
     tags:
@@ -73,7 +80,16 @@ newsList:
       - "+1"
     views: "500"
     style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
-articleList:
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+    width: "1"
+articlesList:
   -
     title: "Баннер на поиске в Яндекс Директ"
     tags:
@@ -82,61 +98,70 @@ articleList:
       - поиск
     views: "23 144"
     time: "5 мин"
-    style: "--background-image: url(\"https://via.placeholder.com/300x300\"); --background-gradient: linear-gradient(180deg, #333E3F 22%, rgba(51, 62, 63, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
-    width: 1
+    style: "--background: url(\"https://via.placeholder.com/300x300\"); --background-gradient: linear-gradient(0deg, #333E3F 22%, rgba(51, 62, 63, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
+    width: 2
+    height: 2
   -
-    title: ""
+    title: "Как геобаннеры помогают бизнесу"
     tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+      - ГЕО
+      - яндекс
+      - "+2"
+    views: "2 544"
+    time: "2 мин"
+    style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #576812 26.5%, rgba(87, 104, 18, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
     width: 1
+    height: 2
   -
-    title: ""
+    title: "Лучшие кративы июня"
     tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+      - "кв"
+      - "иллюстрации"
+    views: "7 666"
+    time: "15 мин"
+    style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #C52D33 26%, rgba(197, 45, 51, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
     width: 1
+    height: 2
   -
-    title: ""
+    title: "Новая технология Яндекса Advanced Matching"
     tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
-    width: 1
+      - "реклама"
+      - "яндекс"
+      - "баннеры"
+      - "+3"
+    views: "115 999"
+    time: "26 мин"
+    style: "--background: url(\"https://via.placeholder.com/1920x1080\"); --background-gradient: linear-gradient(0deg, #4F2AC0 0%, rgba(79, 42, 192, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
+    width: 4
+    height: 2
   -
-    title: ""
+    title: "3D в рекламных кампаниях на свежих примерах"
     tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+      - "3D"
+      - "реклама"
+    views: "2 544"
+    time: "2 мин"
+    style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #E9ECEB 26.5%, rgba(233, 236, 235, 0.00) 100%); --title-color: #000; --counters-color: #000; --counters-opacity: 0.3; --tag-color: rgba(0, 0, 0, 0.8); --tag-border-color: rgba(0, 0, 0, 0.2)"
     width: 1
+    height: 2
   -
-    title: ""
+    title: "Список источников вдохновения для создания эффектных кейвижуалов"
     tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
-    width: 1
+      - "кейвижуал"
+      - "реклама"
+      - "иллюстрации"
+    views: "7 899"
+    time: "10 мин"
+    style: "--background: url(\"https://via.placeholder.com/300x300\"); --background-gradient: linear-gradient(0deg, #A8186B 22%, rgba(168, 24, 107, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
+    width: 2
+    height: 2
   -
-    title: ""
+    title: "Площадки для мобильных перфомансов"
     tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+      - мобайл
+      - площадки
+    views: "100"
+    time: "1 мин"
+    style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #C5EBFF 26.5%, rgba(197, 235, 255, 0.00) 100%); --title-color: rgba(25, 48, 131, 1); --counters-color: rgba(25, 48, 131, 1); --counters-opacity: 0.3; --tag-color: rgba(25, 48, 131, 0.8); --tag-border-color: rgba(25, 48, 131, 0.2);"
     width: 1
-  -
-    title: ""
-    tags:
-      - youtube
-    views: ""
-    time: ""
-    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
-    width: 1
+    height: 2
