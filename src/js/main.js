@@ -74,8 +74,12 @@ const asd = new Swiper('.stories-list', {
     // freeMode: true,
 });
 
+let sliderOpened = false;
+
 const openStories = function () {
     let container = document.querySelector('.stories-slider');
+
+    sliderOpened = true;
 
     $(container).addClass('stories-slider-in');
     $('body').addClass('overflow-hidden');
@@ -86,6 +90,12 @@ const openStories = function () {
 }
 
 const closeStories = function () {
+    if (!sliderOpened) {
+        return false;
+    }
+
+    sliderOpened = false;
+
     let container = document.querySelector('.stories-slider');
 
     $(container).addClass('stories-slider-out');
@@ -126,6 +136,15 @@ const stopAutoPlay = function (slider) {
 $('.story-item').on('click', () => openStories());
 $('.stories-slider__close').on('click', () => closeStories());
 
+document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27) {
+            // Ваш код, который выполняется при нажатии на ESC
+            closeStories();
+        }
+    });
+});
+
 const initStory = function (el) {
     // set video duration
     const videos = el.querySelectorAll('.story__slide video');
@@ -162,7 +181,7 @@ const initStory = function (el) {
         allowTouchMove: false,
         autoplay: {
             enabled: false,
-            delay: 10000,
+            delay: 4000,
             disableOnInteraction: false,
         },
         slidesPerView: 1,
