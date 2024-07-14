@@ -6,6 +6,7 @@
 @import "news.css";
 @import "articles.css";
 @import "stories.css";
+@import "stories-slider.css";
 
 @tailwind base;
 @tailwind components;
