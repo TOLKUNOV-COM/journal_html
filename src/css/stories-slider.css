@@ -27,7 +27,7 @@
 }
 
 .stories-slider-in {
-    animation: stories-slider-in .4s forwards;
+    animation: stories-slider-in .3s forwards;
     pointer-events: auto;
     transform: translateZ(0) scale(1);
     opacity: 1;
@@ -35,7 +35,7 @@
 
 .stories-slider-out {
     pointer-events: none;
-    animation: stories-slider-out .4s forwards !important
+    animation: stories-slider-out .3s forwards !important
 }
 
 @keyframes stories-slider-in {
@@ -81,9 +81,15 @@
     position: relative;
 
     aspect-ratio: 9 / 16;
-    max-height: calc(100dvh - 88px);
-    max-width: calc(100dvw - 88px);
-    margin-top: 44px;
+
+    @apply max-h-[calc(100dvh)];
+    @apply max-w-[calc(100dvw)];
+
+    @apply sm:max-h-[calc(100dvh-10px)];
+    @apply sm:max-w-[calc(100dvw-10px)];
+
+    @apply md:max-h-[calc(100dvh-88px)];
+    @apply md:max-w-[calc(100dvw-88px)];
 
     @apply mx-auto;
 }
@@ -99,7 +105,8 @@
     max-width: 100%;
     max-height: 100%;
 
-    border-radius: 8px;
+    @apply sm:rounded-lg;
+
     overflow: hidden;
 }
 
@@ -245,8 +252,3 @@
 .swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide {
     transform-style: unset;
 }
-
-/** Костыль чтобы были доступны кнопки вперёд-назад, когда они disabled, а нам нужно переключать куб */
-/*.stories-slider-in .swiper-button-disabled {*/
-/*    pointer-events: auto !important;*/
-/*}*/

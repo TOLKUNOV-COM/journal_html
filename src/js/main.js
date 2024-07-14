@@ -98,7 +98,7 @@ const closeStories = function () {
     setTimeout(() => {
         $(container).removeClass('stories-slider-out');
         $(container).removeClass('stories-slider-in');
-    }, 400);
+    }, 300);
 }
 
 const startAutoPlay = function (slider) {
@@ -215,6 +215,7 @@ const initStory = function (el) {
 
                 console.log('Current slide: ', activeSlide);
 
+                // Play current video
                 if (activeSlide.querySelector('video')) {
                     activeSlide.querySelector('video').currentTime = 0;
                     activeSlide.querySelector('video').play();
@@ -235,18 +236,13 @@ const initStory = function (el) {
                         }
                     }
                 }
-            },
-            activeIndexChange: (swiper) => {
-                console.log('active index changed');
-            },
-            reachEnd(swiper) {
-                console.log('reach end');
-                // @TODO
 
-                // if (mainSlider.slideNext() === false) {
-                //     alert('close (reach end)');
-                // }
-            }
+                if (activeIndex === 0 && previousIndex === swiper.slides.length - 1) {
+                    if (mainSlider.slideNext() === false) {
+                        closeStories();
+                    }
+                }
+            },
         }
     });
 
