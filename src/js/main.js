@@ -80,16 +80,19 @@ const openStories = function () {
     $(container).addClass('stories-slider-in');
     $('body').addClass('overflow-hidden');
 
-    sliders[0].autoplay.start();
+    let slider = sliders[mainSlider.activeIndex];
+
+    startAutoPlay(slider);
 }
 
 const closeStories = function () {
     let container = document.querySelector('.stories-slider');
 
     $(container).addClass('stories-slider-out');
+    $('body').removeClass('overflow-hidden');
 
     for (let slider of sliders) {
-        slider.autoplay.stop();
+        stopAutoPlay(slider);
     }
 
     setTimeout(() => {
@@ -98,11 +101,33 @@ const closeStories = function () {
     }, 400);
 }
 
+const startAutoPlay = function (slider) {
+    slider.autoplay.start();
+
+    let activeSlide = slider.slides[slider.activeIndex];
+
+    if (activeSlide.querySelector('video')) {
+        activeSlide.querySelector('video').currentTime = 0;
+        activeSlide.querySelector('video').play();
+    }
+}
+
+const stopAutoPlay = function (slider) {
+    slider.autoplay.stop();
+
+    let activeSlide = slider.slides[slider.activeIndex];
+
+    if (activeSlide.querySelector('video')) {
+        activeSlide.querySelector('video').pause();
+        activeSlide.querySelector('video').currentTime = 0;
+    }
+}
+
 $('.story-item').on('click', () => openStories());
 $('.stories-slider__close').on('click', () => closeStories());
 
 const initStory = function (el) {
-    //set video duration
+    // set video duration
     const videos = el.querySelectorAll('.story__slide video');
     videos.forEach(video => {
         $(video).parent('.story__slide').attr('data-swiper-autoplay', video.duration * 1000);
@@ -113,7 +138,7 @@ const initStory = function (el) {
     $(sliderEl).find('.swiper-button-next').on('click', function () {
         if (slider.slideNext() === false) {
             if (mainSlider.slideNext() === false) {
-                alert('close');
+                closeStories();
             }
         }
     });
@@ -268,14 +293,7 @@ var mainSlider = new Swiper(".stories-slider__slider", {
             if (typeof previousIndex !== "undefined") {
                 let slider = sliders[previousIndex];
 
-                slider.autoplay.stop();
-
-                let activeSlide = slider.slides[slider.activeIndex];
-
-                if (activeSlide.querySelector('video')) {
-                    activeSlide.querySelector('video').pause();
-                    activeSlide.querySelector('video').currentTime = 0;
-                }
+                stopAutoPlay(slider);
             }
         },
         slideChange: (swiper) => {
@@ -286,17 +304,10 @@ var mainSlider = new Swiper(".stories-slider__slider", {
 
             let slider = sliders[activeIndex];
 
-            slider.autoplay.start();
-
-            let activeSlide = slider.slides[slider.activeIndex];
-
-            if (activeSlide.querySelector('video')) {
-                activeSlide.querySelector('video').currentTime = 0;
-                activeSlide.querySelector('video').play();
-            }
+            startAutoPlay(slider);
         },
     }
 });
 
-openStories();
+// openStories();
 window.mainSlider = mainSlider;
