@@ -272,14 +272,11 @@ let stories = document.querySelectorAll('.story');
 
 let sliders = [];
 
-window.sliders = sliders;
-window.stories = stories;
-
 for (let story of stories) {
     sliders.push(initStory(story));
 }
 
-var mainSlider = new Swiper(".stories-slider__slider", {
+const mainSlider = new Swiper(".stories-slider__slider", {
     effect: "cube",
     grabCursor: true,
     // loop: true,
@@ -312,9 +309,6 @@ var mainSlider = new Swiper(".stories-slider__slider", {
             }
         },
         slideChange: (swiper) => {
-            /**
-             * Start autoplay
-             */
             let activeIndex = swiper.realIndex;
 
             let slider = sliders[activeIndex];
@@ -324,5 +318,6 @@ var mainSlider = new Swiper(".stories-slider__slider", {
     }
 });
 
-// openStories();
+window.sliders = sliders;
+window.stories = stories;
 window.mainSlider = mainSlider;
