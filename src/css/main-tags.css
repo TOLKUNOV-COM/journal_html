@@ -1,0 +1,55 @@
+.main-tags {
+    overflow: hidden;
+
+    position: relative;
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+
+        width: 130px;
+        z-index: 2;
+    }
+
+    &:before {
+        left: 0;
+        background: linear-gradient(to right, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    &:after {
+        right: 0;
+        background: linear-gradient(to left, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+}
+
+.main-tags__list {
+}
+
+.main-tags__item {
+    @apply text-xl font-extrabold text-blue;
+
+    @apply inline-block;
+    @apply rounded-[20px];
+
+    @apply border-2 border-[#CDD1F2];
+    @apply py-[14px] px-4;
+    @apply mx-[5px];
+
+    @apply w-auto;
+
+    @apply uppercase tracking-widest;
+
+    &:before {
+        content: '#';
+        color: #CDD1F2;
+
+        @apply text-[1.75rem];
+        @apply font-medium;
+
+        @apply mr-[10px];
+    }
+}

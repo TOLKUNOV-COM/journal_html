@@ -321,3 +321,18 @@ const mainSlider = new Swiper(".stories-slider__slider", {
 window.sliders = sliders;
 window.stories = stories;
 window.mainSlider = mainSlider;
+
+
+/**
+ * Main tags
+ */
+const mainTagsSlider = new Swiper(".main-tags__list", {
+    slidesPerView: 'auto',
+    // freeMode: true,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    centerInsufficientSlides: true,
+});
+
+let centerSlideIndex = Math.ceil((mainTagsSlider.slides.length - 1) / 2);
+mainTagsSlider.slideTo(centerSlideIndex);

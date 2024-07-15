@@ -1,5 +1,7 @@
 .stories {
     overflow: hidden;
+
+    @apply mb-[84px];
 }
 
 .stories__title {

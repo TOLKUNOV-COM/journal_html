@@ -191,3 +191,17 @@ stories:
     title: "Новые баннеры брендов за июнь"
     is_viewed: true,
     style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"
+mainTags:
+  - баннеры
+  - Кейвижуал
+  - баннеры
+  - html5
+  - яндекс
+  - площадки
+  - реклама
+  - иллюстрации
+  - яндекс
+  - площадки
+  - реклама
+  - иллюстрации
+  - баннеры

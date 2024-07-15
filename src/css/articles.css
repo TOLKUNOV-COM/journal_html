@@ -1,4 +1,10 @@
 .materials_articles {
+    @apply mt-[63px];
+
+    .materials__title {
+        @apply mb-5;
+    }
+
     .materials-item {
         @apply p-5;
 
