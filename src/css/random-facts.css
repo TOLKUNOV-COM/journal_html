@@ -2,9 +2,10 @@
 }
 
 .random-fact {
-    @apply flex flex-col items-center;
+    @apply flex flex-col text-center;
     @apply lg:min-h-[384px] h-full w-full;
     @apply md:rounded-full lg:rounded-full;
+    @apply overflow-hidden relative;
 
     --text-color: #fff;
     --background: linear-gradient(101deg, #FF6002 0%, #FF1403 100%);
@@ -12,16 +13,13 @@
     background: var(--background);
     color: var(--text-color);
 
-    overflow: hidden;
-    position: relative;
-
     &::before {
         content: attr(background-text);
 
         @apply absolute left-0 w-full;
 
         @apply top-[100%];
-        transform: translateY(-73%);
+        @apply translate-y-[-73%];
 
         @apply text-center text-white text-nowrap leading-none;
         @apply font-bold font-caveat;
@@ -37,13 +35,11 @@
 }
 
 .random-fact__header {
-    @apply pt-4 pb-5 md:pt-5 md:pb-6 lg:pt-6 lg:pb-[2.125rem];
+    @apply pt-4 pb-5 md:pt-5 md:pb-6 lg:pt-[23px] lg:pb-[33px];
     @apply z-10;
 
     font-size: clamp(1.2rem, 4.5vw, 1.6rem);
-    @apply font-bold font-caveat md:text-3xl lg:text-4xl leading-none;
-
-    letter-spacing: -1.44px;
+    @apply font-bold font-caveat md:text-3xl lg:text-4xl leading-none tracking-[-1.5px];
 }
 
 .random-fact__content {
@@ -72,9 +68,7 @@
     @apply rounded-full;
     @apply py-[15px] pr-[15px] pl-[49px];
 
-    border: 1px dashed rgba(255, 255, 255, 0.30);
-
-    &:hover {
+    &:hover:after {
         border-style: solid;
     }
 
@@ -84,17 +78,47 @@
         content: '';
 
         position: absolute;
-        top: 7px;
-        left: -2px;
-        width: 53px;
-        height: 53px;
-        background: url("../img/reload.svg") no-repeat center center;
-        background-size: 53px;
+        top: 9px;
+        left: 9px;
+        width: 31px;
+        height: 31px;
+
+        mask: url("../img/reload.svg") no-repeat center center;
+        mask-size: 31px;
+
+        background-color: var(--text-color);
+    }
+
+    &:after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @apply rounded-full;
+
+        border: 1px dashed var(--text-color);
+
+        opacity: 0.3;
     }
 }
 
 .random-facts__list:not(.swiper-initialized) .swiper-slide:nth-child(n+2) {
     display: none;
+}
+
+.random-facts__list.swiper-initialized .swiper-slide .random-fact {
+    transition: all .2s ease;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.random-facts__list.swiper-initialized .swiper-slide:not(.swiper-slide-active) .random-fact {
+    transform: scale(.95);
+    opacity: 0;
 }
 
 .random-facts .swiper-slide {

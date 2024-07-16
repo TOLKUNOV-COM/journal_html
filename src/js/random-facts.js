@@ -6,6 +6,7 @@ export default function () {
         spaceBetween: 0,
         effect: "fade",
         loop: false,
+        grabCursor: false,
     });
 
     $('.random-fact__button').on('click', () => {
