@@ -5,6 +5,7 @@ export default {
         fontFamily: {
             sans: ['Craftwork Sans', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
             serif: ['Craftwork Grotesk', 'serif'],
+            caveat: ['Caveat', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
         },
         container: {
             center: true, // Центрирование контейнера

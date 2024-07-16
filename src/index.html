@@ -37,7 +37,7 @@
     <div class="h40 text-xl my-block" data-title-color="#000000">TEXT</div>
 </div>
 
-<div class="stories splash-block">
+<section class="stories splash-block">
     <div class="container">
         <h1 class="stories__title splash-block__title">главное в карточках</h1>
 
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <div class="stories-slider">
     <div class="stories-slider__overlay"></div>
@@ -122,7 +122,7 @@
 
 </div>
 
-<div class="main-tags">
+<section class="main-tags">
     <div class="container">
         <div class="main-tags__list">
             <div class="swiper-wrapper">
@@ -130,10 +130,10 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="container">
-    <div class="materials materials_articles splash-block">
+<section class="materials materials_articles splash-block">
+    <div class="container">
         <h2 class="materials__title splash-block__title">свежие статьи</h2>
 
         <div class="materials-list">
@@ -142,10 +142,46 @@
 
         <a href="#" class="splash-block__button">Все статьи</a>
     </div>
-</div>
+</section>
 
-<div class="container">
-    <div class="materials materials_news splash-block">
+<section class="random-facts splash-block">
+    <div class="container max-md:px-0">
+        <div class="random-facts__list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="random-fact" background-text="5 раз">
+                        <div class="random-fact__header">рандомный факт</div>
+                        <div class="random-fact__content">Мультимедийный формат повышает привлекательность рекламы в&nbsp;5&nbsp;раз</div>
+                        <div class="random-fact__footer">
+                            <button class="random-fact__button">Поменять</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="random-fact" background-text="60%">
+                        <div class="random-fact__header">рандомный факт</div>
+                        <div class="random-fact__content">60%&nbsp;людей опираются на цвета, определяя отношение к бренду</div>
+                        <div class="random-fact__footer">
+                            <button class="random-fact__button">Поменять</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="random-fact" background-text="342" style="--background: linear-gradient(101deg, #D4DEFA 0%, #DAF9EA 100%); --text-color: #000;">
+                        <div class="random-fact__header">рандомный факт</div>
+                        <div class="random-fact__content">342&nbsp;работы в портфолио продакшена TOLKUNOV</div>
+                        <div class="random-fact__footer">
+                            <button class="random-fact__button">Поменять</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="materials materials_news splash-block">
+    <div class="container">
         <h2 class="materials__title splash-block__title">Что происходит</h2>
 
         <div class="materials-list">
@@ -154,18 +190,18 @@
 
         <a href="#" class="splash-block__button">Все новости</a>
     </div>
-</div>
+</section>
 
-<div class="container">
-    <div class="grid">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item grid-item--width2">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-    </div>
-</div>
+<!--<div class="container">-->
+<!--    <div class="grid">-->
+<!--        <div class="grid-item">1</div>-->
+<!--        <div class="grid-item">2</div>-->
+<!--        <div class="grid-item">3</div>-->
+<!--        <div class="grid-item grid-item&#45;&#45;width2">4</div>-->
+<!--        <div class="grid-item">5</div>-->
+<!--        <div class="grid-item">6</div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>

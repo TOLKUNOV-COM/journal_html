@@ -4,6 +4,8 @@
 // createApp(App).mount('#app')
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
+import randomFacts from "./random-facts.js";
+
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
@@ -61,12 +63,12 @@ for (let list of materialLists) {
 
 // element argument can be a selector string
 //   for an individual element
-var pckry = new Packery('.grid', {
-    itemSelector: '.grid-item',
-    gutter: 0,
-    fitWidth: false,
-    // options
-});
+// var pckry = new Packery('.grid', {
+//     itemSelector: '.grid-item',
+//     gutter: 0,
+//     fitWidth: false,
+//     // options
+// });
 
 const asd = new Swiper('.stories-list', {
     slidesPerView: 'auto',
@@ -336,3 +338,5 @@ const mainTagsSlider = new Swiper(".main-tags__list", {
 
 let centerSlideIndex = Math.ceil((mainTagsSlider.slides.length - 1) / 2);
 mainTagsSlider.slideTo(centerSlideIndex);
+
+randomFacts();

@@ -8,6 +8,7 @@
 @import "stories.css";
 @import "stories-slider.css";
 @import "main-tags.css";
+@import "random-facts.css";
 
 @tailwind base;
 @tailwind components;
