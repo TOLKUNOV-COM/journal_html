@@ -2,7 +2,7 @@
     @apply mt-[61px];
 
     .materials__title {
-        @apply mb-5;
+        @apply mb-6;
     }
 
     .materials-item {
@@ -41,6 +41,6 @@
     }
 
     .materials-item__tags {
-        padding-bottom: 12px;
+        margin-bottom: 12px;
     }
 }

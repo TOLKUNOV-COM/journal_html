@@ -5,7 +5,7 @@
 }
 
 .stories__title {
-    @apply mb-5;
+    @apply mb-6;
 }
 
 .stories-list {

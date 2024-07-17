@@ -3,7 +3,7 @@
 }
 
 .splash-block__title {
-    @apply text-blue-light font-bold font-caveat lowercase text-4xl;
+    @apply text-blue-light font-bold font-caveat lowercase text-4xl leading-none;
     @apply mb-7;
     letter-spacing: -1.44px;
 }
