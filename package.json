@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "chokidar": "^3.6.0",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
     "js-yaml": "^4.1.0",
+    "packery": "^2.1.2",
     "pug": "^3.0.3",
     "vite-plugin-pug": "^0.3.2",
     "vue": "^3.4.31"
