@@ -48,6 +48,9 @@ export default {
                 // accent: '#657786',
                 // background: '#F5F8FA',
             },
+            gridTemplateColumns: {
+                'comparisons': 'repeat(auto-fill, minmax(420px, 1fr))',
+            }
         },
     },
     plugins: [],

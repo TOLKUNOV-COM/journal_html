@@ -111,7 +111,7 @@
 .materials-item__tags {
     @apply flex flex-nowrap;
 
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .materials-item__tag {
@@ -148,10 +148,9 @@
 .materials-item__counters {
     @apply flex;
     @apply font-bold text-[10px];
-    @apply pt-2.5;
+    @apply pt-3;
     @apply gap-2.5;
-
-    line-height: 125%;
+    @apply leading-[1.2];
 
     color: var(--counters-color);
     opacity: var(--counters-opacity, 0.3);

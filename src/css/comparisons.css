@@ -136,9 +136,9 @@
 
 .comparison-item__word {
     @apply inline-block;
-    @apply px-[11px];
+    @apply px-[11px] md:px-[14px] lg:px-[11px];
     @apply leading-tight;
-    @apply pt-[11px] pb-[7px] lg:pt-[9px] lg:pb-[7px];
+    @apply pt-[9px] pb-[7px];
 
     @apply rounded-full;
     background: var(--text-background-color);
