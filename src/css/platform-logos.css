@@ -1,0 +1,53 @@
+.platform-logos {
+
+    .splash-block__button {
+        margin-top: 0;
+    }
+}
+
+.platform-logos__container {
+    position: relative;
+    height: 680px;
+
+    margin-bottom: 16px;
+
+    overflow: hidden;
+}
+
+.platform-logos__list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 2000px;
+    height: 680px;
+
+    @apply mx-auto;
+}
+
+.platform-logos__item {
+    position: absolute;
+
+    @apply flex items-center justify-center;
+
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    --background-color: #3490dc;
+    --background-image: none;
+
+    background-color: var(--background-color);
+
+    &:after {
+        content: var(--background-image);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}

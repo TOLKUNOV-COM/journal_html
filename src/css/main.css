@@ -10,6 +10,7 @@
 @import "main-tags.css";
 @import "random-facts.css";
 @import "comparisons.css";
+@import "platform-logos.css";
 
 @tailwind base;
 @tailwind components;

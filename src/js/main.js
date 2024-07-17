@@ -7,6 +7,7 @@ import materials from "./materials.js";
 import stories from "./stories.js";
 import mainTags from "./main-tags.js";
 import randomFacts from "./random-facts.js";
+import platformLogos from "./platform-logos.js";
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -36,3 +37,4 @@ materials();
 stories();
 mainTags();
 randomFacts();
+platformLogos($('.platform-logos'));
