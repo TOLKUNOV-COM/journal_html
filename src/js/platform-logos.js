@@ -105,7 +105,7 @@ export default (el) => {
 
     const containerWidth = 2000;
     const containerHeight = 680;
-    const gap = 3;
+    const gap = 4;
     const cellSize = 15;
 
     for (let circle of circles) {

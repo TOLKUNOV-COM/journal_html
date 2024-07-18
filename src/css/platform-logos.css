@@ -31,6 +31,7 @@
     @apply flex items-center justify-center;
 
     transform: translate(-50%, -50%);
+    transition: transform .2s ease-in-out;
     border-radius: 50%;
 
     --background-color: #3490dc;
@@ -49,5 +50,9 @@
         display: grid;
         align-items: center;
         justify-content: center;
+    }
+
+    &:hover {
+        transform: translate(-50%, -50%) scale(1.05);
     }
 }
