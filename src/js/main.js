@@ -8,6 +8,7 @@ import stories from "./stories.js";
 import mainTags from "./main-tags.js";
 import randomFacts from "./random-facts.js";
 import platformLogos from "./platform-logos.js";
+import portfolioSlider from "./portfolio-slider.js";
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -38,3 +39,4 @@ stories();
 mainTags();
 randomFacts();
 platformLogos();
+portfolioSlider();

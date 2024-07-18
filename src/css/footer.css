@@ -1,10 +1,11 @@
 .footer {
     @apply bg-blue-600 relative;
     @apply mt-[168px];
+    @apply pb-9;
 }
 
 .footer__mockup {
-    @apply absolute top-0 left-1/2 translate-x-[-50%] translate-y-[-16%];
+    @apply absolute top-0 left-1/2 -translate-x-1/2 translate-y-[-16%];
 
     max-width: 909px;
     max-height: 468px;
@@ -27,6 +28,7 @@
 }
 
 .footer__counters {
+    @apply mb-[22px];
 }
 
 .footer__counter {
@@ -41,7 +43,7 @@
     font-size: clamp(28px, 10vw, 60px);
     @apply rounded-full bg-blue-900 aspect-square;
     @apply flex items-center justify-center text-white;
-    @apply font-serif font-black  md:text-6xl text-nowrap;
+    @apply font-serif font-black md:text-6xl text-nowrap;
     @apply relative;
     @apply m-[10px];
 
@@ -63,7 +65,8 @@
         @apply rounded-full;
 
         @apply border border-white opacity-[0.3];
-        pointer-events: none;
+        @apply pointer-events-none;
+
         transition: all .3s linear;
     }
 
@@ -80,42 +83,53 @@
     background-image: url("../img/counter_reviews.svg");
 }
 
-.footer__inner {
-    @apply flex-1;
-
-    @apply relative lg:bottom-[-0.75rem] max-lg:mb-8 max-lg:mt-10;
-}
-
-.footer-inner {
-    @apply text-white text-center;
-}
-
-.footer-inner__header {
-    @apply font-serif font-bold leading-tight mb-4;
-
-    @apply text-4xl xl:text-5xl;
-}
-
-.footer-inner__text {
-    @apply max-w-[400px] mx-auto mb-6;
-
-    @apply font-medium;
-
-    line-height: 145%; /* 23.2px */
-}
-
 .footer-inner__button {
     @apply inline-block bg-white;
     @apply py-[14px] px-[28px];
 
     @apply font-black text-blue-600 leading-none uppercase;
+    @apply rounded-2xl;
 
-    border-radius: 15.5px;
     font-size: 15.5px;
     letter-spacing: 1.55px;
+}
+
+.footer__search {
+    width: 80px;
+    height: 28px;
+    padding: 9px 10px;
+    gap: 6px;
+
+
+    font-size: 10px;
+    border-radius: 10px;
+
+    &:before {
+        position: relative;
+        top: 1px;
+        content: url("../img/search.svg");
+    }
+}
+
+.footer__telegram {
+    height: 28px;
+
+    gap: 6px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: rgba(39, 82, 235, .4);
+
+    &:after {
+        position: relative;
+        top: 1px;
+        content: url("../img/telegram.svg");
+    }
+}
+
+.footer__logo {
     transition: box-shadow 0.2s ease;
 
-    &:hover {
-        box-shadow: 0 0 10px 5px rgba(255, 255, 255, .3);
+    &:before {
+        content: url("../img/footer_logo.svg");
     }
 }

@@ -13,6 +13,7 @@
 @import "comparisons.css";
 @import "platform-logos.css";
 @import "footer.css";
+@import "portfolio-slider.css";
 
 @tailwind base;
 @tailwind components;

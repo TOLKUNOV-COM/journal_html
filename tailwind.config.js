@@ -61,6 +61,9 @@ export default {
                     '100%': { transform: 'rotate(360deg)' },
                 },
             },
+            boxShadow: {
+                'white-button': '0 0 10px 5px rgba(255, 255, 255, .3)',
+            }
         },
     },
     plugins: [],
