@@ -28,7 +28,7 @@ export default defineConfig({
                 main: path.resolve(__dirname, './src/index.html'),
             }
         },
-        assetsInlineLimit: 8192, // Порог в байтах, например, 8 КБ
+        // assetsInlineLimit: 8192, // Порог в байтах, например, 8 КБ
     },
     plugins: [
         vue(),

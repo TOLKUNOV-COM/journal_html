@@ -1,6 +1,7 @@
 /* src/styles/main.css */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import "../fonts/stylesheet.css";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 @import "splash-block.css";
 @import "materials.css";
 @import "news.css";
