@@ -1,4 +1,4 @@
-export default (el) => {
+export default () => {
 
     function placeCircles(circles, width, height) {
         if (circles.length === 0) return [];
@@ -45,7 +45,7 @@ export default (el) => {
             let possible = [];
             let iteration = 0;
 
-            while (possible.length < 5 && iteration < 60) {
+            while (possible.length < 5 && iteration < 80) {
                 iteration++;
 
                 let angle = Math.floor(Math.random() * 361);
@@ -83,12 +83,13 @@ export default (el) => {
         return placedCircles;
     }
 
+    const blockSelector = '.platform-logos';
     const itemSelector = '.platform-logos__item';
 
     // Пример использования
     const circles = [];
 
-    $(el).find(itemSelector).each(function (index) {
+    $(blockSelector).find(itemSelector).each(function () {
         const size = parseInt($(this).data('size'));
         const id = $(this).data('id');
 

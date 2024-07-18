@@ -40,6 +40,7 @@ export default {
                     light: '#504895',
                     DEFAULT: '#52479A',
                     dark: '#171F66',
+                    600: '#2752EB',
                     800: '#193083',
                     900: '#161F6A',
                 },
@@ -50,7 +51,16 @@ export default {
             },
             gridTemplateColumns: {
                 'comparisons': 'repeat(auto-fill, minmax(420px, 1fr))',
-            }
+            },
+            animation: {
+                'spin-slow': 'spin 30s linear infinite',
+            },
+            keyframes: {
+                spin: {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' },
+                },
+            },
         },
     },
     plugins: [],

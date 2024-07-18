@@ -1,0 +1,121 @@
+.footer {
+    @apply bg-blue-600 relative;
+    @apply mt-[168px];
+}
+
+.footer__mockup {
+    @apply absolute top-0 left-1/2 translate-x-[-50%] translate-y-[-16%];
+
+    max-width: 909px;
+    max-height: 468px;
+
+    width: 100%;
+
+    aspect-ratio: 909/468;
+
+    background: url("../img/footer_mockup.png") no-repeat center;
+    background-size: contain;
+
+    &:after {
+        content: '';
+
+        @apply absolute;
+        @apply top-0 left-0 right-0 bottom-0;
+
+        background: linear-gradient(to bottom, rgba(39, 82, 235, 0.00) 32%, #2752EB 82%)
+    }
+}
+
+.footer__counters {
+}
+
+.footer__counter {
+    @apply w-full;
+    @apply h-fit;
+
+    @apply max-w-[236px];
+
+    @apply lg:w-[236px];
+    @apply lg:min-w-[236px];
+
+    font-size: clamp(28px, 10vw, 60px);
+    @apply rounded-full bg-blue-900 aspect-square;
+    @apply flex items-center justify-center text-white;
+    @apply font-serif font-black  md:text-6xl text-nowrap;
+    @apply relative;
+    @apply m-[10px];
+
+    &:before {
+        content: '';
+
+        @apply absolute;
+        @apply top-[5%] left-[5%] right-[5%] bottom-[5%];
+        @apply rounded-full;
+        @apply bg-cover bg-center bg-no-repeat pointer-events-none;
+        @apply animate-spin-slow;
+    }
+
+    &:after {
+        content: '';
+
+        @apply absolute;
+        @apply top-[-10px] left-[-10px] right-[-10px] bottom-[-10px];
+        @apply rounded-full;
+
+        @apply border border-white opacity-[0.3];
+        pointer-events: none;
+        transition: all .3s linear;
+    }
+
+    &:hover:after {
+        @apply opacity-100 scale-[1.03];
+    }
+}
+
+.footer__counter_portfolio:before {
+    background-image: url("../img/counter_portfolio.svg");
+}
+
+.footer__counter_reviews:before {
+    background-image: url("../img/counter_reviews.svg");
+}
+
+.footer__inner {
+    @apply flex-1;
+
+    @apply relative lg:bottom-[-0.75rem] max-lg:mb-8 max-lg:mt-10;
+}
+
+.footer-inner {
+    @apply text-white text-center;
+}
+
+.footer-inner__header {
+    @apply font-serif font-bold leading-tight mb-4;
+
+    @apply text-4xl xl:text-5xl;
+}
+
+.footer-inner__text {
+    @apply max-w-[400px] mx-auto mb-6;
+
+    @apply font-medium;
+
+    line-height: 145%; /* 23.2px */
+}
+
+.footer-inner__button {
+    @apply inline-block bg-white;
+    @apply py-[14px] px-[28px];
+
+    @apply font-black text-blue-600 leading-none uppercase;
+
+    border-radius: 15.5px;
+    font-size: 15.5px;
+    letter-spacing: 1.55px;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, .3);
+    }
+}

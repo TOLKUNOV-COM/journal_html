@@ -37,4 +37,4 @@ materials();
 stories();
 mainTags();
 randomFacts();
-platformLogos($('.platform-logos'));
+platformLogos();
