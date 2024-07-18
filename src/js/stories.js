@@ -67,6 +67,26 @@ export default function stories() {
         }
     }
 
+    const pauseAutoPlay = function (slider) {
+        slider.autoplay.pause();
+
+        let activeSlide = slider.slides[slider.activeIndex];
+
+        if (activeSlide.querySelector('video')) {
+            activeSlide.querySelector('video').pause();
+        }
+    }
+
+    const resumeAutoPlay = function (slider) {
+        slider.autoplay.resume();
+
+        let activeSlide = slider.slides[slider.activeIndex];
+
+        if (activeSlide.querySelector('video')) {
+            activeSlide.querySelector('video').play();
+        }
+    }
+
     $('.story-item').on('click', () => openStories());
     $('.stories-slider__close').on('click', () => closeStories());
 
@@ -115,7 +135,7 @@ export default function stories() {
             allowTouchMove: false,
             autoplay: {
                 enabled: false,
-                delay: 4000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
             slidesPerView: 1,
@@ -248,6 +268,20 @@ export default function stories() {
                 let slider = sliders[activeIndex];
 
                 startAutoPlay(slider);
+            },
+            touchStart: function (swiper) {
+                let activeIndex = swiper.realIndex;
+
+                let slider = sliders[activeIndex];
+
+                pauseAutoPlay(slider);
+            },
+            touchEnd: function (swiper) {
+                let activeIndex = swiper.realIndex;
+
+                let slider = sliders[activeIndex];
+
+                resumeAutoPlay(slider);
             },
         }
     });
