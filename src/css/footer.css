@@ -94,35 +94,17 @@
     letter-spacing: 1.55px;
 }
 
-.footer__search {
-    width: 80px;
-    height: 28px;
-    padding: 9px 10px;
-    gap: 6px;
-
-    font-size: 10px;
-    border-radius: 10px;
-
-    &:before {
-        position: relative;
-        top: 1px;
-        content: url("../img/search.svg");
-    }
+.footer__button_search {
+    --text-color: #2752EB;
+    --background-color: #FFF;
+    --icon: url("../img/search.svg");
 }
 
-.footer__telegram {
-    height: 28px;
-
-    gap: 6px;
-    border-radius: 10px;
-    font-size: 10px;
-    color: rgba(39, 82, 235, .4);
-
-    &:after {
-        position: relative;
-        top: 1px;
-        content: url("../img/telegram.svg");
-    }
+.footer__button_telegram {
+    --text-color: rgba(39, 82, 235, .4);
+    --background-color: #FFF;
+    --icon-color: #2752EB;
+    --icon: url("../img/telegram.svg");
 }
 
 .footer__logo {

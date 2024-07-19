@@ -1,0 +1,50 @@
+.button {
+    --text-color: #171F66;
+    --background-color: #E6EAFF;
+    --icon: url("../img/search.svg");
+    --icon-color: var(--text-color);
+
+    height: 28px;
+
+    @apply text-nowrap;
+    @apply font-sans text-[10px] font-black leading-none tracking-widest uppercase;
+    @apply rounded-[10px] py-2;
+
+    @apply flex items-center gap-[6px];
+    @apply p-[9px];
+
+    color: var(--text-color);
+    background: var(--background-color);
+
+    transition: box-shadow 0.2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 10px 1px var(--background-color);
+    }
+}
+
+.button-icon-left {
+    &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        mask-image: var(--icon);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        background-color: var(--icon-color, var(--text-color));
+    }
+}
+
+.button-icon-right {
+    &:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        mask-image: var(--icon);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        background-color: var(--icon-color, var(--text-color));
+    }
+}
