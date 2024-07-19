@@ -4,6 +4,7 @@
 // createApp(App).mount('#app')
 
 import header from "./header.js";
+import splashVideo from "./splash/splash-video.js";
 import materials from "./materials.js";
 import stories from "./stories.js";
 import mainTags from "./main-tags.js";
@@ -36,6 +37,7 @@ import portfolioSlider from "./portfolio-slider.js";
 // setupCounter(document.querySelector('#counter'))
 
 header();
+splashVideo();
 materials();
 stories();
 mainTags();

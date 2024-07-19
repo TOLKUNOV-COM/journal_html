@@ -1,0 +1,62 @@
+.splash-video {
+    @apply w-full aspect-square;
+}
+
+.splash-video__content {
+    @apply w-full aspect-square;
+    @apply rounded-full;
+    @apply overflow-hidden;
+    @apply relative;
+    @apply cursor-pointer;
+    @apply transition-transform duration-75 ease-in-out;
+}
+
+.splash-video__video {
+    @apply w-full h-full object-cover;
+    @apply rounded-full;
+    @apply relative;
+}
+
+.splash-video__timeline {
+    @apply absolute top-0 left-0 right-0 bottom-0;
+    @apply opacity-100;
+    @apply transition-opacity;
+
+    background: url("../../img/splash-video-timeline.svg") no-repeat center;
+    background-size: cover;
+    @apply animate-spin-slow;
+}
+
+/*.splash-video__overlay {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+
+/*    background: rgba(0, 0, 0, 0.8);*/
+/*    @apply opacity-0;*/
+/*    @apply z-20;*/
+/*    @apply transition-opacity;*/
+/*    @apply pointer-events-none;*/
+/*}*/
+
+.splash-video_active {
+    .splash-video__content {
+        @apply shadow-lg;
+        @apply scale-110 md:scale-[150%];
+        /*@apply z-30;*/
+    }
+
+    /*.splash-video__overlay {*/
+    /*    @apply opacity-100;*/
+    /*    @apply pointer-events-auto;*/
+    /*}*/
+
+    .splash-video__video {
+    }
+
+    .splash-video__timeline {
+        @apply opacity-0;
+    }
+}
