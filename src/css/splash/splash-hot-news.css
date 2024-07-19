@@ -2,13 +2,6 @@
     @apply block;
     @apply rounded-2xl;
 
-    --background-image: none;
-
-    /*background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 10%, #FCEAEE 20%), var(--background-image);*/
-    /*!*background: var(--background-image), linear-gradient(to right, rgba(233, 51, 93, 0) 0%, rgba(233, 51, 93, 0.10) 20%);*!*/
-    /*background-position: left center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover, contain;*/
     padding: 10px 13px 15px 138px;
 
     background: #FCEAEE;
@@ -22,10 +15,8 @@
     left: 0;
     bottom: 0;
     width: 138px;
-
-    background: var(--background-image) no-repeat center center;
     overflow: hidden;
-    
+
     &:after {
         content: '';
         position: absolute;
