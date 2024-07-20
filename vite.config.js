@@ -30,6 +30,7 @@ export default defineConfig({
         },
         // assetsInlineLimit: 8192, // Порог в байтах, например, 8 КБ
     },
+    base: '',
     plugins: [
         vue(),
         pugPlugin(pugOptions, currentLocals),
