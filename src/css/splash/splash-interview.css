@@ -1,0 +1,13 @@
+.splash-interview {
+    @apply w-full min-h-[85px];
+    @apply bg-[#E7EAFD] rounded-2xl;
+
+    padding: 5px 5px 0;
+}
+
+.splash-interview__faces {
+    @apply min-w-[93px] h-[80px];
+
+    background: url("../../img/splash/splash-interview.png") no-repeat center right;
+    background-size: contain;
+}

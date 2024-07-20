@@ -55,11 +55,11 @@
 
 <section class="splash">
     <div class="container">
-        <div class="grid grid-cols-12 gap-5">
-            <div class="col-span-12 lg:col-span-8 bg-blue-500 p-4">
+        <div class="grid grid-cols-12 gap-5 xl:grid-cols-[1fr,380px]">
+            <div class="col-span-12 lg:col-span-8 xl:col-span-1 bg-blue-500 p-4">
                 <p>MAIN SLIDER</p>
             </div>
-            <div class="col-span-12 lg:col-span-4">
+            <div class="col-span-12 lg:col-span-4 xl:col-span-1">
                 <div class="font-caveat font-bold text-[26px] leading-none tracking-tight mb-3 pl-3 relative before:rounded-full before:w-[7px] before:h-[7px] before:bg-[#E9335D] before:absolute before:top-1/2 before:left-0">
                     прямой эфир
                 </div>
@@ -163,7 +163,16 @@
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-6 grid grid-cols-1 gap-3">
-                            <div class="w-full min-h-14 bg-yellow-500">INTERVIEW</div>
+                            <a href="#" class="splash-interview">
+                                <div class="flex flew-row flex-nowrap h-full">
+                                    <div class="flex flex-col gap-[5px] text-blue leading-tight pt-[5px] pl-[7px] pb-[5px]">
+                                        <div class="text-[8px] font-black opacity-30 tracking-widest">ИСТОРИИ</div>
+                                        <div class="text-xs font-medium">Диджитал специалисты и&nbsp;их&nbsp;опыт</div>
+                                    </div>
+                                    <div class="splash-interview__faces flex-1 md:hidden xl:block">
+                                    </div>
+                                </div>
+                            </a>
                             <div class="w-full min-h-14 bg-yellow-500">COMPARISON</div>
                         </div>
                     </div>
