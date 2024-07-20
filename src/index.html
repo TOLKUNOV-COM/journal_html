@@ -15,7 +15,7 @@
     <div class="container">
         <div class="flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-6">
 
-            <div class="header__item header__item_logo z-20">
+            <div class="header__item header__item_logo z-50">
                 <a href="#" class="header__logo"></a>
             </div>
 
@@ -60,9 +60,15 @@
                         <div class="splash-slider__wrapper swiper-wrapper">
                             <div class="splash-slider__slide swiper-slide">
                                 <img src="https://picsum.photos/id/1/1920/1080"/>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
                             </div>
                             <div class="splash-slider__slide swiper-slide">
                                 <img src="https://picsum.photos/id/2/1920/1080"/>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
                             </div>
                             <!--                            <div class="splash-slider__slide swiper-slide">-->
                             <!--                                <video autoplay muted>-->
@@ -72,11 +78,11 @@
                             <!--                            </div>-->
                             <div class="splash-slider__slide swiper-slide">
                                 <img src="https://picsum.photos/760/420"/>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
                             </div>
                         </div>
-
-                        <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
-                        <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
                     </div>
 
                     <div class="splash-slider__pagination swiper-pagination"></div>
@@ -330,31 +336,31 @@
         <div class="random-facts__list">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <article class="random-fact" background-text="5 раз">
+                    <a href="https://ya.ru" class="random-fact" background-text="5 раз">
                         <div class="random-fact__header">рандомный факт</div>
                         <div class="random-fact__content">Мультимедийный формат повышает привлекательность рекламы в&nbsp;5&nbsp;раз</div>
                         <div class="random-fact__footer">
                             <button class="random-fact__button">Поменять</button>
                         </div>
-                    </article>
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <article class="random-fact" background-text="60%">
+                    <a href="https://ya.ru" class="random-fact" background-text="60%">
                         <div class="random-fact__header">рандомный факт</div>
                         <div class="random-fact__content">60%&nbsp;людей опираются на цвета, определяя отношение к бренду</div>
                         <div class="random-fact__footer">
                             <button class="random-fact__button">Поменять</button>
                         </div>
-                    </article>
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <article class="random-fact" background-text="342" style="--background: linear-gradient(101deg, #D4DEFA 0%, #DAF9EA 100%) !important; --text-color: #000;">
+                    <a href="https://ya.ru" class="random-fact" background-text="342" style="--background: linear-gradient(101deg, #D4DEFA 0%, #DAF9EA 100%) !important; --text-color: #000;">
                         <div class="random-fact__header">рандомный факт</div>
                         <div class="random-fact__content">342&nbsp;работы в портфолио продакшена TOLKUNOV</div>
                         <div class="random-fact__footer">
                             <button class="random-fact__button">Поменять</button>
                         </div>
-                    </article>
+                    </a>
                 </div>
             </div>
         </div>
@@ -429,6 +435,29 @@
         </div>
 
         <a href="#" class="splash-block__button">Все сравнения</a>
+    </div>
+</section>
+
+<section class="platform-logos splash-block">
+    <div class="platform-logos__title splash-block__title text-center leading-[90%]">рассказываем<br>про Площадки и форматы</div>
+
+    <div class="platform-logos__container">
+        <div class="platform-logos__list">
+            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #43118A; --background-image: url('img/platform-logos/hybrid.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #3B5EF2; --background-image: url('img/platform-logos/rambler.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #C11F2F; --background-image: url('img/platform-logos/weborama.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="9" style="--background-color: #0077FF; --background-image: url('img/platform-logos/vk.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="11" style="--background-color: #FC3F31; --background-image: url('img/platform-logos/yandex.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="3" style="--background-color: #FF2D00; --background-image: url('img/platform-logos/segment.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #000000; --background-image: url('img/platform-logos/my_target.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #4DABF8; --background-image: url('img/platform-logos/getintent.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #4DABF8; --background-image: url('img/platform-logos/getintent.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="3" style="--background-color: #04E061; --background-image: url('img/platform-logos/avito.svg');"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#" class="splash-block__button">Все площадки</a>
     </div>
 </section>
 

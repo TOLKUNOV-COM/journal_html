@@ -60,7 +60,6 @@
 
 .splash-slider__prev, .splash-slider__next {
     height: 100%;
-    width: 20%;
     top: 0;
     margin-top: 0;
 }
@@ -71,10 +70,12 @@
 
 .splash-slider__prev {
     left: 0;
+    width: 30%;
 }
 
 .splash-slider__next {
     right: 0;
+    width: 70%;
 }
 
 /** Next / Prev button shadows */

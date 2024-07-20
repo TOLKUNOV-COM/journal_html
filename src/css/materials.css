@@ -97,8 +97,6 @@
 
     border-radius: var(--border-radius);
     background: var(--background-gradient);
-    background-size: cover;
-    background-position: center center;
 }
 
 .materials-item__content {

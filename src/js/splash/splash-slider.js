@@ -13,7 +13,7 @@ export default function () {
         watchSlidesProgress: true,
         loop: true,
         autoplay: {
-            delay: 15000,
+            delay: 8000,
             disableOnInteraction: false
         },
         slidesPerView: 'auto',

@@ -66,13 +66,14 @@
 /* Split line horizontal */
 .comparison:not(.comparison_small) .comparison-item:first-child:after {
     background: url("../img/split-line-rotated.svg") no-repeat center;
+    background-size: 100% 6px;
 
     @apply translate-x-0 translate-y-[-50%];
     @apply top-full;
     @apply right-auto;
     @apply left-0;
     @apply w-full;
-    @apply h-[8px];
+    @apply h-[6px];
 }
 
 /* Split line vertical */
@@ -86,6 +87,7 @@
         @apply h-full;
 
         background: url("../img/split-line.svg") no-repeat center;
+        background-size: 8px 100%;
     }
 }
 
@@ -153,13 +155,23 @@
     @apply grid-cols-2;
 
     .comparison-item {
-        @apply aspect-[95/85];
+        @apply xl:aspect-[95/85];
         @apply p-[10px];
         @apply rounded-2xl;
     }
 
     .comparison-item:first-child:after {
-        @apply scale-[40%] translate-y-0 translate-x-[50%];
+        @apply top-0;
+        @apply left-auto;
+        @apply translate-y-0 translate-x-[50%];
+        @apply right-0;
+        @apply w-[2px];
+        @apply h-full;
+
+        background: url("../img/split-line.svg") repeat-y center;
+        background-size: contain;
+
+        @apply translate-y-0 translate-x-[50%];
     }
 
     .comparison-item:first-child:before {
@@ -173,6 +185,6 @@
     }
 
     .comparison-item__word {
-        padding: 2.439px 3.485px;
+        padding: 3px 4px 2px;
     }
 }

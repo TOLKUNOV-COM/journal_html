@@ -9,7 +9,9 @@ export default function () {
         grabCursor: false,
     });
 
-    $('.random-fact__button').on('click', () => {
+    $('.random-fact__button').on('click', (e) => {
+        e.preventDefault();
+
         if (randomFactsSlider.slideNext() === false) {
             randomFactsSlider.slideTo(0);
         }
