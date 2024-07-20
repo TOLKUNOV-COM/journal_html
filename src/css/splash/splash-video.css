@@ -5,25 +5,20 @@
 .splash-video__content {
     @apply w-full aspect-square;
     @apply rounded-full;
-    @apply overflow-hidden;
     @apply relative;
     @apply cursor-pointer;
     @apply transition-transform duration-75 ease-in-out;
 }
 
 .splash-video__video {
-    @apply relative;
-
-    top: -1%;
-    left: -1%;
-
-    width: 102%;
-    height: 102%;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     object-fit: cover;
-
-    max-width: 102%;
-    max-height: 102%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
 }
 
 .splash-video__timeline {
@@ -39,7 +34,7 @@
 .splash-video_active {
     .splash-video__content {
         @apply shadow-2xl;
-        @apply scale-110 lg:scale-[150%] z-20;
+        @apply scale-125 lg:scale-[150%] z-20;
     }
 
     .splash-video__video {
