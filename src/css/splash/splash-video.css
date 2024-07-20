@@ -12,9 +12,18 @@
 }
 
 .splash-video__video {
-    @apply w-full h-full object-cover;
-    @apply rounded-full;
     @apply relative;
+
+    top: -1%;
+    left: -1%;
+
+    width: 102%;
+    height: 102%;
+
+    object-fit: cover;
+
+    max-width: 102%;
+    max-height: 102%;
 }
 
 .splash-video__timeline {
@@ -30,7 +39,7 @@
 .splash-video_active {
     .splash-video__content {
         @apply shadow-2xl;
-        @apply scale-110 md:scale-[150%];
+        @apply scale-110 lg:scale-[150%] z-20;
     }
 
     .splash-video__video {

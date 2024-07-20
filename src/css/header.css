@@ -69,7 +69,7 @@
     @apply text-blue-dark lg:text-[10px] font-black leading-none tracking-widest uppercase;
 
     @apply flex items-center justify-center gap-5 lg:gap-[30px];
-    @apply z-10;
+    @apply z-50;
 
     @apply max-lg:absolute max-lg:top-[80px] max-lg:left-0 max-lg:right-0 max-lg:h-[calc(100vh-80px)];
     @apply max-lg:bg-white;

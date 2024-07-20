@@ -53,7 +53,7 @@ export default {
                 'comparisons': 'repeat(auto-fill, minmax(420px, 1fr))',
             },
             animation: {
-                'spin-slow': 'spin 30s linear infinite',
+                'spin-slow': 'spin 40s linear infinite',
             },
             keyframes: {
                 spin: {
