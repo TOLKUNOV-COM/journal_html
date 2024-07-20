@@ -40,7 +40,8 @@
     background-color: var(--background-color);
 
     &:after {
-        content: var(--background-image);
+        content: '';
+        background: var(--background-image) no-repeat center;
         position: absolute;
         top: 0;
         bottom: 0;
