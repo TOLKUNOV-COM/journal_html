@@ -4,18 +4,18 @@
 
     padding: 10px 13px 15px 138px;
 
+    @apply pl-[13px] sm:pl-[138px] md:pl-[13px] xl:pl-[138px];
+
     background: #FCEAEE;
     position: relative;
     overflow: hidden;
 }
 
 .hot-news__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 138px;
-    overflow: hidden;
+    @apply absolute top-0 left-0 bottom-0;
+    @apply overflow-hidden;
+
+    @apply w-0 sm:w-[138px] md:w-[0] xl:w-[138px];
 
     &:after {
         content: '';
@@ -36,7 +36,7 @@
 }
 
 .hot-news__counter {
-    @apply flex items-center;
+    @apply flex items-center text-nowrap;
     gap: 2px;
 
     &:before {
