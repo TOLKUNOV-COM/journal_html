@@ -64,8 +64,8 @@
                     прямой эфир
                 </div>
 
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="grid grid-cols-12 gap-3 col-span-2 md:col-span-1 lg:col-span-2">
+                <div class="grid grid-cols-2 gap-[10px]">
+                    <div class="grid grid-cols-12 gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
                         <div class="col-span-12">
                             <a href="#" class="hot-news">
                                 <div class="hot-news__img">
@@ -84,7 +84,7 @@
                             </a>
                         </div>
                         <div class="col-span-12 sm:col-span-7">
-                            <div class="grid grid-cols-2 gap-3">
+                            <div class="grid grid-cols-2 gap-[10px]">
                                 <div class="splash-video">
                                     <div class="splash-video__content">
                                         <video class="splash-video__video" autoplay muted loop>
@@ -148,8 +148,8 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-3 col-span-2 md:col-span-1 lg:col-span-2">
-                        <div class="col-span-12 sm:col-span-6">
+                    <div class="grid grid-cols-12 xl:grid-cols-[1fr,190px] gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-1">
                             <div class="splash-news h-full">
                                 <div class="splash-news__list">
                                     <a href="#" class="splash-news__item">Новый закон об интернет-рекламе</a>
@@ -162,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 sm:col-span-6 grid grid-cols-1 gap-3">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-1 grid grid-cols-1 gap-[10px]">
                             <a href="#" class="splash-interview">
                                 <div class="flex flew-row flex-nowrap h-full">
                                     <div class="flex flex-col gap-[5px] text-blue leading-tight pt-[5px] pl-[7px] pb-[5px]">
@@ -173,7 +173,18 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="w-full min-h-14 bg-yellow-500">COMPARISON</div>
+                            <a href="#" class="comparison comparison_small min-h-[85px]" style="--vs-color: #FE385B;">
+                                <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --background-image: url('https://picsum.photos/id/14/95/85')">
+                                    <div class="comparison-item__text comparison-item__text_center">
+                                        <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
+                                    </div>
+                                </div>
+                                <div class="comparison-item items-end justify-start" style="--background-color: #E6EAFF; --background-image: url('https://picsum.photos/id/14/95/85')">
+                                    <div class="comparison-item__text comparison-item__text_center">
+                                        <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -345,7 +356,7 @@
         <h2 class="comparisons__title splash-block__title">Сравниваем</h2>
 
         <div class="comparisons__list">
-            <div class="comparison" style="--vs-color: #FE385B;">
+            <a href="#" class="comparison" style="--vs-color: #FE385B;">
                 <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --background-image: url('https://picsum.photos/id/14/285/325')">
                     <div class="comparison-item__text comparison-item__text_center">
                         <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
@@ -356,8 +367,8 @@
                         <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
                     </div>
                 </div>
-            </div>
-            <div class="comparison" style="--vs-color: rgba(82, 71, 154, 1);">
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(82, 71, 154, 1);">
                 <div class="comparison-item items-start justify-end" style="--background-color: #B5CEF4; --text-background-color: #013D9F;">
                     <div class="comparison-item__text comparison-item__text_right">
                         <span class="comparison-item__word">КАЛЬКУЛЯТОР</span>
@@ -368,8 +379,8 @@
                         <span class="comparison-item__word">НОУТБУК</span>
                     </div>
                 </div>
-            </div>
-            <div class="comparison" style="--vs-color: rgba(25, 33, 103, 1);">
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(25, 33, 103, 1);">
                 <div class="comparison-item items-start justify-end" style="--background-color: #CD99F5; --text-background-color: #192167;">
                     <div class="comparison-item__text comparison-item__text_right">
                         <span class="comparison-item__word">деньги</span><br><span class="comparison-item__word">в сейфе</span>
@@ -380,8 +391,8 @@
                         <span class="comparison-item__word">купленная</span><br><span class="comparison-item__word">страховка</span>
                     </div>
                 </div>
-            </div>
-            <div class="comparison" style="--vs-color: rgba(254, 55, 91, 1);">
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(254, 55, 91, 1);">
                 <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --text-background-color: #192167;">
                     <div class="comparison-item__text comparison-item__text_center">
                         <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
@@ -392,7 +403,7 @@
                         <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
 
         <a href="#" class="splash-block__button">Все сравнения</a>

@@ -1,4 +1,5 @@
 .splash-interview {
+    @apply block;
     @apply w-full min-h-[85px];
     @apply bg-[#E7EAFD] rounded-2xl;
 

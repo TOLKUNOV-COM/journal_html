@@ -64,7 +64,7 @@
 }
 
 /* Split line horizontal */
-.comparison-item:first-child:after {
+.comparison:not(.comparison_small) .comparison-item:first-child:after {
     background: url("../img/split-line-rotated.svg") no-repeat center;
 
     @apply translate-x-0 translate-y-[-50%];
@@ -77,7 +77,7 @@
 
 /* Split line vertical */
 @screen sm {
-    .comparison-item:first-child:after {
+    .comparison:not(.comparison_small) .comparison-item:first-child:after {
         @apply top-0;
         @apply left-auto;
         @apply translate-y-0 translate-x-[50%];
@@ -146,4 +146,33 @@
 
 .comparison-item__text .comparison-item__word:nth-child(n+2) {
     @apply mt-[-8px] xl:mt-[-9px];
+}
+
+/* Special small item */
+.comparison_small {
+    @apply grid-cols-2;
+
+    .comparison-item {
+        @apply aspect-[95/85];
+        @apply p-[10px];
+        @apply rounded-2xl;
+    }
+
+    .comparison-item:first-child:after {
+        @apply scale-[40%] translate-y-0 translate-x-[50%];
+    }
+
+    .comparison-item:first-child:before {
+        @apply scale-[40%] translate-x-1/2 -translate-y-1/2;
+        top: 50%;
+        right: 0;
+    }
+
+    .comparison-item__text {
+        font-size: 6px;
+    }
+
+    .comparison-item__word {
+        padding: 2.439px 3.485px;
+    }
 }
