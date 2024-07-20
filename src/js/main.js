@@ -6,6 +6,7 @@
 import header from "./header.js";
 import splashVideo from "./splash/splash-video.js";
 import splashCounter from "./splash/splash-counter.js";
+import splashNews from "./splash/splash-news.js";
 import materials from "./materials.js";
 import stories from "./stories.js";
 import mainTags from "./main-tags.js";
@@ -40,6 +41,7 @@ import portfolioSlider from "./portfolio-slider.js";
 header();
 splashVideo();
 splashCounter();
+splashNews();
 materials();
 stories();
 mainTags();
