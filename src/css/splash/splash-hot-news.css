@@ -5,6 +5,7 @@
     padding: 10px 13px 15px 138px;
 
     @apply pl-[13px] sm:pl-[138px] md:pl-[13px] xl:pl-[138px];
+    @apply pb-5;
 
     background: #FCEAEE;
     position: relative;

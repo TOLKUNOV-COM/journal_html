@@ -1,6 +1,7 @@
 .stories {
     overflow: hidden;
 
+    @apply mt-0;
     @apply mb-[84px];
 }
 

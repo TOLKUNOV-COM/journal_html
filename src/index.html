@@ -51,20 +51,44 @@
     </div>
 </header>
 
-<div class="h-24 bg-black"></div>
-
-<section class="splash">
+<section class="splash mb-10 lg:mb-20">
     <div class="container">
-        <div class="grid grid-cols-12 gap-5 xl:grid-cols-[1fr,380px]">
-            <div class="col-span-12 lg:col-span-8 xl:col-span-1 bg-blue-500 p-4">
-                <p>MAIN SLIDER</p>
+        <div class="grid grid-cols-12 gap-5 xl:grid-cols-[auto,380px] lg:mb-[25px]">
+            <div class="col-span-12 lg:col-span-8 xl:col-span-1 relative mb-5 lg:mb-0">
+                <div class="splash-slider">
+                    <div class="splash-slider__slider swiper">
+                        <div class="splash-slider__wrapper swiper-wrapper">
+                            <div class="splash-slider__slide swiper-slide">
+                                <img src="https://picsum.photos/id/1/1920/1080"/>
+                            </div>
+                            <div class="splash-slider__slide swiper-slide">
+                                <img src="https://picsum.photos/id/2/1920/1080"/>
+                            </div>
+                            <!--                            <div class="splash-slider__slide swiper-slide">-->
+                            <!--                                <video autoplay muted>-->
+                            <!--                                    &lt;!&ndash; May not work in the future, just change source &ndash;&gt;-->
+                            <!--                                    <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">-->
+                            <!--                                </video>-->
+                            <!--                            </div>-->
+                            <div class="splash-slider__slide swiper-slide">
+                                <img src="https://picsum.photos/760/420"/>
+                            </div>
+                        </div>
+
+                        <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                        <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                    </div>
+
+                    <div class="splash-slider__pagination swiper-pagination"></div>
+                </div>
             </div>
             <div class="col-span-12 lg:col-span-4 xl:col-span-1">
-                <div class="font-caveat font-bold text-[26px] leading-none tracking-tight mb-3 pl-3 relative before:rounded-full before:w-[7px] before:h-[7px] before:bg-[#E9335D] before:absolute before:top-1/2 before:left-0">
-                    прямой эфир
-                </div>
-
                 <div class="grid grid-cols-2 gap-[10px]">
+                    <div class="col-span-2">
+                        <div class="font-caveat font-bold text-[26px] leading-none tracking-tight -mt-2 ml-2 mb-0.5 pl-3 relative before:rounded-full before:w-[7px] before:h-[7px] before:bg-[#E9335D] before:absolute before:top-1/2 before:left-0">
+                            прямой эфир
+                        </div>
+                    </div>
                     <div class="grid grid-cols-12 gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
                         <div class="col-span-12">
                             <a href="#" class="hot-news">
@@ -80,7 +104,7 @@
                                     </div>
                                 </div>
 
-                                <div class="line-clamp-2 text-blue-dark text-sm font-medium leading-normal">60% людей опираются на цвета, определяя отношение к бренду</div>
+                                <div class="line-clamp-2 text-blue-dark text-sm font-medium leading-tight">60% людей опираются на цвета, определяя отношение к бренду</div>
                             </a>
                         </div>
                         <div class="col-span-12 sm:col-span-7">
@@ -165,9 +189,9 @@
                         <div class="col-span-12 sm:col-span-6 xl:col-span-1 grid grid-cols-1 gap-[10px]">
                             <a href="#" class="splash-interview">
                                 <div class="flex flew-row flex-nowrap h-full">
-                                    <div class="flex flex-col gap-[5px] text-blue leading-tight pt-[5px] pl-[7px] pb-[5px]">
-                                        <div class="text-[8px] font-black opacity-30 tracking-widest">ИСТОРИИ</div>
-                                        <div class="text-xs font-medium">Диджитал специалисты и&nbsp;их&nbsp;опыт</div>
+                                    <div class="flex flex-col gap-[5px] text-blue pt-[5px] pl-[7px] pb-[5px]">
+                                        <div class="text-[8px] font-black opacity-30 leading-tight tracking-widest">ИСТОРИИ</div>
+                                        <div class="text-xs font-medium leading-tight">Диджитал специалисты и&nbsp;их&nbsp;опыт</div>
                                     </div>
                                     <div class="splash-interview__faces flex-1 md:hidden xl:block">
                                     </div>
@@ -193,8 +217,6 @@
     </div>
 </section>
 
-
-<div class="h-24 bg-black"></div>
 
 <section class="stories splash-block">
     <div class="container">
