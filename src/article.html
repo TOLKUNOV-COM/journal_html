@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<pug src="src/partials/header.html"></pug>
+
+<div class="container">
+    <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-3">
+            <a href="#" class="text-blue-dark text-sm">← назад</a>
+        </div>
+        <div class="col-span-6">
+            <div class="h-24 bg-yellow-500"></div>
+        </div>
+        <div class="col-span-3">
+            <div class="h-24 bg-yellow-500"></div>
+        </div>
+    </div>
+</div>
+
+<pug src="src/partials/footer.html"></pug>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
