@@ -1,0 +1,16 @@
+.splash-dict__word {
+    @apply rounded-full uppercase;
+    @apply font-bold leading-tight tracking-widest;
+    @apply transition-all;
+
+    padding: 5px 7px;
+    background: rgba(0, 0, 0, 0.20);
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 8px;
+
+    &:hover {
+        color: #FFF;
+        background: #FE375B;
+        box-shadow: 0 7px 30px 0 #FE375B;
+    }
+}

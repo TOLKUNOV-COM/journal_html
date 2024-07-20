@@ -37,7 +37,6 @@ import portfolioSlider from "./portfolio-slider.js";
 //
 // setupCounter(document.querySelector('#counter'))
 
-common();
 header();
 splashVideo();
 splashCounter();
