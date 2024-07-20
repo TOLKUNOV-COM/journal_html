@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/vite-DcBtz0py.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+  <script type="module" crossorigin src="/assets/main-BBJ_OMFw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-eilGBvkr.css">
+</head>
+<body>
+<div id="app"></div>
+
+<header class="header">
+<div class="container">
+<div class="flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-6">
+<div class="header__item header__item_logo z-50">
+<a href="#" class="header__logo"></a>
+</div>
+<nav class="header__item_menu header__menu flex-1">
+<a class="header__link" href="#">Новости</a>
+<a class="header__link" href="#">Статьи</a>
+<a class="header__link" href="#">Факты</a>
+<a class="header__link" href="#">Сравнения</a>
+<a class="header__link" href="#">Словарик</a>
+<a class="header__link" href="#">Площадки</a>
+</nav>
+<div class="header__item header__item_buttons z-20">
+<div class="flex items-center flex-row flex-nowrap gap-[10px]">
+<a href="#" class="button button-icon-left header__button header__button_search">
+<span class="max-xl:hidden">Поиск</span>
+</a>
+<a href="#" class="button button-icon-right header__button header__button_telegram">
+<span class="max-xl:hidden">
+<span class="text-white">ТЕЛЕГРАМ-канал</span>
+<span class="text-white opacity-40">1,6к</span>
+</span>
+</a>
+<div class="tham tham-e-spin tham-w-7 ml-2 sm:ml-6 lg:hidden" id="header_menu_toggle">
+<div class="tham-box">
+<div class="tham-inner bg-blue-dark"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<section class="splash mb-10 lg:mb-20">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-5 xl:grid-cols-[auto,380px] lg:mb-[25px]">
+            <div class="col-span-12 lg:col-span-8 xl:col-span-1 relative mb-5 lg:mb-0">
+                <div class="splash-slider">
+                    <div class="splash-slider__slider swiper">
+                        <div class="splash-slider__wrapper swiper-wrapper">
+                            <div class="splash-slider__slide swiper-slide">
+                                <img src="https://picsum.photos/id/1/1920/1080"/>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                            </div>
+                            <div class="splash-slider__slide swiper-slide">
+                                <img src="https://picsum.photos/id/2/1920/1080"/>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                            </div>
+                            <!--                            <div class="splash-slider__slide swiper-slide">-->
+                            <!--                                <video autoplay muted>-->
+                            <!--                                    &lt;!&ndash; May not work in the future, just change source &ndash;&gt;-->
+                            <!--                                    <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">-->
+                            <!--                                </video>-->
+                            <!--                            </div>-->
+                            <div class="splash-slider__slide swiper-slide">
+                                <img src="https://picsum.photos/760/420"/>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="splash-slider__pagination swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 xl:col-span-1">
+                <div class="grid grid-cols-2 gap-[10px]">
+                    <div class="col-span-2">
+                        <div class="font-caveat font-bold text-[26px] leading-none tracking-tight -mt-2 ml-2 mb-0.5 pl-3 relative before:rounded-full before:w-[7px] before:h-[7px] before:bg-[#E9335D] before:absolute before:top-1/2 before:left-0">
+                            прямой эфир
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
+                        <div class="col-span-12">
+                            <a href="#" class="hot-news">
+                                <div class="hot-news__img">
+                                    <img class="w-full h-full object-cover object-center" src="https://placehold.it/300x300/green" alt="#">
+                                </div>
+                                <div class="flex items-center text-blue-900 opacity-30 text-[8px] leading-normal mb-2">
+                                    <div class="flex-1 font-black uppercase tracking-widest">В центре внимания</div>
+                                    <div class="flex items-center gap-1 font-bold">
+                                        <div class="hot-news__counter hot-news__counter_views">1 345</div>
+                                        <div class="hot-news__counter hot-news__counter_comments">654</div>
+                                        <div class="hot-news__counter hot-news__counter_bookmarks">654</div>
+                                    </div>
+                                </div>
+
+                                <div class="line-clamp-2 text-blue-dark text-sm font-medium leading-tight">60% людей опираются на цвета, определяя отношение к бренду</div>
+                            </a>
+                        </div>
+                        <div class="col-span-12 sm:col-span-7">
+                            <div class="grid grid-cols-2 gap-[10px]">
+                                <div class="splash-video">
+                                    <div class="splash-video__content">
+                                        <video class="splash-video__video" autoplay muted loop>
+                                            <!-- May not work in the future, just change source -->
+                                            <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="splash-video__timeline"></div>
+                                </div>
+                                <div class="splash-counter">
+                                    <button class="splash-counter__refresh hidden"></button>
+
+                                    <a href="#" class="splash-counter__item splash-counter__item_articles">
+                                        <svg class="fit-text-container" width="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                            <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="white">442</text>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-span-12 sm:col-span-5">
+                            <div class="splash-dict bg-blue rounded-2xl h-full max-h-full min-h-[76px] overflow-hidden relative">
+                                <div class="splash-dict__container flex flex-row flex-wrap items-center justify-center content-center gap-x-[5px] gap-y-[4px] absolute -left-10 -right-10 top-[6px] bottom-[6px]">
+                                    <a href="#" class="splash-dict__word">ПЭКШОТ</a>
+                                    <a href="#" class="splash-dict__word">АНИМАЦИЯ</a>
+                                    <a href="#" class="splash-dict__word">РАСКАДРОВКИ</a>
+                                    <a href="#" class="splash-dict__word">OOH</a>
+                                    <a href="#" class="splash-dict__word">DOOH</a>
+                                    <a href="#" class="splash-dict__word">ИЗИНГИ</a>
+                                    <a href="#" class="splash-dict__word">ТЭТЭШКИ</a>
+                                    <a href="#" class="splash-dict__word">ЗАГЛУШКИ</a>
+                                    <a href="#" class="splash-dict__word">ЕРИД</a>
+                                    <a href="#" class="splash-dict__word">ДЕДЛАЙН</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАРКИРОВКА</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">ЕРИД</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАРКИРОВКА</a>
+                                    <a href="#" class="splash-dict__word">ЕРИД</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">МАРКИРОВКА</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">МАРКИРОВКА</a>
+                                    <a href="#" class="splash-dict__word">МАРКИРОВКА</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">HTML5</a>
+                                    <a href="#" class="splash-dict__word">МАСТЕРЫ</a>
+                                    <a href="#" class="splash-dict__word">МАРКИРОВКА</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12 xl:grid-cols-[1fr,190px] gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-1">
+                            <div class="splash-news h-full">
+                                <div class="splash-news__list">
+                                    <a href="#" class="splash-news__item">Новый закон об интернет-рекламе</a>
+                                    <a href="#" class="splash-news__item">Adobe не смог купить компанию Figma: почему так произошло</a>
+                                    <a href="#" class="splash-news__item">Новая технология Яндекса Advanced Matching</a>
+                                    <a href="#" class="splash-news__item">Блокировщик рекламы встроили в браузер Safari</a>
+                                    <a href="#" class="splash-news__item">Новые рекламные форматы VK</a>
+                                    <a href="#" class="splash-news__item">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                                    <a href="#" class="splash-news__item">Aliquam non magna non nulla blandit mollis vel nec est</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xl:col-span-1 grid grid-cols-1 gap-[10px]">
+                            <a href="#" class="splash-interview">
+                                <div class="flex flew-row flex-nowrap h-full">
+                                    <div class="flex flex-col gap-[5px] text-blue pt-[5px] pl-[7px] pb-[5px]">
+                                        <div class="text-[8px] font-black opacity-30 leading-tight tracking-widest">ИСТОРИИ</div>
+                                        <div class="text-xs font-medium leading-tight">Диджитал специалисты и&nbsp;их&nbsp;опыт</div>
+                                    </div>
+                                    <div class="splash-interview__faces flex-1 md:hidden xl:block">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="comparison comparison_small min-h-[85px]" style="--vs-color: #FE385B;">
+                                <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --background-image: url('https://picsum.photos/id/14/95/85')">
+                                    <div class="comparison-item__text comparison-item__text_center">
+                                        <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
+                                    </div>
+                                </div>
+                                <div class="comparison-item items-end justify-start" style="--background-color: #E6EAFF; --background-image: url('https://picsum.photos/id/14/95/85')">
+                                    <div class="comparison-item__text comparison-item__text_center">
+                                        <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="stories splash-block">
+    <div class="container">
+        <h1 class="stories__title splash-block__title">главное в карточках</h1>
+
+        <div class="stories-list">
+            <div class="swiper-wrapper">
+                
+<div class="story-item swiper-slide" style="--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(&quot;https://via.placeholder.com/350x350&quot;) #1860CA; --title-color: #fff;">
+  <div class="story-item__content">
+    <div class="story-item__title">Наружная реклама: почему рекомендуем</div>
+  </div>
+</div>
+<div class="story-item swiper-slide" style="--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(&quot;https://picsum.photos/350/350?grayscale&quot;) #1860CA; --title-color: #000;">
+  <div class="story-item__content">
+    <div class="story-item__title">Иллюстрации в КВ: минусы и плюсы</div>
+  </div>
+</div>
+<div class="story-item swiper-slide" style="--background: linear-gradient(180deg, #BB217F 0%, rgba(187, 33, 127, 0.00) 55%), url(&quot;https://picsum.photos/350/350?grayscale&quot;) #BB217F; --title-color: #fff;">
+  <div class="story-item__content">
+    <div class="story-item__title">Рекламные извращения как источник пиара</div>
+  </div>
+</div>
+<div class="story-item swiper-slide story-item_viewed" style="--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(&quot;https://picsum.photos/350/350?grayscale&quot;) #2B9B37; --title-color: #fff;">
+  <div class="story-item__content">
+    <div class="story-item__title">Новые баннеры брендов за июнь</div>
+  </div>
+</div>
+<div class="story-item swiper-slide story-item_viewed" style="--background: linear-gradient(180deg, #BB217F 0%, rgba(187, 33, 127, 0.00) 55%), url(&quot;https://picsum.photos/350/350?grayscale&quot;) #BB217F; --title-color: #fff;">
+  <div class="story-item__content">
+    <div class="story-item__title">Рекламные извращения как источник пиара</div>
+  </div>
+</div>
+<div class="story-item swiper-slide story-item_viewed" style="--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(&quot;https://picsum.photos/350/350?grayscale&quot;) #2B9B37; --title-color: #fff;">
+  <div class="story-item__content">
+    <div class="story-item__title">Новые баннеры брендов за июнь</div>
+  </div>
+</div>
+<div class="story-item swiper-slide story-item_viewed" style="--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(&quot;https://picsum.photos/350/350?grayscale&quot;) #2B9B37; --title-color: #fff;">
+  <div class="story-item__content">
+    <div class="story-item__title">Новые баннеры брендов за июнь</div>
+  </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="stories-slider">
+    <div class="stories-slider__overlay"></div>
+
+    <div class="stories-slider__content">
+
+        <div class="swiper stories-slider__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide stories__slide">
+
+                    <div class="story">
+                        <div class="story__slider swiper">
+                            <button class="stories-slider__close"></button>
+
+                            <div class="story__wrapper swiper-wrapper">
+                                <div class="story__slide swiper-slide">
+                                    <img src="https://placehold.it/300x500/fff"/>
+                                </div>
+                                <div class="story__slide swiper-slide">
+                                    <img src="https://picsum.photos/450/800"/>
+                                </div>
+                                <div class="story__slide swiper-slide">
+                                    <video autoplay muted>
+                                        <!-- May not work in the future, just change source -->
+                                        <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="story__slide swiper-slide">
+                                    <img src="https://picsum.photos/450/810"/>
+                                </div>
+                            </div>
+
+                            <div class="story__button story__next swiper-button-next"></div>
+                            <div class="story__button story__prev swiper-button-prev"></div>
+
+                            <div class="story__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide stories__slide">
+                    <div class="story">
+                        <div class="story__slider swiper">
+                            <button class="stories-slider__close"></button>
+
+                            <div class="story__wrapper swiper-wrapper">
+                                <div class="story__slide swiper-slide">
+                                    <img src="https://picsum.photos/450/800"/>
+                                </div>
+                                <div class="story__slide swiper-slide">
+                                    <video autoplay muted>
+                                        <!-- May not work in the future, just change source -->
+                                        <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="story__slide swiper-slide">
+                                    <img src="https://picsum.photos/450/810"/>
+                                </div>
+                            </div>
+
+                            <div class="story__button story__next swiper-button-next"></div>
+                            <div class="story__button story__prev swiper-button-prev"></div>
+
+                            <div class="story__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="main-tags">
+    <div class="container">
+        <div class="main-tags__list">
+            <div class="swiper-wrapper">
+                <a class="main-tags__item swiper-slide" href="#">баннеры</a><a class="main-tags__item swiper-slide" href="#">Кейвижуал</a><a class="main-tags__item swiper-slide" href="#">баннеры</a><a class="main-tags__item swiper-slide" href="#">html5</a><a class="main-tags__item swiper-slide" href="#">яндекс</a><a class="main-tags__item swiper-slide" href="#">площадки</a><a class="main-tags__item swiper-slide" href="#">реклама</a><a class="main-tags__item swiper-slide" href="#">иллюстрации</a><a class="main-tags__item swiper-slide" href="#">яндекс</a><a class="main-tags__item swiper-slide" href="#">площадки</a><a class="main-tags__item swiper-slide" href="#">реклама</a><a class="main-tags__item swiper-slide" href="#">иллюстрации</a><a class="main-tags__item swiper-slide" href="#">баннеры</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="materials materials_articles splash-block">
+    <div class="container">
+        <h2 class="materials__title splash-block__title">свежие статьи</h2>
+
+        <div class="materials-list">
+            <a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/300x300&quot;); --background-gradient: linear-gradient(0deg, #333E3F 22%, rgba(51, 62, 63, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);" data-height="2" data-width="2" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">реклама</div>
+      <div class="materials-item__tag">яндекс</div>
+      <div class="materials-item__tag">поиск</div>
+    </div>
+    <div class="materials-item__title">Баннер на поиске в Яндекс Директ</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">23 144</div>
+      <div class="materials-item__time">5 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/400x800&quot;); --background-gradient: linear-gradient(0deg, #576812 26.5%, rgba(87, 104, 18, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);" data-height="2" data-width="1" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">ГЕО</div>
+      <div class="materials-item__tag">яндекс</div>
+      <div class="materials-item__tag">+2</div>
+    </div>
+    <div class="materials-item__title">Как геобаннеры помогают бизнесу</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">2 544</div>
+      <div class="materials-item__time">2 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/400x800&quot;); --background-gradient: linear-gradient(0deg, rgba(197, 45, 51, 1) 0%, rgba(197, 45, 51, 0) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);" data-height="2" data-width="1" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">кв</div>
+      <div class="materials-item__tag">иллюстрации</div>
+    </div>
+    <div class="materials-item__title">Лучшие кративы июня</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">7 666</div>
+      <div class="materials-item__time">15 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/1920x1080&quot;); --background-gradient: linear-gradient(0deg, rgba(79, 42, 192, 1) 0%, rgba(79, 42, 192, 0) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);" data-height="2" data-width="4" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">реклама</div>
+      <div class="materials-item__tag">яндекс</div>
+      <div class="materials-item__tag">баннеры</div>
+      <div class="materials-item__tag">+3</div>
+    </div>
+    <div class="materials-item__title">Новая технология Яндекса Advanced Matching</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">115 999</div>
+      <div class="materials-item__time">26 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/400x800&quot;); --background-gradient: linear-gradient(0deg, #E9ECEB 26.5%, rgba(233, 236, 235, 0.00) 100%); --title-color: #000; --counters-color: #000; --counters-opacity: 0.3; --tag-color: rgba(0, 0, 0, 0.8); --tag-border-color: rgba(0, 0, 0, 0.2)" data-height="2" data-width="1" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">3D</div>
+      <div class="materials-item__tag">реклама</div>
+    </div>
+    <div class="materials-item__title">3D в рекламных кампаниях на свежих примерах</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">2 544</div>
+      <div class="materials-item__time">2 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/300x300&quot;); --background-gradient: linear-gradient(0deg, #A8186B 22%, rgba(168, 24, 107, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);" data-height="2" data-width="2" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">кейвижуал</div>
+      <div class="materials-item__tag">реклама</div>
+      <div class="materials-item__tag">иллюстрации</div>
+    </div>
+    <div class="materials-item__title">Список источников вдохновения для создания эффектных кейвижуалов</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">7 899</div>
+      <div class="materials-item__time">10 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/400x800&quot;); --background-gradient: linear-gradient(0deg, #C5EBFF 26.5%, rgba(197, 235, 255, 0.00) 100%); --title-color: rgba(25, 48, 131, 1); --counters-color: rgba(25, 48, 131, 1); --counters-opacity: 0.3; --tag-color: rgba(25, 48, 131, 0.8); --tag-border-color: rgba(25, 48, 131, 0.2);" data-height="2" data-width="1" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">мобайл</div>
+      <div class="materials-item__tag">площадки</div>
+    </div>
+    <div class="materials-item__title">Площадки для мобильных перфомансов</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">100</div>
+      <div class="materials-item__time">1 мин</div>
+    </div>
+  </div></a>
+        </div>
+
+        <a href="#" class="splash-block__button">Все статьи</a>
+    </div>
+</section>
+
+<section class="random-facts splash-block">
+    <div class="container max-md:px-0">
+        <div class="random-facts__list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://ya.ru" class="random-fact" background-text="5 раз">
+                        <div class="random-fact__header">рандомный факт</div>
+                        <div class="random-fact__content">Мультимедийный формат повышает привлекательность рекламы в&nbsp;5&nbsp;раз</div>
+                        <div class="random-fact__footer">
+                            <button class="random-fact__button">Поменять</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://ya.ru" class="random-fact" background-text="60%">
+                        <div class="random-fact__header">рандомный факт</div>
+                        <div class="random-fact__content">60%&nbsp;людей опираются на цвета, определяя отношение к бренду</div>
+                        <div class="random-fact__footer">
+                            <button class="random-fact__button">Поменять</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://ya.ru" class="random-fact" background-text="342" style="--background: linear-gradient(101deg, #D4DEFA 0%, #DAF9EA 100%) !important; --text-color: #000;">
+                        <div class="random-fact__header">рандомный факт</div>
+                        <div class="random-fact__content">342&nbsp;работы в портфолио продакшена TOLKUNOV</div>
+                        <div class="random-fact__footer">
+                            <button class="random-fact__button">Поменять</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="materials materials_news splash-block">
+    <div class="container">
+        <h2 class="materials__title splash-block__title">Что происходит</h2>
+
+        <div class="materials-list">
+            <a class="materials-item" style="--box-shadow-color: rgba(22, 31, 106, 0.10);" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">youtube</div>
+      <div class="materials-item__tag">видео</div>
+    </div>
+    <div class="materials-item__title">YouTube тестирует новый инструмент для поддержки непопулярных авторов</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">1 023</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: #F4F6FF; --box-shadow-color: transparent; --border: 1px solid #F4F6FF" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">технологии</div>
+      <div class="materials-item__tag">выставки</div>
+      <div class="materials-item__tag">+4</div>
+    </div>
+    <div class="materials-item__title">Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">5 478</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: #52479A; --border: 1px solid #52479A; --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent;" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">ozon</div>
+      <div class="materials-item__tag">статистика</div>
+      <div class="materials-item__tag">+1</div>
+    </div>
+    <div class="materials-item__title">«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">500</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/300x300&quot;); --background-gradient: linear-gradient(180deg, #4F2AC0 0%, rgba(79, 42, 192, 0.30) 100%); --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48); --box-shadow-color: transparent" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">закон</div>
+    </div>
+    <div class="materials-item__title">Разрешить нельзя отказать: персональные данные предложено возвращать «в один клик»</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">170</div>
+    </div>
+  </div></a><a class="materials-item" style="--border: 1px solid rgba(22, 31, 106, 0.20);" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">банки</div>
+      <div class="materials-item__tag">ИИ</div>
+    </div>
+    <div class="materials-item__title">«Т-Банк» запустил ИИ-помощника для детей</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">791</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/300x300&quot;); --background-gradient: linear-gradient(180deg, #006A0E 0%, rgba(0, 106, 14, 0.30) 100%); --title-color: #FFF; --counters-color: #FFF; --counters-opacity: 0.4; --tag-border-color: rgba(255, 255, 255, 0.10); --tag-color: rgba(255, 255, 255, 0.48);" data-height="2" data-width="2" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">ICQ</div>
+      <div class="materials-item__tag">МЕССЕНДЖЕР</div>
+      <div class="materials-item__tag">+2</div>
+    </div>
+    <div class="materials-item__title">«Аськи» больше нет. Легендарный мессенджер завершил работу</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">5 478</div>
+    </div>
+  </div></a><a class="materials-item" style="--box-shadow-color: rgba(22, 31, 106, 0.10);" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">youtube</div>
+      <div class="materials-item__tag">видео</div>
+    </div>
+    <div class="materials-item__title">YouTube тестирует новый инструмент для поддержки непопулярных авторов</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">1 023</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: #FCEAEE; --title-color: #BA2943; --border: 1px solid #FCEAEE; --counters-color: #BA2943; --counters-opacity: 0.3; --tag-color: rgba(186, 41, 67, 0.32); --tag-border-color: rgba(186, 41, 67, 0.05);" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">технологии</div>
+      <div class="materials-item__tag">выставки</div>
+      <div class="materials-item__tag">+4</div>
+    </div>
+    <div class="materials-item__title">Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">5 478</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">ozon</div>
+      <div class="materials-item__tag">статистика</div>
+      <div class="materials-item__tag">+1</div>
+    </div>
+    <div class="materials-item__title">«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">500</div>
+    </div>
+  </div></a>
+        </div>
+
+        <a href="#" class="splash-block__button">Все новости</a>
+    </div>
+</section>
+
+<section class="comparisons splash-block">
+    <div class="container">
+        <h2 class="comparisons__title splash-block__title">Сравниваем</h2>
+
+        <div class="comparisons__list">
+            <a href="#" class="comparison" style="--vs-color: #FE385B;">
+                <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --background-image: url('https://picsum.photos/id/14/285/325')">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
+                    </div>
+                </div>
+                <div class="comparison-item items-end justify-start" style="--background-color: #E6EAFF; --background-image: url('https://picsum.photos/id/14/285/325')">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(82, 71, 154, 1);">
+                <div class="comparison-item items-start justify-end" style="--background-color: #B5CEF4; --text-background-color: #013D9F;">
+                    <div class="comparison-item__text comparison-item__text_right">
+                        <span class="comparison-item__word">КАЛЬКУЛЯТОР</span>
+                    </div>
+                </div>
+                <div class="comparison-item items-end justify-start" style="--background-color: #E8CEFF; --text-background-color: #7D5588;">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">НОУТБУК</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(25, 33, 103, 1);">
+                <div class="comparison-item items-start justify-end" style="--background-color: #CD99F5; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_right">
+                        <span class="comparison-item__word">деньги</span><br><span class="comparison-item__word">в сейфе</span>
+                    </div>
+                </div>
+                <div class="comparison-item items-end justify-start" style="--background-color: #FE3D81; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_left">
+                        <span class="comparison-item__word">купленная</span><br><span class="comparison-item__word">страховка</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(254, 55, 91, 1);">
+                <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
+                    </div>
+                </div>
+                <div class="comparison-item items-end justify-start" style="--background-color: #E6EAFF; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <a href="#" class="splash-block__button">Все сравнения</a>
+    </div>
+</section>
+
+<section class="platform-logos splash-block">
+    <div class="platform-logos__title splash-block__title text-center leading-[90%]">рассказываем<br>про Площадки и форматы</div>
+
+    <div class="platform-logos__container">
+        <div class="platform-logos__list">
+            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #43118A; --background-image: url(&quot;data:image/svg+xml,%3csvg%20width='118'%20height='34'%20viewBox='0%200%20118%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame'%20clip-path='url(%23clip0_172_194)'%3e%3cpath%20id='Vector'%20d='M43.5581%2022.5206C40.4148%2022.5206%2038.2638%2020.2585%2038.2638%2016.9461C38.2638%2013.553%2040.4148%2011.3717%2043.5581%2011.3717C46.7017%2011.3717%2048.7698%2013.553%2048.8523%2016.9461C48.7698%2020.2585%2046.7017%2022.5206%2043.5581%2022.5206ZM51.417%2016.8654C51.417%2014.5225%2050.5897%2012.5027%2049.1006%2011.0485C47.6943%209.59433%2045.7091%208.78646%2043.5581%208.78646C41.4899%208.78646%2039.6701%209.51354%2038.2638%2010.7254V0.869141H35.6167V24.7826H38.2638V23.1669C39.6701%2024.3787%2041.4899%2025.1058%2043.5581%2025.1058C45.7091%2025.1058%2047.6943%2024.2979%2049.1006%2022.8437C50.5897%2021.3895%2051.417%2019.3698%2051.417%2017.0269C51.417%2016.9461%2051.417%2016.9461%2051.417%2016.9461V16.8654Z'%20fill='white'/%3e%3cpath%20id='Vector_2'%20d='M78.3848%2022.5206C75.2411%2022.5206%2073.0905%2020.2585%2073.0905%2016.9461C73.0905%2013.553%2075.2411%2011.3717%2078.3848%2011.3717C81.5281%2011.3717%2083.5962%2013.553%2083.6791%2016.9461C83.5962%2020.2585%2081.5281%2022.5206%2078.3848%2022.5206ZM83.6791%2010.7254C82.2728%209.51354%2080.37%208.78646%2078.3848%208.78646C76.2338%208.78646%2074.2485%209.59433%2072.7594%2011.0485C71.3531%2012.5027%2070.5259%2014.5225%2070.5259%2016.8654V16.9461C70.5259%2016.9461%2070.5259%2016.9461%2070.5259%2017.0269C70.5259%2019.3698%2071.3531%2021.3895%2072.7594%2022.8437C74.2485%2024.2979%2076.2338%2025.1058%2078.3848%2025.1058C80.37%2025.1058%2082.2728%2024.3787%2083.6791%2023.1669V24.7826H86.2433V0.869141H83.6791V10.7254Z'%20fill='white'/%3e%3cpath%20id='Vector_3'%20d='M102.126%2022.6833C98.9823%2022.6833%2096.8317%2020.4212%2096.8317%2017.1089C96.8317%2013.7158%2098.9823%2011.4537%20102.126%2011.4537C105.27%2011.4537%20107.338%2013.7158%20107.338%2017.1089C107.338%2020.4212%20105.27%2022.6833%20102.126%2022.6833ZM107.338%2010.8881C106.014%209.59551%20104.111%208.94922%20102.126%208.94922C99.8925%208.94922%2097.9072%209.75709%2096.501%2011.1305C95.0118%2012.5847%2094.2674%2014.6852%2094.1846%2017.0281C94.1846%2017.0281%2094.1846%2017.0281%2094.1846%2017.1089C94.2674%2019.5326%2095.0118%2021.5523%2096.501%2023.0065C97.9072%2024.4607%2099.8925%2025.1878%20102.126%2025.1878C104.111%2025.1878%20106.014%2024.5415%20107.338%2023.2488V24.8646H109.985V9.1108H107.338V10.8881Z'%20fill='white'/%3e%3cpath%20id='Vector_4'%20d='M56.8767%209.11027H54.312V24.7833H56.8767V17.0276C56.8767%2013.6345%2059.0273%2011.3723%2062.1709%2011.3723V8.78711C60.1857%208.78711%2058.2829%209.51423%2056.8767%2010.7261V9.11027Z'%20fill='white'/%3e%3cpath%20id='Vector_5'%20d='M64.9834%2024.7824H67.6305V9.10938H64.9834V24.7824Z'%20fill='white'/%3e%3cpath%20id='Vector_6'%20d='M64.9834%206.52594H67.6305V4.02148H64.9834V6.52594Z'%20fill='white'/%3e%3cpath%20id='Vector_7'%20d='M114.535%2024.8644H117.099V9.19141H114.535V24.8644Z'%20fill='white'/%3e%3cpath%20id='Vector_8'%20d='M114.535%206.68681H117.099V4.10156H114.535V6.68681Z'%20fill='white'/%3e%3cpath%20id='Vector_9'%20d='M33.383%209.10938H30.6532L25.5243%2021.47L19.8164%209.10938H17.0038L24.118%2024.7016L23.9526%2025.1864C23.8698%2025.3479%2023.7871%2025.5903%2023.7044%2025.7519C22.4636%2028.6603%2020.8091%2031.2455%2017.7483%2030.1145L16.8384%2032.5381C17.6656%2032.7805%2018.4101%2032.9421%2019.1546%2032.9421C20.7264%2032.9421%2022.2154%2032.2958%2023.4563%2031.0031C24.5317%2029.9529%2025.1934%2028.6603%2025.6898%2027.61C25.7725%2027.5293%2025.8552%2027.4485%2025.8552%2027.3677L33.383%209.10938Z'%20fill='white'/%3e%3cpath%20id='Vector_10'%20d='M16.2594%2024.7826V17.0269C16.2594%2014.6033%2015.5149%2012.5027%2014.0259%2011.0485C12.5369%209.59433%2010.5515%208.78646%208.40072%208.78646C6.41534%208.78646%204.5127%209.51354%203.10642%2010.7254V0.869141H0.541992V24.7826H3.10642V17.0269C3.10642%2013.6338%205.25723%2011.3717%208.40072%2011.3717C11.5442%2011.3717%2013.695%2013.6338%2013.695%2017.0269V24.7826H16.2594Z'%20fill='white'/%3e%3cpath%20id='Vector_11'%20d='M89.3042%2024.7825H91.8688V22.1973H89.3042V24.7825Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_172_194'%3e%3crect%20width='116.557'%20height='32.1537'%20fill='white'%20transform='translate(0.541992%200.869141)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e&quot;);"></a>
+            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #3B5EF2; --background-image: url(&quot;data:image/svg+xml,%3csvg%20width='117'%20height='28'%20viewBox='0%200%20117%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame'%20clip-path='url(%23clip0_172_170)'%3e%3cpath%20id='Vector'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M103.675%2026.9139H107.418L116.569%200.933594H112.827L103.673%2026.9139H103.675ZM95.1045%2017.8208C92.6911%2017.8208%2091.3617%2015.7423%2091.3617%2013.6639C91.3617%2011.5855%2092.693%209.50709%2095.1045%209.50709C97.4338%209.50709%2098.7651%2011.3257%2098.7651%2013.6639C98.7651%2015.9149%2097.5176%2017.8208%2095.1045%2017.8208ZM91.4401%208.38065V6.90905H87.9469V26.9139H91.524V19.1198C92.6031%2020.1804%2094.032%2020.7696%2095.5161%2020.7658C98.8436%2020.7658%20101.921%2018.1678%20101.921%2013.6639C102.005%208.90027%2098.5939%206.56202%2095.5161%206.56202C93.1904%206.56202%2091.859%207.86106%2091.4401%208.38065ZM79.544%209.41986C81.957%209.41986%2082.3721%2011.4129%2082.456%2012.1923H76.3858C76.4938%2011.4066%2076.8759%2010.6899%2077.459%2010.1786C78.0421%209.66732%2078.7855%209.39724%2079.5475%209.41986H79.544ZM72.8087%2013.6639C72.8087%2017.6482%2075.5534%2020.7658%2079.7132%2020.7658C83.8728%2020.7658%2085.6211%2017.7336%2085.6211%2017.7336L82.9584%2015.9149C82.6307%2016.5058%2082.1568%2016.9942%2081.5858%2017.3295C81.0151%2017.6646%2080.3684%2017.8343%2079.7132%2017.8208C77.3017%2017.8208%2076.302%2015.6551%2076.302%2014.8757H85.8708C85.8708%2014.8757%2085.9527%2014.2708%2085.9527%2014.0963V13.6639C85.9527%209.5943%2083.6235%206.56202%2079.6313%206.56202C75.5534%206.56202%2072.8087%209.67968%2072.8087%2013.6639ZM72.5594%2020.4188L67.8168%206.90905H64.0742L59.2478%2020.4188H63.158L65.9026%2011.8453H65.9865L68.7327%2020.4188H72.5594ZM52.2597%2017.8208C49.8466%2017.8208%2048.8449%2015.8296%2048.8449%2013.9237C48.8449%2012.0179%2049.8431%2010.2865%2052.2562%2010.2865C54.6693%2010.2865%2055.4998%2012.4521%2055.4998%2014.011C55.4998%2015.5698%2054.6712%2017.8208%2052.2597%2017.8208ZM49.2638%208.0355C49.3477%207.60127%2049.7628%203.96401%2054.4216%203.96401H57.3339L58.4157%200.933594H54.5054C49.3477%200.933594%2045.3536%203.4444%2045.3536%2012.1923C45.3536%2016.9541%2047.3516%2020.8512%2052.1762%2020.8512C56.7511%2020.8512%2059.0823%2017.3884%2059.0823%2013.9237C59.0823%208.90027%2055.5033%206.90905%2052.5913%206.90905C51.3968%206.9156%2050.2338%207.30929%2049.2638%208.0355ZM31.0442%206.99629L30.9605%206.90905H27.8826V20.4188H31.4595V12.5375L34.9543%2017.1286L35.0381%2017.3012H35.9525L39.5293%2012.5375V20.4188H43.1082V6.90905H40.0301L35.5371%2012.6247L31.0442%206.99629ZM18.6489%2017.908C16.8186%2017.908%2016.651%2016.7816%2016.651%2016.3492C16.651%2015.31%2017.4833%2014.7031%2019.5632%2014.4433C20.1426%2014.3709%2020.7263%2014.3417%2021.3098%2014.3561H21.5593V14.7904C21.5593%2016.609%2020.5612%2017.908%2018.6489%2017.908ZM24.8867%2013.3169V12.5375C24.7191%208.2953%2022.9726%206.56202%2019.3119%206.56202C16.8168%206.56202%2015.1522%207.60127%2014.5694%208.0355L15.5674%2010.8061C15.5674%2010.8061%2017.0663%209.41986%2018.9786%209.41986C21.725%209.41986%2021.3917%2011.7581%2021.3917%2011.7581C20.4757%2011.7581%2013.0723%2011.3257%2013.0723%2016.3492C13.0723%2019.1198%2015.3179%2020.6786%2017.731%2020.6786C19.8947%2020.6786%2021.1422%2019.5522%2021.4737%2019.1198C21.4737%2019.207%2021.5557%2020.4188%2021.5557%2020.4188H24.8849C25.0506%2020.4188%2024.8849%2019.2924%2024.8849%2017.3884V13.3169H24.8867ZM5.50323%2010.2865H3.6729V4.13845H5.50323C6.9183%204.22381%208.99817%205.00323%208.99817%207.25609C8.99817%209.50895%206.91653%2010.2865%205.50323%2010.2865ZM0.012207%200.933594V20.506H3.75487V13.5767H5.75095C9.5774%2013.5767%2012.7391%2011.4983%2012.7391%207.25609C12.7408%203.09924%209.57918%200.933594%205.83651%200.933594H0.012207Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_172_170'%3e%3crect%20width='116.557'%20height='26.1249'%20fill='white'%20transform='translate(0.012207%200.933594)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e&quot;);"></a>
+            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #C11F2F; --background-image: url('/assets/weborama-RDdOKr_v.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="9" style="--background-color: #0077FF; --background-image: url(&quot;data:image/svg+xml,%3csvg%20width='67'%20height='65'%20viewBox='0%200%2067%2065'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='VK%20Logo%201'%20clip-path='url(%23clip0_172_144)'%3e%3cg%20id='Clip%20path%20group'%3e%3cmask%20id='mask0_172_144'%20style='mask-type:luminance'%20maskUnits='userSpaceOnUse'%20x='1'%20y='0'%20width='65'%20height='65'%3e%3cg%20id='clip0_2_40'%3e%3cpath%20id='Vector'%20d='M65.9783%200H1V64.9783H65.9783V0Z'%20fill='white'/%3e%3c/g%3e%3c/mask%3e%3cg%20mask='url(%23mask0_172_144)'%3e%3cg%20id='Group'%3e%3cpath%20id='Vector_2'%20d='M1%2031.1896C1%2016.4867%201%209.13523%205.56761%204.56761C10.1352%200%2017.4867%200%2032.1896%200H34.7887C49.4916%200%2056.843%200%2061.4107%204.56761C65.9783%209.13523%2065.9783%2016.4867%2065.9783%2031.1896V33.7887C65.9783%2048.4916%2065.9783%2055.843%2061.4107%2060.4107C56.843%2064.9783%2049.4916%2064.9783%2034.7887%2064.9783H32.1896C17.4867%2064.9783%2010.1352%2064.9783%205.56761%2060.4107C1%2055.843%201%2048.4916%201%2033.7887V31.1896Z'%20fill='white'/%3e%3cpath%20id='Vector_3'%20d='M35.5741%2046.8109C20.7644%2046.8109%2012.3173%2036.658%2011.9653%2019.7637H19.3837C19.6274%2032.1637%2025.0963%2037.4161%2029.4281%2038.4991V19.7637H36.4135V30.4579C40.6912%2029.9977%2045.185%2025.1244%2046.7012%2019.7637H53.6866C52.5224%2026.3698%2047.649%2031.2431%2044.1835%2033.2466C47.649%2034.8711%2053.1995%2039.1217%2055.3113%2046.8109H47.622C45.9704%2041.6667%2041.8555%2037.6868%2036.4135%2037.1453V46.8109H35.5741Z'%20fill='%230077FF'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_172_144'%3e%3crect%20width='65.6281'%20height='64.9783'%20fill='white'%20transform='translate(0.675293)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e&quot;);"></a>
+            <a href="#" class="platform-logos__item" data-size="11" style="--background-color: #FC3F31; --background-image: url(&quot;data:image/svg+xml,%3csvg%20width='117'%20height='37'%20viewBox='0%200%20117%2037'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Yandex_logo_2021_Russian%201'%20clip-path='url(%23clip0_172_153)'%3e%3cpath%20id='Name'%20d='M111.28%2031.8437C113.567%2031.8437%20115.187%2031.4001%20116.394%2030.4446V26.1107C115.155%2027.0321%20113.662%2027.6122%20111.566%2027.6122C108.041%2027.6122%20106.58%2024.6774%20106.58%2020.0363C106.58%2015.1564%20108.358%2012.6653%20111.598%2012.6653C113.503%2012.6653%20115.377%2013.3819%20116.362%2014.0644V9.55984C115.314%208.94558%20113.503%208.50195%20111.026%208.50195C104.706%208.50195%20101.435%2013.3819%20101.435%2020.207C101.467%2027.6804%20104.674%2031.8437%20111.28%2031.8437ZM80.3783%2029.8645V25.5305C78.8538%2026.6567%2076.2496%2027.6463%2073.8676%2027.6463C70.247%2027.6463%2068.8814%2025.8035%2068.659%2022.0497H80.6006V19.2515C80.6006%2011.4367%2077.3929%208.50195%2072.4702%208.50195C66.4359%208.50195%2063.5775%2013.4501%2063.5775%2020.2411C63.5775%2028.0558%2067.1663%2031.8437%2073.4547%2031.8437C76.5989%2031.8437%2078.9173%2030.9224%2080.3783%2029.8645ZM35.0575%208.91146V17.7841H28.4515V8.91146H23.4971V31.4001H28.4515V22.0156H35.0575V31.4001H40.012V8.91146H35.0575ZM62.3389%2027.1686H60.1475V8.91146H45.7287V10.8225C45.7287%2016.3167%2045.4111%2023.4148%2043.6643%2027.1686H42.0764V36.5189H46.6497V31.4001H57.7338V36.5189H62.3071V27.1686H62.3389ZM96.1627%2031.4001H101.784L93.8443%2019.2856L100.831%208.91146H95.8451L88.8581%2019.2856V8.91146H83.9036V31.4001H88.8581V20.3435L96.1627%2031.4001ZM72.3431%2012.6653C74.7886%2012.6653%2075.5508%2014.8493%2075.5508%2017.6817V18.1253H68.659C68.7861%2014.5422%2069.9929%2012.6653%2072.3431%2012.6653ZM55.193%2027.1686H48.2059C49.5716%2023.7901%2049.9527%2017.6476%2049.9527%2013.7573V13.0748H55.193V27.1686Z'%20fill='white'/%3e%3cpath%20id='Glyph'%20d='M19.3683%2031.3998H14.3185V4.54313H12.0636C7.93488%204.54313%205.77524%206.76128%205.77524%2010.0714C5.77524%2013.8252%207.26793%2015.5656%2010.3486%2017.7838L12.8894%2019.6266L5.58468%2031.3998H0.153809L6.72802%2020.8892C2.94864%2017.9885%200.820758%2015.1561%200.820758%2010.3786C0.820758%204.40663%204.69541%200.345703%2012.0319%200.345703H19.3365V31.3998H19.3683Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_172_153'%3e%3crect%20width='116.557'%20height='36.1729'%20fill='white'%20transform='translate(0.153809%200.345703)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e&quot;);"></a>
+            <a href="#" class="platform-logos__item" data-size="3" style="--background-color: #FF2D00; --background-image: url('/assets/segment-BHE54E6_.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #000000; --background-image: url('/assets/my_target-DsjnHSX4.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #4DABF8; --background-image: url('/assets/getintent-BK9dMOWx.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #4DABF8; --background-image: url('/assets/getintent-BK9dMOWx.svg');"></a>
+            <a href="#" class="platform-logos__item" data-size="3" style="--background-color: #04E061; --background-image: url(&quot;data:image/svg+xml,%3csvg%20width='89'%20height='32'%20viewBox='0%200%2089%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group'%3e%3cg%20id='Group_2'%3e%3cpath%20id='Vector'%20d='M10.3862%2011.084C4.82741%2011.084%200.318848%2015.5925%200.318848%2021.1513C0.318848%2026.7101%204.82741%2031.2186%2010.3862%2031.2186C15.9449%2031.2186%2020.4486%2026.7101%2020.4486%2021.1513C20.4486%2015.5925%2015.9401%2011.084%2010.3862%2011.084Z'%20fill='white'/%3e%3cpath%20id='Vector_2'%20d='M25.4846%2016.4682C29.9931%2016.4682%2033.6713%2012.7949%2033.6713%208.28145C33.6713%203.768%2029.9931%200.0996094%2025.4846%200.0996094C20.976%200.0996094%2017.3027%203.77777%2017.3027%208.28145C17.3027%2012.7851%2020.9809%2016.4682%2025.4846%2016.4682Z'%20fill='white'/%3e%3cpath%20id='Vector_3'%20d='M27.8524%2017.7812C24.482%2017.7812%2021.7661%2020.4971%2021.7661%2023.8676C21.7661%2027.238%2024.482%2029.9539%2027.8524%2029.9539C31.2229%2029.9539%2033.9387%2027.238%2033.9387%2023.8676C33.9387%2020.4971%2031.2229%2017.7812%2027.8524%2017.7812Z'%20fill='white'/%3e%3cpath%20id='Vector_4'%20d='M12.3139%209.77046C14.4144%209.77046%2016.08%208.06082%2016.08%206.00437C16.08%203.94792%2014.4144%202.23828%2012.3139%202.23828C10.2135%202.23828%208.54785%203.90396%208.54785%206.00437C8.54785%208.10478%2010.2575%209.77046%2012.3139%209.77046Z'%20fill='white'/%3e%3cpath%20id='Vector_5'%20d='M70.3498%2021.327L65.7533%209.02734H60.3264L67.7218%2028.4635H73.1047L80.3731%209.02734H74.9414L70.3498%2021.327Z'%20fill='white'/%3e%3cpath%20id='Vector_6'%20d='M84.6208%200.0996094C82.5644%200.0996094%2080.8547%201.80925%2080.8547%203.8657C80.8547%205.92215%2082.5644%207.63179%2084.6208%207.63179C86.6773%207.63179%2088.382%205.96611%2088.382%203.8657C88.382%201.76529%2086.7212%200.0996094%2084.6208%200.0996094Z'%20fill='white'/%3e%3cpath%20id='Vector_7'%20d='M87.1956%209.02734H82.0325V28.4586H87.1956V9.02734Z'%20fill='white'/%3e%3cpath%20id='Vector_8'%20d='M46.4251%2017.6119L50.1277%207.87673L53.8108%2017.6119H46.4251ZM47.1969%200.808594L36.6069%2028.4705H42.2976L44.4957%2022.692H55.7353L57.9237%2028.4705H63.5704L53.0195%200.808594H47.1969Z'%20fill='white'/%3e%3c/g%3e%3cg%20id='Group_3'%3e%3cpath%20id='Vector_9'%20d='M10.3862%2011.084C4.82741%2011.084%200.318848%2015.5925%200.318848%2021.1513C0.318848%2026.7101%204.82741%2031.2186%2010.3862%2031.2186C15.9449%2031.2186%2020.4486%2026.7101%2020.4486%2021.1513C20.4486%2015.5925%2015.9401%2011.084%2010.3862%2011.084Z'%20fill='white'/%3e%3cpath%20id='Vector_10'%20d='M25.4846%2016.4682C29.9931%2016.4682%2033.6713%2012.79%2033.6713%208.28145C33.6713%203.77289%2029.9931%200.0996094%2025.4846%200.0996094C20.976%200.0996094%2017.3027%203.77777%2017.3027%208.28145C17.3027%2012.7851%2020.9809%2016.4682%2025.4846%2016.4682Z'%20fill='white'/%3e%3cpath%20id='Vector_11'%20d='M27.8524%2017.7812C24.482%2017.7812%2021.7661%2020.4922%2021.7661%2023.8627C21.7661%2027.2331%2024.482%2029.949%2027.8524%2029.949C31.2229%2029.949%2033.9387%2027.238%2033.9387%2023.8627C33.9387%2020.4874%2031.2229%2017.7812%2027.8524%2017.7812Z'%20fill='white'/%3e%3cpath%20id='Vector_12'%20d='M12.3139%209.77143C14.4144%209.77143%2016.08%208.06668%2016.08%206.00535C16.08%203.94401%2014.4144%202.24414%2012.3139%202.24414C10.2135%202.24414%208.54785%203.90982%208.54785%206.00535C8.54785%208.10087%2010.2575%209.77143%2012.3139%209.77143Z'%20fill='white'/%3e%3cpath%20id='Vector_13'%20d='M70.3498%2021.327L65.7533%209.02734H60.3264L67.7218%2028.4586H73.1047L80.3731%209.02734H74.9414L70.3498%2021.327Z'%20fill='white'/%3e%3cpath%20id='Vector_14'%20d='M84.6208%200.0996094C82.5644%200.0996094%2080.8547%201.80436%2080.8547%203.8657C80.8547%205.92703%2082.5644%207.6269%2084.6208%207.6269C86.6773%207.6269%2088.382%205.96611%2088.382%203.8657C88.382%201.76529%2086.7212%200.0996094%2084.6208%200.0996094Z'%20fill='white'/%3e%3cpath%20id='Vector_15'%20d='M87.1956%209.02734H82.0325V28.4635H87.1956V9.02734Z'%20fill='white'/%3e%3cpath%20id='Vector_16'%20d='M46.4251%2017.6119L50.1277%207.87673L53.8108%2017.6119H46.4251ZM47.1969%200.808594L36.6069%2028.4705H42.2976L44.4957%2022.692H55.7353L57.9237%2028.4705H63.5704L53.0195%200.808594H47.1969Z'%20fill='white'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e&quot;);"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#" class="splash-block__button">Все площадки</a>
+    </div>
+</section>
+
+<footer class="footer">
+<div class="container relative">
+<div class="footer__mockup z-1"></div>
+</div>
+<div class="container overflow-hidden relative z-2 pt-[136px]">
+<div class="footer__counters grid grid-cols-[1fr,1fr] lg:grid-cols-[256px,1fr,256px] md:mx-[10px] max-md:gap-5">
+<div class="w-full lg:w-auto order-2 lg:order-1 flex justify-center lg:justify-start">
+<a href="https://tolkunov.com/portfolio" class="footer__counter footer__counter_portfolio">703</a>
+</div>
+<div class="order-1 col-span-2 lg:col-span-1 lg:order-2 flex lg:items-end px-3 md:mx-2">
+<div class="text-white text-center flex-1 relative lg:-bottom-3 max-lg:mb-7 max-lg:mt-10">
+<div class="font-serif font-bold leading-tight text-4xl xl:text-5xl mb-4">От слов к делу</div>
+<div class="font-medium max-w-[400px] mx-auto mb-6 leading-[145%]">Мы не только пишем, но и делаем баннеры и видео для медийной и наружной рекламы</div>
+<a class="footer-inner__button transition-shadow hover:shadow-white-button" href="https://tolkunov.com/">перейти НА САЙТ</a>
+</div>
+</div>
+<div class="w-full lg:w-auto order-3 lg:order-3 flex justify-center lg:justify-end">
+<a href="https://tolkunov.com/reviews" class="footer__counter footer__counter_reviews">210</a>
+</div>
+</div>
+</div>
+<div class="portfolio-slider">
+<div class="portfolio-slider__list">
+<div class="swiper-wrapper">
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="grid items-center gap-4 grid-cols-2 lg:grid-cols-[200px,1fr,200px] mb-6">
+<div class="order-2 lg:order-1 flex items-center justify-center lg:justify-start">
+<a href="#" class="button button-icon-right footer__button_telegram px-3">1,6к</a>
+</div>
+<div class="order-1 max-lg:col-span-2 lg:order-2">
+<nav class="flex flex-wrap justify-center gap-7 text-white font-black tracking-widest uppercase text-[10px] max-lg:mb-5">
+<a href="#">Новости</a>
+<a href="#">Статьи</a>
+<a href="#">Факты</a>
+<a href="#">Сравнения</a>
+<a href="#">Словарик</a>
+<a href="#">Площадки</a>
+</nav>
+</div>
+<div class="order-3 lg:order-3 flex items-center justify-center lg:justify-end">
+<a href="#" class="button button-icon-left footer__button_search">Поиск</a>
+</div>
+</div>
+<div class="text-center">
+<a href="#" class="footer__logo inline-block hover:scale-105 transition-transform"></a>
+</div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</body>
+</html>
