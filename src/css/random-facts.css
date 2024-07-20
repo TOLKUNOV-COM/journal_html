@@ -1,6 +1,10 @@
 .random-facts {
 }
 
+.random-facts__list {
+    @apply overflow-hidden;
+}
+
 .random-fact {
     @apply flex flex-col text-center;
     @apply lg:min-h-[384px] h-full w-full;

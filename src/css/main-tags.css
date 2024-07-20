@@ -27,6 +27,7 @@
 }
 
 .main-tags__list {
+    @apply -mx-[5px];
 }
 
 .main-tags__item {
