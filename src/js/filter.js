@@ -1,7 +1,13 @@
 import Swiper from 'swiper/bundle';
 
 export default function () {
-    const mainTagsSlider = new Swiper('.filter', {
+    const selector = '.filter';
+
+    if (!document.querySelector(selector)) {
+        return;
+    }
+
+    const mainTagsSlider = new Swiper(selector, {
         slidesPerView: 'auto',
         freeMode: true,
         // centeredSlides: true,
