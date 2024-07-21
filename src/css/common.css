@@ -50,7 +50,7 @@
 }
 
 .checkbox {
-    @apply relative pl-[24px] cursor-pointer;
+    @apply relative pl-[24px] cursor-pointer inline-block;
 
     input[type="checkbox"] {
         display: none;

@@ -16,7 +16,7 @@
     }
 
     figure img {
-        @apply rounded-[14px];
+        @apply rounded-[14px] w-full;
     }
 
     figure {
