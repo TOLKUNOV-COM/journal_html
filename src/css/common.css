@@ -48,3 +48,43 @@
         background-color: var(--icon-color, var(--text-color));
     }
 }
+
+.checkbox {
+    @apply relative pl-[24px] cursor-pointer;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    &:before {
+        content: '';
+
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: calc(50% + 2px);
+        transform: translateY(-50%);
+
+        width: 18px;
+        height: 18px;
+
+        border-radius: 22px;
+        border: 1px solid #161F6A;
+    }
+}
+
+.checkbox:has(:checked) {
+    &:after {
+        content: '';
+
+        position: absolute;
+        left: 4px;
+        top: calc(50% + 2px);
+        transform: translateY(-50%);
+
+        width: 10px;
+        height: 10px;
+        background-color: #171F66;
+        border-radius: 50%;
+    }
+}

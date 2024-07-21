@@ -137,6 +137,37 @@
     </div>
 </section>
 
+<div class="container">
+    <section class="subscribe-widget bg-[#FAFBFF] text-blue-900 rounded-2xl p-7">
+        <div class="grid grid-cols-12">
+            <div class="col-span-5 text-blue-900 flex flex-col flex-nowrap">
+                <div class="text-3xl font-bold leading-none tracking-tight lowercase">Самое интересное —<br>вышлем на почту!</div>
+                <div class="leading-tight opacity-70 mt-auto">Мы присылаем отличные материалы и никогда не спамим. Отписаться можно в любой момент</div>
+            </div>
+            <div class="col-span-7">
+                <form action="#">
+                    <div class="my-2 text-xs font-medium leading-normal lowercase">ваш Email</div>
+
+                    <input type="email" name="email" placeholder="tolkunov@yandex.ru" required
+                           class="bg-transparent w-full py-3 border-b border-b-[rgba(22, 31, 106, .3)] placeholder-[rgba(22, 31, 106, .3)] text-xl lowercase mb-[10px]">
+
+                    <label for="agree" class="relative checkbox">
+                        <input type="checkbox" required id="agree" name="agree"/>
+
+                        <span>я даю согласие на <a href="#" class="underline">обработку персональных данных</a></span>
+                    </label>
+
+                    <div class="mt-7">
+                        <button type="submit" class="px-5 pt-3.5 pb-4 bg-rose-500 rounded-2xl">
+                            <span class="text-white font-medium lowercase leading-none">подписаться</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
 <pug src="src/templates/includes/footer.html"></pug>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
