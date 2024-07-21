@@ -50,10 +50,10 @@
 
 <div class="container">
     <div class="grid grid-cols-12 gap-10 mb-10 mt-7">
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-4 lg:col-span-3 max-md:hidden">
             <a href="#" class="text-blue-dark text-sm">← назад</a>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-12 md:col-span-8 lg:col-span-6">
             <div class="flex flex-row flex-nowrap items-start">
                 <div class="flex-1 flex flex-row flex-wrap gap-2">
                     <a href="#" class="inline-block lowercase text-sm text-blue-light font-bold rounded-lg border border-blue px-2 py-1">статьи</a>
@@ -62,17 +62,17 @@
                 <div class="text-blue-dark lowercase flex items-center leading-7">27 декабря</div>
             </div>
         </div>
-        <div class="col-span-3"></div>
+        <div class="col-span-3 max-lg:hidden"></div>
     </div>
     <div class="grid grid-cols-12 gap-10 mb-16">
-        <div class="col-span-3">
+        <div class="col-span-3 md:col-span-4 lg:col-span-3 max-md:hidden">
             <nav class="toc sticky top-0 bg-[#F8F9FF] rounded-2xl p-[10px] text-[#A2A5C3]">
                 <p class="pb-5 leading-none">навигация по статье</p>
 
                 <ul class="toc__list list-none"></ul>
             </nav>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-12 md:col-span-8 lg:col-span-6">
             <article class="article">
                 <div class="article__header">
                     <h1 class="article__title">4&nbsp;бесплатных аналога Dev Mode в&nbsp;Figma</h1>
@@ -150,7 +150,7 @@
                 </div>
             </article>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-3 max-lg:hidden">
             <div class="sticky top-0 h-dvh w-full">
                 <div class="absolute bottom-[10px] left-0 w-full bg-blue-600 rounded-2xl text-white p-[10px]">
                     <div class="font-semibold text-[18px] leading-tight mb-[10px]">от слов к делу</div>
@@ -211,12 +211,12 @@
 
 <div class="container">
     <section class="subscribe-widget bg-[#FAFBFF] text-blue-900 rounded-2xl p-7">
-        <div class="grid grid-cols-12">
-            <div class="col-span-5 text-blue-900 flex flex-col flex-nowrap">
-                <div class="text-3xl font-bold leading-none tracking-tight lowercase">Самое интересное —<br>вышлем на почту!</div>
+        <div class="grid grid-cols-12 gap-5">
+            <div class="col-span-12 lg:col-span-6 xl:col-span-5 text-blue-900 flex flex-col flex-nowrap">
+                <div class="text-3xl mb-3 font-bold leading-none tracking-tight lowercase">Самое интересное — <br class="max-lg:hidden">вышлем на почту!</div>
                 <div class="leading-tight opacity-70 mt-auto">Мы присылаем отличные материалы и никогда не спамим. Отписаться можно в любой момент</div>
             </div>
-            <div class="col-span-7">
+            <div class="col-span-12 lg:col-span-6 xl:col-span-7">
                 <form action="#">
                     <div class="my-2 text-xs font-medium leading-normal lowercase">ваш Email</div>
 
@@ -230,7 +230,7 @@
                     </label>
 
                     <div class="mt-7">
-                        <button type="submit" class="px-5 pt-3.5 pb-4 bg-rose-500 rounded-2xl">
+                        <button type="submit" class="px-5 pt-3.5 pb-4 bg-rose-500 rounded-2xl hover:drop-shadow-lg">
                             <span class="text-white font-medium lowercase leading-none">подписаться</span>
                         </button>
                     </div>
