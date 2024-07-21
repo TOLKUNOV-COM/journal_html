@@ -1,6 +1,6 @@
 .footer {
     @apply bg-blue-600 relative;
-    @apply mt-[168px];
+    @apply mt-40;
     @apply pb-9;
 }
 

@@ -14,15 +14,98 @@
 <pug src="src/partials/header.html"></pug>
 
 <div class="container">
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-12 gap-10 mb-10 mt-7">
         <div class="col-span-3">
             <a href="#" class="text-blue-dark text-sm">← назад</a>
         </div>
         <div class="col-span-6">
-            <div class="h-24 bg-yellow-500"></div>
+            <div class="flex flex-row flex-nowrap items-start">
+                <div class="flex-1 flex flex-row flex-wrap gap-2">
+                    <a href="#" class="inline-block lowercase text-sm text-blue-light font-bold rounded-lg border border-blue px-2 py-1">статьи</a>
+                    <a href="#" class="inline-block lowercase text-sm text-blue-light font-bold rounded-lg border border-blue px-2 py-1">разборы</a>
+                </div>
+                <div class="text-blue-dark lowercase flex items-center leading-7">27 декабря</div>
+            </div>
+        </div>
+        <div class="col-span-3"></div>
+    </div>
+    <div class="grid grid-cols-12 gap-10 mb-16">
+        <div class="col-span-3">
+
+        </div>
+        <div class="col-span-6">
+            <article class="article">
+                <div class="article__header">
+                    <h1 class="article__title">4&nbsp;бесплатных аналога Dev Mode в&nbsp;Figma</h1>
+
+                    <div class="flex flex-row my-7">
+                        <div class="article__counters flex-1">
+                            <div class="article__counter article__counter_time">5 мин</div>
+                            <div class="article__counter article__counter_views">140</div>
+                            <div class="article__counter article__counter_comments">0</div>
+                        </div>
+                        <a href="#" class="article__share">поделиться</a>
+                    </div>
+                </div>
+                <div class="content">
+
+                    <figure>
+                        <img src="https://picsum.photos/id/1/560/305" alt="Описание изображения">
+                        <figcaption>Иллюстрация: Полина Честнова для TOLKUNOV ЖУРНАЛ</figcaption>
+                    </figure>
+
+                    <p>31 января Dev Mode в Figma стал доступен только для пользователей с подпиской. Если вы не работаете в корпорации или просто не хотите оформлять подписку, придётся искать другой
+                        способ выгрузить код из макета.
+                        <br><br>Собрали четыре доступных решения, которые могут вам помочь.</p>
+
+                    <h2>Стандартные функции Figma</h2>
+                    <h3>Стандартные функции Figma</h3>
+
+                    <p>До появления <code>Dev Mode</code> в Figma на боковой панели настроек была вкладка <code>Properties</code> — на ней отображались все CSS-стили, которые доступны для выделенного
+                        элемента. Эта функция никуда не делась, и ей до сих пор можно пользоваться, но работать она стала непоследовательно.<br><br>Вкладка Properties будет вам видна, если у вас нет
+                        доступа на редактирование макета:</p>
+
+                    <figure>
+                        <img src="https://picsum.photos/id/1/560/305" alt="Описание изображения">
+                        <figcaption>Иллюстрация: Полина Честнова для TOLKUNOV ЖУРНАЛ</figcaption>
+                    </figure>
+
+                    <p>Если доступ есть, то этой вкладки у вас не будет и придётся копировать CSS-стили вручную и наугад:<br></p>
+                    <ol>
+                        <li>Выделите любой объект на макете.</li>
+                        <li>Кликните по нему правой кнопкой мыши и перейдите<br><code>Copy/Paste as</code> → <code>Copy as code</code> → <code>CSS, iOS или Android</code>.</li>
+                        <li>Вставьте полученные строки в ваш редактор кода.</li>
+                    </ol>
+
+                    <div class="embed">
+                        <iframe src="https://player.vimeo.com/video/146022717?color=0c88dd&title=0&byline=0&portrait=0&badge=0" class="" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <h2>Плагин Figma to Code</h2>
+
+                    <p>Полностью бесплатный плагин с открытым исходным кодом, который может вывести всю вёрстку вашего макета на трёх языках.</p>
+
+                    <h3>Как пользоваться</h3>
+
+                    <ol>
+                        <li>Установите плагин <a href="#">по ссылке.</a></li>
+                        <li>Нажмите правой кнопкой мыши по макету и перейдите Plugins → Figma to Code.</li>
+                        <li>Выделите любой объект на макете, и в появившемся окне отобразится его код.</li>
+                        <li>При необходимости вы можете изменить язык: HTML, Flutter, SwiftUI, CSS-фреймворк Tailwind.</li>
+                    </ol>
+
+                </div>
+            </article>
         </div>
         <div class="col-span-3">
-            <div class="h-24 bg-yellow-500"></div>
+            <div class="sticky top-0 h-svh w-full">
+                <div class="absolute bottom-0 left-0 w-full bg-blue-600 rounded-2xl text-white p-[10px]">
+                    <div class="font-semibold text-[18px] leading-tight mb-[10px]">от слов к делу</div>
+                    <div class="text-[13px] leading-[145%] mb-[26px]">Это блог продакшена TOLKUNOV. Мы не только пишем,но и делаем баннеры и видео для медийной и наружной рекламы</div>
+                    <a href="https://tolkunov.com/" class="inline-block bg-white rounded-2xl pt-[14px] pb-[16px] px-[20px] text-blue-600 font-medium leading-none lowercase">Перейти на сайт ↗</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

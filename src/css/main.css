@@ -18,6 +18,9 @@
 @import "footer.css";
 @import "portfolio-slider.css";
 
+@import "article.css";
+@import "content.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
