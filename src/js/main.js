@@ -7,6 +7,7 @@ import header from "./header.js";
 import materials from "./materials.js";
 import portfolioSlider from "./portfolio-slider.js";
 import toc from "./toc.js";
+import filter from "./filter.js";
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -36,3 +37,4 @@ header();
 materials();
 portfolioSlider();
 toc();
+filter();

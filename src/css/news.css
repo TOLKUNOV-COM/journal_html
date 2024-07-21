@@ -1,9 +1,5 @@
 .materials_news {
 
-    .materials__title {
-        @apply mb-[1.875rem];
-    }
-
     .materials-item[data-width]:not([data-width="1"]) {
         .materials-item__title {
             @apply sm:text-[1.33rem];

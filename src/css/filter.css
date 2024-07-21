@@ -1,0 +1,21 @@
+.filter {
+    @apply flex-1 flex flex-row flex-wrap gap-2 mt-3 md:mt-5 mb-5 md:mb-8;
+    @apply -mx-[5px];
+}
+
+.filter__item {
+    @apply inline-block lowercase text-sm leading-none px-3 pt-2 pb-[10px];
+    @apply w-auto;
+    @apply mx-[5px];
+
+    @apply text-blue-dark rounded-full border border-[#E5EBFF];
+    @apply transition-all;
+}
+
+.filter__item:not(.filter__item_active):hover {
+    @apply border-blue-light;
+}
+
+.filter__item_active {
+    @apply text-white bg-[#D74560] border-[#D74560];
+}

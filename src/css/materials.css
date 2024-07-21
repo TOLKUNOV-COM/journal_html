@@ -1,3 +1,24 @@
+.materials__title {
+    @apply font-serif font-bold text-blue-900 leading-tight;
+    @apply lowercase;
+
+    @apply text-4xl sm:text-5xl md:text-[56px];
+    letter-spacing: -1.68px;
+
+    @apply flex items-center;
+
+    @apply mb-3 md:mb-5;
+}
+
+.materials__count {
+    @apply font-sans tracking-normal text-xs;
+    @apply ml-2;
+
+    position: relative;
+    top: -4px;
+    /*line-height: 110%; !* 13.2px *!*/
+}
+
 .materials-list {
     @apply flex flex-row flex-wrap;
 

@@ -1,6 +1,6 @@
 .footer {
     @apply bg-blue-600 relative;
-    @apply mt-28 lg:mt-40;
+    @apply mt-28 lg:mt-36;
     @apply pb-9;
 }
 
