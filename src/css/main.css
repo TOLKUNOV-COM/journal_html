@@ -20,6 +20,7 @@
 
 @import "article.css";
 @import "content.css";
+@import "toc.css";
 
 @tailwind base;
 @tailwind components;
@@ -53,6 +54,7 @@
     /*color: rgba(255, 255, 255, 0.87);*/
     /*background-color: #242424;*/
 
+    scroll-behavior: smooth;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

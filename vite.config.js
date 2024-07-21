@@ -25,8 +25,21 @@ export default defineConfig({
         outDir: '../dist', // Указываем директорию для сборки
         rollupOptions: {
             input: {
-                main: path.resolve(__dirname, './src/index.html'),
-            }
+                index: path.resolve(__dirname, './src/index.html'),
+                article: path.resolve(__dirname, './src/article.html'),
+                // splash:  path.resolve(__dirname, './src/js/splash.js'),
+                // main:  path.resolve(__dirname, './src/js/main.js'),
+            },
+            output: {
+                entryFileNames: '[name].js', // Имена файлов без хэша для JS
+                chunkFileNames: '[name].js', // Имена чанков без хэша для JS
+                assetFileNames: (assetInfo) => {
+                    if (assetInfo.name.endsWith('.css')) {
+                        return '[name].css'; // Имена файлов без хэша для CSS
+                    }
+                    return 'assets/[name].[ext]'; // Имена файлов без хэша для остальных ассетов
+                }
+            },
         },
         assetsInlineLimit: 8192, // Порог в байтах, например, 8 КБ
     },

@@ -4,16 +4,9 @@
 // createApp(App).mount('#app')
 
 import header from "./header.js";
-import splashVideo from "./splash/splash-video.js";
-import splashCounter from "./splash/splash-counter.js";
-import splashNews from "./splash/splash-news.js";
-import splashSlider from "./splash/splash-slider.js";
 import materials from "./materials.js";
-import stories from "./stories.js";
-import mainTags from "./main-tags.js";
-import randomFacts from "./random-facts.js";
-import platformLogos from "./platform-logos.js";
 import portfolioSlider from "./portfolio-slider.js";
+import toc from "./toc.js";
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -40,13 +33,6 @@ import portfolioSlider from "./portfolio-slider.js";
 // setupCounter(document.querySelector('#counter'))
 
 header();
-splashVideo();
-splashCounter();
-splashNews();
-splashSlider();
 materials();
-stories();
-mainTags();
-randomFacts();
-platformLogos();
 portfolioSlider();
+toc();

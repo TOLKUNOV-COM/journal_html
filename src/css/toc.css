@@ -1,0 +1,19 @@
+.toc {
+    @apply sticky top-0 bg-[#F8F9FF] rounded-2xl p-[10px] text-[#A2A5C3];
+
+    li.active .toc__link {
+        @apply text-blue-900;
+    }
+}
+
+.toc__list {
+
+}
+
+.toc__link {
+    @apply leading-[165%] underline;
+
+    &:hover, &:active, &:focus {
+        @apply no-underline;
+    }
+}
