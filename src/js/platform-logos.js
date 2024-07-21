@@ -104,35 +104,68 @@ export default () => {
     //     // { size: 16, name: "BIGGEST" },
     // ];
 
-    const containerWidth = 2000;
-    const containerHeight = 680;
-    const gap = 4;
-    const cellSize = 15;
+    const generatePositions = function () {
+        const containerWidth = 2000;
+        const containerHeight = 680;
+        const gap = 4;
+        const cellSize = 15;
 
-    for (let circle of circles) {
-        circle.size += 10 + gap;
+        for (let circle of circles) {
+            circle.size += 10 + gap;
+        }
+
+        const coefficient = cellSize / 2;
+
+        const width = Math.ceil(containerWidth / cellSize * 2); //150 * 2; // 1500 / 15  // Ширина области размещения
+        const height = Math.ceil(containerHeight / cellSize * 2); // 5 * 2; // 650px / 15 // Высота области размещения
+
+        const placedCircles = placeCircles(circles, width, height);
+        console.log(placedCircles);
+
+        const container = document.querySelector('.platform-logos__list');
+
+        placedCircles.forEach(({ x, y, size, id, el }) => {
+            $(el).css({
+                'top': ((height / 2) + y) * coefficient,
+                'left': ((width / 2) + x) * coefficient,
+                'width': ((size - gap - 1) * coefficient) * 2,
+                'height': ((size - gap - 1) * coefficient) * 2,
+            }).attr({
+                x: x,
+                y: y,
+                size: size,
+            });
+        });
     }
 
-    const coefficient = cellSize / 2;
+    generatePositions();
+    // window.addEventListener('resize', generatePositions); // Подгонка при изменении размера окна
 
-    const width = Math.ceil(containerWidth / cellSize * 2); //150 * 2; // 1500 / 15  // Ширина области размещения
-    const height = Math.ceil(containerHeight / cellSize * 2); // 5 * 2; // 650px / 15 // Высота области размещения
+    let container = document.querySelector('.platform-logos__container');
+    let list = document.querySelector('.platform-logos__list');
 
-    const placedCircles = placeCircles(circles, width, height);
-    console.log(placedCircles);
+    // let items = document.querySelectorAll('.platform-logos__item');
 
-    const container = document.querySelector('.platform-logos__list');
+    const paralax = function (e) {
+        let x = e.clientX / window.innerWidth;
+        let y = e.clientY / window.innerHeight;
 
-    placedCircles.forEach(({ x, y, size, id, el }) => {
-        $(el).css({
-            'top': ((height / 2) + y) * coefficient,
-            'left': ((width / 2) + x) * coefficient,
-            'width': ((size - gap - 1) * coefficient) * 2,
-            'height': ((size - gap - 1) * coefficient) * 2,
-        }).attr({
-            x: x,
-            y: y,
-            size: size,
-        });
-    });
+        let containerWidth = $(container).width();
+        let listWidth = $(list).width();
+
+        let containerHeight = $(container).height();
+        let listHeight = $(list).height();
+
+        // items.forEach((item) => {
+        //     let itemOffsetX = $(item).attr('x');
+        //     let itemOffsetY = $(item).attr('y');
+        // });
+
+        let a = ((containerWidth - listWidth) * x);
+        let b = ((containerHeight - listHeight) * y);
+
+        list.style.transform = 'translate(' + a + 'px, ' + b + 'px)';
+    }
+
+    window.addEventListener('mousemove', e => paralax(e));
 }
