@@ -89,6 +89,7 @@ export default function stories() {
 
     $('.story-item').on('click', () => openStories());
     $('.stories-slider__close').on('click', () => closeStories());
+    $('.stories-slider__overlay').on('click', () => closeStories());
 
     document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('keydown', (event) => {
