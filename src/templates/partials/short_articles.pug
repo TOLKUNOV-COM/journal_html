@@ -1,0 +1,11 @@
+each item in articlesList.slice(4, 7)
+    a.materials-item(style=item.style, data-height=item.height, data-width=item.width, href="#")
+        .materials-item__gradient
+        .materials-item__content
+            .materials-item__tags
+                each tag in item.tags
+                    .materials-item__tag= tag
+            .materials-item__title=item.title
+            .materials-item__counters
+                .materials-item__views=item.views
+                .materials-item__time=item.time
