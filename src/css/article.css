@@ -2,19 +2,21 @@
 }
 
 .article__title {
-    @apply font-serif text-blue-900 text-4xl font-bold leading-[115%] -tracking-[0.075rem] lowercase;
+    @apply font-serif text-blue-900 font-bold leading-[115%] -tracking-[0.075rem] lowercase;
+    @apply text-2xl lg:text-3xl xl:text-4xl;
 
-    @apply mb-7;
+    @apply mb-5 md:mb-7;
 }
 
 .article__header {
-    @apply mb-7;
+    @apply mb-5 md:mb-7;
 }
 
 .article__counters {
     @apply flex items-center gap-4;
 
     @apply text-blue-900 font-medium leading-tight;
+    @apply text-sm md:text-base;
 
     --tw-text-opacity: 0.4;
 }
@@ -53,6 +55,7 @@
     @apply flex items-center gap-[5px];
 
     @apply text-blue-900 font-medium leading-tight;
+    @apply text-sm md:text-base;
 
     --tw-text-opacity: 0.4;
 
