@@ -50,7 +50,7 @@
 }
 
 .checkbox {
-    @apply relative pl-[24px] cursor-pointer inline-block;
+    @apply relative cursor-pointer flex items-center gap-2;
 
     input[type="checkbox"] {
         display: none;
@@ -59,32 +59,20 @@
     &:before {
         content: '';
 
-        position: absolute;
-        display: inline-block;
-        left: 0;
-        top: calc(50% + 2px);
-        transform: translateY(-50%);
-
         width: 18px;
         height: 18px;
 
-        border-radius: 22px;
+        position: relative;
+        top: 2px;
+
+        border-radius: 50%;
         border: 1px solid #161F6A;
     }
 }
 
 .checkbox:has(:checked) {
-    &:after {
-        content: '';
-
-        position: absolute;
-        left: 4px;
-        top: calc(50% + 2px);
-        transform: translateY(-50%);
-
-        width: 10px;
-        height: 10px;
+    &:before {
+        box-shadow: inset 0 0 0 3px white;
         background-color: #171F66;
-        border-radius: 50%;
     }
 }
