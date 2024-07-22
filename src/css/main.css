@@ -26,6 +26,7 @@
 @import "dictionary.css";
 @import "not-found.css";
 @import "search-form.css";
+@import "platforms.css";
 
 @tailwind base;
 @tailwind components;

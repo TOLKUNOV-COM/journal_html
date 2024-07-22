@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<pug src="src/templates/includes/header.html"></pug>
+
+<main class="page">
+    <section class="materials materials_news mb-24">
+        <div class="container">
+            <div class="materials__header">
+                <h1 class="materials__title">Площадки<span class="materials__count">60</span></h1>
+            </div>
+
+            <div class="platforms my-10">
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #43118A; --background-image: url('img/platform-logos/hybrid.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #3B5EF2; --background-image: url('img/platform-logos/rambler.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #C11F2F; --background-image: url('img/platform-logos/weborama.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #0077FF; --background-image: url('img/platform-logos/vk.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_2_4" style="--background-color: #FC3F31; --background-image: url('img/platform-logos/yandex.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_2_4" style="--background-color: #FF2D00; --background-image: url('img/platform-logos/segment.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_3_4" style="--background-color: #000000; --background-image: url('img/platform-logos/my_target.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #4DABF8; --background-image: url('img/platform-logos/getintent.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #4DABF8; --background-image: url('img/platform-logos/getintent.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_4" style="--background-color: #04E061; --background-image: url('img/platform-logos/avito.svg');"></a>
+
+                <a href="#" class="platforms__item platforms__item_size_1_3" style="--background-color: #FC3F31; --background-image: url('img/platform-logos/yandex.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_3" style="--background-color: #FF2D00; --background-image: url('img/platform-logos/segment.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_3" style="--background-color: #000000; --background-image: url('img/platform-logos/my_target.svg');"></a>
+
+                <a href="#" class="platforms__item platforms__item_size_2_3" style="--background-color: #0077FF; --background-image: url('img/platform-logos/vk.svg');"></a>
+                <a href="#" class="platforms__item platforms__item_size_1_3" style="--background-color: #FC3F31; --background-image: url('img/platform-logos/yandex.svg');"></a>
+            </div>
+
+            <a href="#" class="splash-block__button">Загрузить еще</a>
+        </div>
+    </section>
+</main>
+
+<pug src="src/templates/includes/subscribe.html"></pug>
+
+<pug src="src/templates/includes/footer.html"></pug>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

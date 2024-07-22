@@ -1,11 +1,11 @@
 import Packery from 'packery/js/packery';
 
-export default function materials() {
-    let materialLists = document.querySelectorAll('.materials-list');
+export default function () {
+    let lists = document.querySelectorAll('.platforms');
 
-    for (let list of materialLists) {
+    for (let list of lists) {
         let msnry = new Packery(list, {
-            itemSelector: '.materials-item',
+            itemSelector: '.platforms__item',
             gutter: 0,
             // fitWidth: false,
             // stagger: 0,
@@ -17,5 +17,4 @@ export default function materials() {
             // percentPosition: true
         });
     }
-// window.dispatchEvent(new Event('resize'));
 }

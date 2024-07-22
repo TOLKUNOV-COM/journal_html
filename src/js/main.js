@@ -8,6 +8,7 @@ import materials from "./materials.js";
 import portfolioSlider from "./portfolio-slider.js";
 import toc from "./toc.js";
 import filter from "./filter.js";
+import platforms from "./platforms.js";
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -38,3 +39,4 @@ materials();
 portfolioSlider();
 toc();
 filter();
+platforms();
