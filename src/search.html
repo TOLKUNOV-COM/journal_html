@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<pug src="src/templates/includes/header.html"></pug>
+
+<main class="page">
+    <div class="container">
+        <div class="my-8">
+            <a href="#" class="text-blue-dark leading-none inline-block"><span class="font-sf-pro-display relative top-[1px]">←</span> назад</a>
+        </div>
+
+        <div class="mb-10">
+            <div class="search-form grid grid-cols-[1fr,auto] items-stretch">
+                <input type="text" class="search-form__input bg-transparent w-full px-4 py-3 border-0 rounded-2xl" placeholder="Поиск по сайту"/>
+
+                <button class="search-form__button px-4 py-3 border-0 rounded-2xl focus:outline-none"></button>
+            </div>
+            <div class="text-blue-dark leading-none lowercase mt-3">4 158 РЕЗУЛЬТАТОВ</div>
+        </div>
+
+        <section class="materials materials_news mb-24">
+            <div class="materials-list">
+                <pug src="src/templates/partials/news.pug"></pug>
+            </div>
+
+            <a href="#" class="splash-block__button">Загрузить еще</a>
+        </section>
+    </div>
+</main>
+
+<pug src="src/templates/includes/subscribe.html"></pug>
+<pug src="src/templates/includes/footer.html"></pug>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

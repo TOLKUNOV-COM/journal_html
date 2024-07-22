@@ -1,6 +1,7 @@
 /* src/styles/main.css */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import "../fonts/stylesheet.css";
+@import "../fonts/sf-pro-display/stylesheet.css";
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 @import "common.css";
 @import "splash-block.css";
@@ -24,6 +25,7 @@
 @import "filter.css";
 @import "dictionary.css";
 @import "not-found.css";
+@import "search-form.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,35 @@
+.search-form {
+    @apply bg-[#E7E9F2] border border-[#E7E9F2];
+    @apply rounded-2xl;
+}
+
+.search-form:has(:focus) {
+    @apply ring-2 ring-blue-500;
+}
+
+.search-form__input {
+    outline: none;
+    user-select: none;
+
+    @apply text-blue-900 font-serif leading-tight lowercase;
+    @apply text-4xl md:text-5xl xl:text-[56px];
+    letter-spacing: -1.68px;
+}
+
+.search-form__button {
+    @apply w-full aspect-square;
+
+    mask: url("../img/zoom.svg") no-repeat center;
+
+    mask-size: 20px;
+
+    @screen md {
+        mask-size: 30px;
+    }
+
+    @screen lg {
+        mask-size: 40px 40px;
+    }
+
+    background-color: #161F6A;
+}
