@@ -70,6 +70,14 @@
         margin-bottom: var(--gap-small);
     }
 
+    h5 {
+        @apply text-base md:text-lg;
+        @apply font-medium leading-[155%];
+
+        margin-top: var(--gap-normal);
+        margin-bottom: var(--gap-small);
+    }
+
     .embed {
         margin-top: var(--gap-medium);
         margin-bottom: var(--gap-bigger);
