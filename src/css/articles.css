@@ -1,5 +1,4 @@
-.materials_articles {
-    @apply mt-[62px];
+.materials-list_articles {
 
     .materials-item {
         @apply p-5;

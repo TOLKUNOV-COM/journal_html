@@ -1,4 +1,4 @@
-.materials_news {
+.materials-list_news {
 
     .materials-item[data-width]:not([data-width="1"]) {
         .materials-item__title {
