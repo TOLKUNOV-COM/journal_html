@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
+        url('subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('subset-SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
+        url('subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('subset-SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
+        url('subset-SFProDisplay-Regular.woff2') format('woff2'),
+        url('subset-SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
