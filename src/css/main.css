@@ -23,6 +23,7 @@
 @import "toc.css";
 @import "filter.css";
 @import "dictionary.css";
+@import "not-found.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,8 @@
+.not-found__image {
+    background: url("../img/404.png") no-repeat center;
+    background-size: contain;
+
+    @apply w-full max-w-[440px];
+    @apply aspect-[440/308];
+    @apply mb-4 mt-6;
+}
