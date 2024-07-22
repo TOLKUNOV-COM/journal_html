@@ -1,5 +1,6 @@
 import Swiper from 'swiper/bundle';
 import {gsap} from "gsap";
+import videoDuration from "./helpers/video-duration.js";
 
 export default function stories() {
     const asd = new Swiper('.stories-list', {
@@ -101,11 +102,7 @@ export default function stories() {
     });
 
     const initStory = function (el) {
-        // set video duration
-        const videos = el.querySelectorAll('.story__slide video');
-        videos.forEach(video => {
-            $(video).parent('.story__slide').attr('data-swiper-autoplay', video.duration * 1000);
-        });
+        videoDuration(el);
 
         const sliderEl = el.querySelector(".story__slider");
 

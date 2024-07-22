@@ -1,14 +1,13 @@
 import Swiper from 'swiper/bundle';
 import {gsap} from "gsap";
+import videoDuration from "../helpers/video-duration.js";
 
 export default function () {
-    //set video duration
-    const videos = document.querySelectorAll('.splash-slider__slide video');
-    videos.forEach(video => {
-        $(video).parent('.splash-slider__slide').attr('data-swiper-autoplay', video.duration * 1000);
-    });
+    let el = document.querySelector('.splash-slider__slider');
 
-    const slider = new Swiper(".splash-slider__slider", {
+    videoDuration(el);
+
+    const slider = new Swiper(el, {
         speed: 1,
         watchSlidesProgress: true,
         loop: true,
