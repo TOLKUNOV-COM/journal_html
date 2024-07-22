@@ -1,5 +1,5 @@
 .filter {
-    @apply flex-1 flex flex-row flex-wrap gap-2 mt-3 md:mt-5 mb-5 md:mb-8;
+    @apply mt-3 md:mt-5 mb-5 md:mb-8;
     @apply -mx-[5px];
 }
 

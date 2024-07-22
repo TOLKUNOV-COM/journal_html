@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<pug src="src/templates/includes/header.html"></pug>
+
+<main class="page">
+    <section class="materials mb-12 lg:mb-24">
+        <div class="container">
+            <div class="materials__header">
+                <h1 class="materials__title">Словарик<span class="materials__count">100</span></h1>
+            </div>
+
+            <div class="dictionary my-10">
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-r-full" style="background:#504895; color: #fff;">Раскадровка</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-full border" style="background: #ffffff; color: #504895; border-color:#504895;">апрув</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-xl" style="background: #161F6A; color: #ffffff;">Факап</span>
+                    <span class="dictionary__icon dictionary__icon_stars rounded-xl" style="background: #161F6A; color: #ffffff; --color: #fff"></span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-none" style="background:#D74560; color: #ffffff;">адаптив</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-xl" style="background: #C0FF71; color:#504895;">Таймлайн</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-full" style="background: #E7EAFD; color:#504895;">драфт</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-xl" style="background: #E7EAFD; color:#504895;">Статика</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-none" style="background: #C0FF71; color:#504895;">Моушн</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-xl" style="background:#504895; color: #fff;">ренедер</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-xl" style="background: #E7EAFD; color:#504895;">релиз</span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-full border" style="background:#fff; color: #D74560; border-color: #D74560;">мастер макет</span>
+                    <span class="dictionary__icon dictionary__icon_hot rounded-full border" style="background: #fff; border-color: #D74560; --color: #D74560"></span>
+                </a>
+                <a href="#" class="dictionary__item">
+                    <span class="dictionary__word rounded-none" style="background: #E7EAFD; color:#504895;">Раскадровка</span>
+                </a>
+            </div>
+
+
+            <a href="#" class="splash-block__button">Загрузить еще</a>
+        </div>
+    </section>
+</main>
+
+<pug src="src/templates/includes/subscribe.html"></pug>
+
+<pug src="src/templates/includes/footer.html"></pug>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
