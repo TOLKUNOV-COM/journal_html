@@ -1,10 +1,12 @@
 export default function () {
+    const tocSelector = '.toc';
     const tocListSelector = '.toc__list';
     const articleSelector = '.article';
     const anchorSelector = 'h2';
 
     let article = document.querySelector(articleSelector);
     let tocList = document.querySelector(tocListSelector);
+    let toc = document.querySelector(tocSelector);
 
     if (!article || !tocList) {
         return;
@@ -27,6 +29,10 @@ export default function () {
     });
 
     tocList.innerHTML = contents;
+
+    if (anchors.length > 0) {
+        $(toc).removeClass('hidden');
+    }
 
     /**
      * Watch scroll elements
