@@ -20,7 +20,7 @@
 
 .comparison-item {
     @apply flex;
-    @apply rounded-[30px] sm:rounded-[50px] aspect-[16/9] sm:aspect-[285/325];
+    @apply rounded-[30px] sm:rounded-[50px] w-full aspect-[16/9] sm:aspect-[285/325];
     @apply relative;
 
     @apply p-[20px] sm:p-[30px];
@@ -155,8 +155,7 @@
     @apply grid-cols-2;
 
     .comparison-item {
-        @apply sm:h-full sm:aspect-auto;
-        @apply xl:aspect-[95/85];
+        @apply sm:h-full sm:aspect-square h-full w-full;
         @apply p-[10px];
         @apply rounded-2xl;
     }
@@ -164,15 +163,15 @@
     .comparison-item:first-child:after {
         @apply top-0;
         @apply left-auto;
-        @apply translate-y-0 translate-x-[50%];
-        @apply right-0;
+        @apply translate-y-0 translate-x-0;
+        @apply -right-[1px];
         @apply w-[2px];
         @apply h-full;
+        @apply max-w-full;
+        @apply !aspect-auto;
 
         background: url("../img/split-line.svg") repeat-y center;
-        background-size: contain;
-
-        @apply translate-y-0 translate-x-[50%];
+        background-size: 2px 100%;
     }
 
     .comparison-item:first-child:before {

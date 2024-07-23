@@ -17,13 +17,18 @@ mainTags();
 randomFacts();
 platformLogos();
 
-let $splash = $("#splash");
+let $splash = $(".splash_zoom");
+let $zoomIgnore = $(".splash_zoom_ignore");
 
 const calcSplashZoom = function () {
     if ($(window).innerWidth() > 1160) {
-        $splash.css('zoom', ($(window).innerWidth()) / 1160);
+        let zoom = ($(window).innerWidth()) / 1160;
+
+        $splash.css('zoom', zoom);
+        $zoomIgnore.css('zoom', 1 / zoom);
     } else {
         $splash.css('zoom', 1);
+        $zoomIgnore.css('zoom', 1);
     }
 }
 
