@@ -71,12 +71,10 @@
 
     position: relative;
     border-radius: var(--border-radius);
-    background: var(--background);
-    background-size: cover;
-    background-position: center center;
     box-shadow: 0 5px 30px 0 var(--box-shadow-color);
+    overflow: hidden;
 
-    &:before {
+    &:after {
         content: '';
 
         position: absolute;
@@ -84,8 +82,46 @@
         left: 0;
         right: 0;
         bottom: 0;
+
         border-radius: var(--border-radius);
+        @apply pointer-events-none;
+    }
+
+    &:after {
         border: var(--border);
+    }
+}
+
+.materials-item__image {
+    @apply absolute top-0 left-0 right-0 bottom-0;
+
+    background: var(--background);
+    background-size: cover;
+    background-position: center center;
+
+    @apply transition-transform;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        opacity: 0;
+        background: #FFF;
+
+        mix-blend-mode: overlay;
+        @apply transition-opacity pointer-events-none;
+    }
+}
+
+.materials-item:hover .materials-item__image {
+    transform: scale(105%);
+
+    &:after {
+        opacity: 0.1;
     }
 }
 

@@ -28,6 +28,12 @@
 
     --background: transparent;
     --title-color: #000;
+
+    @apply transition-transform;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
 }
 
 .story-item_viewed {

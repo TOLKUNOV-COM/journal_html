@@ -15,6 +15,27 @@
 
 .splash-slider__slide {
     position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        opacity: 0;
+        background: #FFF;
+
+        mix-blend-mode: overlay;
+        @apply transition-opacity pointer-events-none;
+    }
+
+    &:hover, &:active, &:focus {
+        &:has(a):after {
+            opacity: 0.1;
+        }
+    }
 }
 
 .splash-slider__slide video,

@@ -36,13 +36,25 @@
     @apply inline-block;
     @apply rounded-[20px];
 
-    @apply border-2 border-[#CDD1F2];
-    @apply py-[13px] px-4;
+    @apply py-[15px] px-[18px];
     @apply mx-[5px];
 
     @apply w-auto;
 
     @apply uppercase tracking-widest;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        @apply border-2 border-[#CDD1F2];
+
+        @apply rounded-[20px];
+    }
 
     &:before {
         content: '#';
@@ -56,5 +68,19 @@
         @apply font-medium;
 
         @apply mr-[10px];
+    }
+
+    &:hover {
+        @apply text-white;
+
+        background: linear-gradient(180deg, rgba(253, 54, 90, 0.00) 0%, #FD365A 56.5%), rgba(253, 54, 90, 0.70);
+
+        &:before {
+            @apply text-white opacity-40;
+        }
+
+        &:after {
+            @apply hidden;
+        }
     }
 }

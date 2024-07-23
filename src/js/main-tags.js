@@ -6,7 +6,9 @@ import Swiper from 'swiper/bundle';
 export default function mainTags() {
     const mainTagsSlider = new Swiper(".main-tags__list", {
         slidesPerView: 'auto',
-        // freeMode: true,
+        freeMode: true,
+        freeModeMomentum: true,
+
         centeredSlides: true,
         centeredSlidesBounds: true,
         centerInsufficientSlides: true,
