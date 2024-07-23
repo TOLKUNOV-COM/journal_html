@@ -45,6 +45,9 @@ export default {
                     800: '#193083',
                     900: '#161F6A',
                 },
+                rose: {
+                    500: '#FE375B'
+                },
                 primary: '#161F6A',
                 // secondary: '#14171A',
                 // accent: '#657786',

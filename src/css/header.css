@@ -68,7 +68,7 @@
 
     @apply text-blue-dark lg:text-[10px] font-black leading-none tracking-widest uppercase;
 
-    @apply flex items-center justify-center gap-5 lg:gap-[30px];
+    @apply flex items-center justify-center gap-5 lg:gap-1.5;
     @apply z-40;
 
     @apply max-lg:absolute max-lg:top-[80px] max-lg:left-0 max-lg:right-0 max-lg:h-[calc(100vh-80px)];
@@ -89,8 +89,18 @@
 }
 
 .header__link {
-    @apply min-h-10;
+    @apply min-h-10 lg:min-h-0;
     @apply flex items-center;
+    @apply rounded-[10px];
+    @apply px-3 py-[9px];
+
+    &:hover, &:active, &:focus {
+        @apply bg-[#E6EAFF];
+    }
+}
+
+.header__link_active {
+    @apply text-rose-500;
 }
 
 @media (max-width: 1020px) {

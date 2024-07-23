@@ -4,7 +4,7 @@ export default function videoDuration(el) {
     const setDuration = function (video) {
         const duration = video.duration; // Получаем продолжительность видео в секундах
 
-        $(video).parent('.swiper-slide').attr('data-swiper-autoplay', duration * 1000);
+        $(video).parent('.swiper-slide').attr('data-swiper-autoplay', duration * 1000).attr('data-original-duration', duration * 1000);
     }
 
     videos.forEach(video => {

@@ -30,25 +30,35 @@
     /*top: 8px !important;*/
 
     /*bottom: -25px !important;*/
-    --swiper-pagination-bottom: -10px;
+    --swiper-pagination-bottom: -15px;
+    height: 10px;
 
     @screen lg {
         --swiper-pagination-bottom: -25px;
+        height: 20px;
     }
 
     z-index: 10;
-    display: flex;
-    padding: 0;
+
+    @apply flex items-center gap-[4px];
+}
+
+.splash-slider__pagination:hover {
+    .swiper-pagination-bullet {
+        height: 6px;
+    }
 }
 
 .splash-slider__pagination .swiper-pagination-bullet {
     flex-grow: 1;
     border-radius: 100vh;
     height: 2px;
-    margin: 0 1px !important;
+    margin: 0 !important;
     background-color: #E6EAFF;
     backdrop-filter: blur(5px);
     opacity: 1;
+
+    @apply transition-all cursor-pointer;
 }
 
 .splash-slider__pagination .swiper-pagination-bullet .swiper-pagination-progress {

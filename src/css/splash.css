@@ -9,3 +9,23 @@
 .splash {
 
 }
+
+.splash-hover-block {
+    @apply relative;
+
+    &:after {
+        content: '';
+
+        @apply absolute -top-[3px] -left-[3px] -bottom-[3px] -right-[3px];
+        @apply border border-[#FE375B] rounded-[18px];
+        @apply pointer-events-none;
+        @apply opacity-0;
+        @apply transition-opacity;
+    }
+
+    &:hover, &:active, &:focus {
+        &:after {
+            @apply opacity-100;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 .hot-news {
     @apply block;
     @apply rounded-2xl;
+    @apply outline-none;
 
     padding: 10px 13px 15px 138px;
 
@@ -9,12 +10,12 @@
 
     background: #FCEAEE;
     position: relative;
-    overflow: hidden;
 }
 
 .hot-news__img {
     @apply absolute top-0 left-0 bottom-0;
     @apply overflow-hidden;
+    @apply rounded-l-2xl;
 
     @apply w-0 sm:w-[138px] md:w-[0] xl:w-[138px];
 

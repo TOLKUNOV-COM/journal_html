@@ -1,6 +1,7 @@
 import Swiper from 'swiper/bundle';
 import {gsap} from "gsap";
 import videoDuration from "./helpers/video-duration.js";
+import {startAutoPlay, stopAutoPlay, pauseAutoPlay, resumeAutoPlay} from "./helpers/video-utils.js";
 
 export default function stories() {
     const asd = new Swiper('.stories-list', {
@@ -44,48 +45,6 @@ export default function stories() {
             $(container).removeClass('stories-slider-out');
             $(container).removeClass('stories-slider-in');
         }, 300);
-    }
-
-    const startAutoPlay = function (slider) {
-        slider.autoplay.start();
-
-        let activeSlide = slider.slides[slider.activeIndex];
-
-        if (activeSlide.querySelector('video')) {
-            activeSlide.querySelector('video').currentTime = 0;
-            activeSlide.querySelector('video').play();
-        }
-    }
-
-    const stopAutoPlay = function (slider) {
-        slider.autoplay.stop();
-
-        let activeSlide = slider.slides[slider.activeIndex];
-
-        if (activeSlide.querySelector('video')) {
-            activeSlide.querySelector('video').pause();
-            activeSlide.querySelector('video').currentTime = 0;
-        }
-    }
-
-    const pauseAutoPlay = function (slider) {
-        slider.autoplay.pause();
-
-        let activeSlide = slider.slides[slider.activeIndex];
-
-        if (activeSlide.querySelector('video')) {
-            activeSlide.querySelector('video').pause();
-        }
-    }
-
-    const resumeAutoPlay = function (slider) {
-        slider.autoplay.resume();
-
-        let activeSlide = slider.slides[slider.activeIndex];
-
-        if (activeSlide.querySelector('video')) {
-            activeSlide.querySelector('video').play();
-        }
     }
 
     $('.story-item').on('click', () => openStories());
