@@ -36,6 +36,25 @@
 
         pointer-events: none;
     }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        opacity: 0;
+        background: #000;
+
+        mix-blend-mode: overlay;
+        @apply transition-opacity pointer-events-none;
+    }
+
+    &:hover::after {
+        opacity: 0.1;
+    }
 }
 
 .random-fact__header {
@@ -73,7 +92,7 @@
     @apply py-[15px] pr-[15px] pl-[49px];
 
     &:hover:after {
-        border-style: solid;
+        opacity: .8;
     }
 
     position: relative;

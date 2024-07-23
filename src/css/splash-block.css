@@ -25,4 +25,12 @@
     background: #E5E3F0;
 
     line-height: 100%;
+
+    @apply transition-all;
+
+    &:hover, &:active, &:focus {
+        @apply text-white;
+
+        background: linear-gradient(180deg, rgba(82, 71, 154, 0.00) 0%, #52479A 56.5%), rgba(82, 71, 154, 0.70);
+    }
 }

@@ -117,11 +117,13 @@
     }
 }
 
-.materials-item:hover .materials-item__image {
-    transform: scale(105%);
+.materials-item:hover {
+    .materials-item__image {
+        transform: scale(105%);
 
-    &:after {
-        opacity: 0.1;
+        &:after {
+            opacity: 0.1;
+        }
     }
 }
 
