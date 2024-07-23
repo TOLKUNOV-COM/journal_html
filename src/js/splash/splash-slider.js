@@ -66,7 +66,7 @@ export default function () {
                 let bulletsBefore = allBullets.slice(0, swiper.realIndex);
                 let bulletsAfter = allBullets.slice(swiper.realIndex, allBullets.length);
                 if (bulletsBefore.length) {
-                    gsap.set(bulletsBefore, { width: '100%' })
+                    gsap.set(bulletsBefore, { width: '0%' })
                 }
                 if (bulletsAfter.length) {
                     gsap.set(bulletsAfter, { width: '0%' })
