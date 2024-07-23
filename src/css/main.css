@@ -27,6 +27,7 @@
 @import "not-found.css";
 @import "search-form.css";
 @import "platforms.css";
+@import "tags.css";
 
 @tailwind base;
 @tailwind components;

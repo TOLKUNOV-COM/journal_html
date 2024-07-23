@@ -100,10 +100,10 @@
     }
 
     a {
-        @apply text-blue-600;
+        @apply text-[#1C4AEE] underline;
 
         &:hover, &:active, &:focus {
-            @apply underline underline-offset-2;
+            @apply text-[#FE375B];
         }
     }
 }
