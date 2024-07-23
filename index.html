@@ -49,9 +49,9 @@
 </div>
 </header>
 
-<section class="splash mb-10 lg:mb-20">
-    <div class="container 2xl:max-w-[1580px]">
-        <div class="grid grid-cols-12 gap-5 xl:grid-cols-[auto,380px] 2xl:grid-cols-[auto,550px] lg:mb-[25px]">
+<section class="splash mb-10 lg:mb-20 md:mx-10">
+    <div class="container lg:max-w-full 2xl:max-w-full">
+        <div class="grid grid-cols-12 gap-5 xl:grid-cols-[auto,32.75%] 2xl:grid-cols-[auto,34.5%] lg:mb-[25px]">
             <div class="col-span-12 lg:col-span-8 xl:col-span-1 relative mb-5 lg:mb-0">
                 <div class="splash-slider">
                     <div class="splash-slider__slider swiper">
@@ -183,9 +183,9 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 xl:grid-cols-[1fr,190px] gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
+                    <div class="grid grid-cols-12 lg:grid-cols-[1fr,190px] xl:grid-cols-2 gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
                         <div class="col-span-12 sm:col-span-6 xl:col-span-1">
-                            <div class="splash-news h-full">
+                            <div class="splash-news min-h-[85px] h-full">
                                 <div class="splash-news__list">
                                     <a href="#" class="splash-news__item">Новый закон об интернет-рекламе</a>
                                     <a href="#" class="splash-news__item">Adobe не смог купить компанию Figma: почему так произошло</a>
@@ -198,7 +198,7 @@
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-6 xl:col-span-1 grid grid-cols-1 gap-[10px]">
-                            <a href="#" class="block w-full min-h-[85px] bg-[#E7EAFD] rounded-2xl object-cover splash-hover-block">
+                            <a href="#" class="block w-full min-h-[85px] bg-[#E7EAFD] aspect-video rounded-2xl object-cover splash-hover-block">
                                 <img src="https://placehold.it/190x85" class="rounded-2xl object-cover min-w-full min-h-full" alt="">
                             </a>
                             <a href="#" class="comparison comparison_small min-h-[85px] splash-hover-block" style="--vs-color: #FE385B;">
@@ -225,10 +225,11 @@
 <section class="stories splash-block">
     <div class="container">
         <h1 class="stories__title splash-block__title">главное в карточках</h1>
+    </div>
 
-        <div class="stories-list">
-            <div class="swiper-wrapper">
-                
+    <div class="stories-list mx-[5px] md:mx-10">
+        <div class="swiper-wrapper">
+            
 <div class="story-item swiper-slide" style="--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(&quot;https://via.placeholder.com/350x350&quot;) #1860CA; --title-color: #fff;">
   <div class="story-item__content">
     <div class="story-item__title">Наружная реклама: почему рекомендуем</div>
@@ -264,7 +265,6 @@
     <div class="story-item__title">Новые баннеры брендов за июнь</div>
   </div>
 </div>
-            </div>
         </div>
     </div>
 </section>
