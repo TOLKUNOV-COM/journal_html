@@ -16,3 +16,17 @@ stories();
 mainTags();
 randomFacts();
 platformLogos();
+
+let $splash = $("#splash");
+
+const calcSplashZoom = function () {
+    if ($(window).innerWidth() > 1160) {
+        $splash.css('zoom', ($(window).innerWidth()) / 1160);
+    } else {
+        $splash.css('zoom', 1);
+    }
+}
+
+$(window).on("resize", calcSplashZoom);
+
+calcSplashZoom();
