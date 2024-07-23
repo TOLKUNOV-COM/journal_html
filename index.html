@@ -22,7 +22,7 @@
 <nav class="header__item_menu header__menu flex-1">
 <a class="header__link" href="news.html">Новости</a>
 <a class="header__link" href="news.html">Статьи</a>
-<a class="header__link" href="facts.html">Факты</a>
+<a class="header__link header__link_active" href="facts.html">Факты</a>
 <a class="header__link" href="comparison.html">Сравнения</a>
 <a class="header__link" href="dictionary.html">Словарик</a>
 <a class="header__link" href="platforms.html">Площадки</a>
@@ -57,28 +57,33 @@
                     <div class="splash-slider__slider swiper">
                         <div class="splash-slider__wrapper swiper-wrapper">
                             <div class="splash-slider__slide swiper-slide">
-                                <img src="https://picsum.photos/id/1/1920/1080"/>
+                                <a href="https://ya.ru">
+                                    <img src="https://picsum.photos/id/1/1920/1080"/>
+                                </a>
 
-                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
-                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                                <div class="splash-slider__next splash-slider__button swiper-button-next hidden"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev hidden"></div>
                             </div>
                             <div class="splash-slider__slide swiper-slide">
                                 <img src="https://picsum.photos/id/2/1920/1080"/>
 
-                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
-                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                                <div class="splash-slider__next splash-slider__button swiper-button-next hidden"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev hidden"></div>
                             </div>
-                            <!--                            <div class="splash-slider__slide swiper-slide">-->
-                            <!--                                <video autoplay muted>-->
-                            <!--                                    &lt;!&ndash; May not work in the future, just change source &ndash;&gt;-->
-                            <!--                                    <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">-->
-                            <!--                                </video>-->
-                            <!--                            </div>-->
+                            <div class="splash-slider__slide swiper-slide">
+                                <video autoplay muted>
+                                    <!-- May not work in the future, just change source -->
+                                    <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">
+                                </video>
+
+                                <div class="splash-slider__next splash-slider__button swiper-button-next hidden"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev hidden"></div>
+                            </div>
                             <div class="splash-slider__slide swiper-slide">
                                 <img src="https://picsum.photos/760/420"/>
 
-                                <div class="splash-slider__next splash-slider__button swiper-button-next"></div>
-                                <div class="splash-slider__prev splash-slider__button swiper-button-prev"></div>
+                                <div class="splash-slider__next splash-slider__button swiper-button-next hidden"></div>
+                                <div class="splash-slider__prev splash-slider__button swiper-button-prev hidden"></div>
                             </div>
                         </div>
                     </div>
@@ -95,7 +100,7 @@
                     </div>
                     <div class="grid grid-cols-12 gap-[10px] col-span-2 md:col-span-1 lg:col-span-2">
                         <div class="col-span-12">
-                            <a href="#" class="hot-news">
+                            <a href="#" class="hot-news splash-hover-block">
                                 <div class="hot-news__img">
                                     <img class="w-full h-full object-cover object-center" src="https://placehold.it/300x300/green" alt="#">
                                 </div>
@@ -122,14 +127,16 @@
                                     </div>
                                     <div class="splash-video__timeline"></div>
                                 </div>
-                                <div class="splash-counter">
-                                    <button class="splash-counter__refresh hidden"></button>
+                                <div class="splash-hover-block after:rounded-full">
+                                    <div class="splash-counter">
+                                        <button class="splash-counter__refresh hidden"></button>
 
-                                    <a href="#" class="splash-counter__item splash-counter__item_articles">
-                                        <svg class="fit-text-container" width="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                            <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="white">442</text>
-                                        </svg>
-                                    </a>
+                                        <a href="#" class="splash-counter__item splash-counter__item_articles">
+                                            <svg class="fit-text-container" width="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="white">442</text>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -191,17 +198,10 @@
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-6 xl:col-span-1 grid grid-cols-1 gap-[10px]">
-                            <a href="#" class="splash-interview">
-                                <div class="flex flew-row flex-nowrap h-full">
-                                    <div class="flex flex-col gap-[5px] text-blue pt-[5px] pl-[7px] pb-[5px]">
-                                        <div class="text-[8px] font-black opacity-30 leading-tight tracking-widest">ИСТОРИИ</div>
-                                        <div class="text-xs font-medium leading-tight">Диджитал специалисты и&nbsp;их&nbsp;опыт</div>
-                                    </div>
-                                    <div class="splash-interview__faces flex-1 md:hidden xl:block">
-                                    </div>
-                                </div>
+                            <a href="#" class="block w-full min-h-[85px] bg-[#E7EAFD] rounded-2xl object-cover splash-hover-block">
+                                <img src="https://placehold.it/190x85" class="rounded-2xl object-cover min-w-full min-h-full" alt="">
                             </a>
-                            <a href="#" class="comparison comparison_small min-h-[85px]" style="--vs-color: #FE385B;">
+                            <a href="#" class="comparison comparison_small min-h-[85px] splash-hover-block" style="--vs-color: #FE385B;">
                                 <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --background-image: url('https://picsum.photos/id/14/95/85')">
                                     <div class="comparison-item__text comparison-item__text_center">
                                         <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
@@ -667,7 +667,6 @@
 <div class="mouse-parallax mx-auto">
     <div class="mouse-parallax-bg"></div>
 </div>
-
 
 
 <section class="platform-logos splash-block">
