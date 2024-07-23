@@ -7,7 +7,7 @@
     z-index: 1000;
     transform: translateZ(0) scale(.5);
     opacity: 0;
-    background: rgb(41, 40, 49);
+    background: rgba(82, 71, 154, 0.90);
 }
 
 .stories-slider:not(.stories-slider-in) {
@@ -256,6 +256,32 @@
 
     &:after {
         transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+.story__link {
+    --text-color: #fff;
+    --background: linear-gradient(180deg, rgba(253, 54, 90, 0.00) 0%, #FD365A 56.5%), rgba(253, 54, 90, 0.70);
+    --hover-background: linear-gradient(180deg, rgba(253, 54, 90, 0.00) 0%, #FD365A 56.5%), rgba(253, 54, 90, 0.90);
+
+    position: absolute;
+    left: 23px;
+    right: 23px;
+    bottom: 23px;
+
+    text-align: center;
+    @apply block px-5 py-7 z-20 font-black leading-none uppercase;
+    @apply pointer-events-auto;
+
+    border-radius: 14px;
+
+    color: var(--text-color);
+    background: var(--background);
+
+    letter-spacing: 1.676px;
+
+    &:hover {
+        background: var(--hover-background);
     }
 }
 

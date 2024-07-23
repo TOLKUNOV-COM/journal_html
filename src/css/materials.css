@@ -241,3 +241,14 @@
 .materials-item__time:before {
     mask: url("../img/time.svg") no-repeat center center;
 }
+
+/* Title opacity */
+.materials-item__title {
+    @apply transition-opacity;
+}
+
+.materials-item:hover {
+    .materials-item__title {
+        opacity: .8;
+    }
+}

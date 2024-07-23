@@ -8,14 +8,4 @@
             @apply xl:text-[24px];
         }
     }
-
-    .materials-item__title {
-        @apply transition-opacity;
-    }
-
-    .materials-item:hover {
-        .materials-item__title {
-            opacity: .8;
-        }
-    }
 }

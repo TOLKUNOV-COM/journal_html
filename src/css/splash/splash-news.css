@@ -2,7 +2,7 @@
     @apply rounded-2xl overflow-hidden relative min-h-40;
 
     padding: 14px 15px 0;
-    background: url("../../img/splash/splash-news-bg.svg") no-repeat center;
+    background: #52479A url("../../img/splash/splash-news-bg.svg") no-repeat center;
     background-size: cover;
 
     mask: linear-gradient(180deg, #D9D9D9 78%, rgba(217, 217, 217, 0.00) 100%);

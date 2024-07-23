@@ -119,10 +119,18 @@
     --text-color: #171F66;
     --background-color: #E6EAFF;
     --icon: url("../img/search.svg");
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #E6EAFF;
+    }
 }
 
 .header__button_telegram {
     --text-color: #fff;
     --background-color: #2BABEE;
     --icon: url("../img/telegram.svg");
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #2BABEE;
+    }
 }
