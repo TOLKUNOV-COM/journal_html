@@ -93,6 +93,7 @@
     @apply flex items-center;
     @apply rounded-[10px];
     @apply px-3 py-[9px];
+    @apply transition-all;
 
     &:hover, &:active, &:focus {
         @apply bg-[#E6EAFF];

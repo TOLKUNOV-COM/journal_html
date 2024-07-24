@@ -59,27 +59,23 @@ export default function mainTags() {
         if (isPlaying) {
 
             if (!isMouseEnter) {
-                $('.main-tags__list .swiper-wrapper').css('transition-duration', '500ms');
+                $('.main-tags__list .swiper-wrapper').css('transition-duration', '100ms');
             }
 
             if (isReversed === false) {
-                if (scrollByPixel('right', 10) === false) {
-                    console.log('reverse');
+                if (scrollByPixel('right', 2) === false) {
                     isReversed = true;
-                    // swiper.slidePrev();
                 }
             } else {
-                if (scrollByPixel('left', 10) === false) {
-                    console.log('reverse');
+                if (scrollByPixel('left', 2) === false) {
                     isReversed = false;
-                    // swiper.slideNext();
                 }
             }
         }
     };
 
     setTimeout(() => {
-        setInterval(handleTick, 500);
+        setInterval(handleTick, 100);
         handleTick();
     }, 100);
 
@@ -91,13 +87,14 @@ export default function mainTags() {
             isMouseEnter = true;
 
             $('.main-tags__list .swiper-wrapper').css('transition-duration', '0ms');
-        }).on('mouseleave', function () {
-        isMouseEnter = false;
+        })
+        .on('mouseleave', function () {
+            isMouseEnter = false;
 
-        setTimeout(() => {
-            if (!isPlaying && !isMouseEnter) {
-                isPlaying = true;
-            }
-        }, sliderSpeed);
-    });
+            setTimeout(() => {
+                if (!isPlaying && !isMouseEnter) {
+                    isPlaying = true;
+                }
+            }, 100);
+        });
 }

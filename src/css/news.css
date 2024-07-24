@@ -8,4 +8,10 @@
             @apply xl:text-[24px];
         }
     }
+
+    .materials-item:hover {
+        .materials-item__title {
+            opacity: .6;
+        }
+    }
 }

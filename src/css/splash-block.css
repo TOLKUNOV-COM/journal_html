@@ -26,8 +26,6 @@
 
     line-height: 100%;
 
-    @apply transition-all;
-
     &:hover, &:active, &:focus {
         @apply text-white;
 
