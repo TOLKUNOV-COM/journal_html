@@ -28,6 +28,16 @@
 
 .main-tags__list {
     @apply -mx-[5px];
+
+    & > .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    --swiper-wrapper-transition-timing-function: linear;
+}
+
+.swiper-container-free-mode > .swiper-wrapper {
+    transition-timing-function: linear;
 }
 
 .main-tags__item {
