@@ -85,7 +85,7 @@
 
 .footer-inner__button {
     @apply inline-block bg-white;
-    @apply py-[14px] px-[28px];
+    @apply pt-[15px] pb-[13px] px-[28px];
 
     @apply font-black text-blue-600 leading-none uppercase;
     @apply rounded-2xl;
@@ -108,8 +108,6 @@
 }
 
 .footer__logo {
-    transition: box-shadow 0.2s ease;
-
     &:before {
         content: url("../img/footer_logo.svg");
     }

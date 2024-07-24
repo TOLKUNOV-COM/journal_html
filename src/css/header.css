@@ -48,9 +48,9 @@
         flex-shrink: 0;
 
         border-radius: 9px;
-        background: linear-gradient(180deg, rgba(253, 54, 90, 0.00) 0%, #FD365A 56.5%), rgba(253, 54, 90, 0.70);
-        backdrop-filter: blur(1.483132004737854px);
-        filter: drop-shadow(-2.966px 4.746px 23.73px rgba(253, 54, 90, 0.60));
+        background: linear-gradient(180deg, rgba(253, 54, 90, 0.70) 0%, #FD365A 56.5%), rgba(253, 54, 90, 0.70);
+        backdrop-filter: blur(1.5px);
+        filter: drop-shadow(-2.966px 4.746px 6.73px rgba(253, 54, 90, 0.60));
 
         @apply py-[5px] px-[10px];
         @apply text-white font-caveat font-bold;
@@ -93,7 +93,7 @@
     @apply flex items-center;
     @apply rounded-[10px];
     @apply px-3 py-[9px];
-    @apply transition-all;
+    @apply transition-all duration-300;
 
     &:hover, &:active, &:focus {
         @apply bg-[#E6EAFF];
