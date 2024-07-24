@@ -148,29 +148,32 @@ articlesList:
     height: 2
 stories:
   -
+    id: 1
     title: "Наружная реклама: почему рекомендуем"
     style: "--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(\"https://via.placeholder.com/350x350\") #1860CA; --title-color: #fff;"
   -
+    id: 2
     title: "Иллюстрации в КВ: минусы и плюсы"
     style: "--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #1860CA; --title-color: #000;"
   -
+    id: 1
     title: "Рекламные извращения как источник пиара"
     style: "--background: linear-gradient(180deg, #BB217F 0%, rgba(187, 33, 127, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #BB217F; --title-color: #fff;"
   -
+    id: 2
     title: "Новые баннеры брендов за июнь"
-    is_viewed: true,
     style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"
   -
+    id: 1
     title: "Рекламные извращения как источник пиара"
-    is_viewed: true,
     style: "--background: linear-gradient(180deg, #BB217F 0%, rgba(187, 33, 127, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #BB217F; --title-color: #fff;"
   -
+    id: 2
     title: "Новые баннеры брендов за июнь"
-    is_viewed: true,
     style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"
   -
+    id: 1
     title: "Новые баннеры брендов за июнь"
-    is_viewed: true,
     style: "--background: linear-gradient(180deg, #2B9B37 0%, rgba(43, 155, 55, 0.00) 55%), url(\"https://picsum.photos/350/350?grayscale\") #2B9B37; --title-color: #fff;"
 mainTags:
   - баннеры

@@ -3,6 +3,109 @@ import {gsap} from "gsap";
 import videoDuration from "./helpers/video-duration.js";
 import {startAutoPlay, stopAutoPlay, pauseAutoPlay, resumeAutoPlay} from "./helpers/video-utils.js";
 
+/**
+ * Stories viewed methods
+ */
+const viewedStoriesStorageKey = "viewedStories";
+
+const getViewedStories = () => {
+    const localStorage = window.localStorage || {};
+
+    const data = localStorage.getItem(viewedStoriesStorageKey);
+
+    if (data) {
+        return JSON.parse(data);
+    }
+
+    return null;
+}
+
+const setViewedStories = (data) => {
+    try {
+        localStorage.setItem(viewedStoriesStorageKey, JSON.stringify(data));
+    } catch (e) {
+        if (e.name === 'QuotaExceededError') {
+            console.error('Local storage is full.');
+        } else {
+            console.error('An error occurred while accessing local storage.', e);
+        }
+    }
+}
+
+const addViewedStorySlide = function (storyId, slideId) {
+    const viewedStories = getViewedStories() || [];
+
+    let value = storyId + '_' + slideId;
+
+    if (!viewedStories.includes(value)) {
+        viewedStories.push(value);
+    }
+
+    setViewedStories(viewedStories);
+}
+
+const markSlideAsViewed = function (slide) {
+    let storyId = $(slide).data('story-id');
+    let slideId = $(slide).data('slide-id');
+
+    if (storyId && slideId) {
+        addViewedStorySlide(storyId, slideId);
+
+        updateStoriesListViewed();
+    }
+}
+
+/**
+ * Collect stories and their slides IDs
+ */
+let storiesSlides = {};
+
+$('.stories__slide').each(function () {
+    let storyId = $(this).data('story-id');
+
+    $(this).find('.story__slide').each(function () {
+        let slideId = $(this).data('slide-id');
+
+        if (!storiesSlides[storyId]) {
+            storiesSlides[storyId] = [];
+        }
+
+        storiesSlides[storyId].push(slideId);
+    });
+});
+
+const updateStoriesListViewed = function () {
+    let viewedStories = getViewedStories() || [];
+
+    $('.stories-list .story-item:not(.story-item_viewed)').each(function () {
+        let storyId = $(this).data('story-id');
+
+        let storySlideIds = storiesSlides[storyId] || [];
+
+        for (let slideId of storySlideIds) {
+            let value = storyId + '_' + slideId;
+
+            console.log(viewedStories);
+            console.log(value);
+
+            if (!viewedStories.includes(value)) {
+                return;
+            }
+        }
+
+        $(this).addClass('story-item_viewed');
+    });
+}
+
+window.markSlideAsViewed = markSlideAsViewed;
+window.getViewedStories = getViewedStories;
+
+updateStoriesListViewed();
+
+/**
+ * End Story views methods
+ */
+
 export default function stories() {
     const asd = new Swiper('.stories-list', {
         slidesPerView: 'auto',
@@ -12,17 +115,25 @@ export default function stories() {
 
     let sliderOpened = false;
 
-    const openStories = function () {
+    const openStories = function (storyId) {
         let container = document.querySelector('.stories-slider');
+
+        // Change mainSlider index
+        let targetIndex = $('.stories__slide[data-story-id="' + storyId + '"]').index();
+        mainSlider.slideTo(targetIndex);
 
         sliderOpened = true;
 
         $(container).addClass('stories-slider-in');
         $('body').addClass('overflow-hidden');
 
-        let slider = sliders[mainSlider.activeIndex];
+        let slider = sliders[targetIndex];
 
         startAutoPlay(slider);
+
+        let activeSlide = slider.slides[slider.activeIndex];
+
+        markSlideAsViewed(activeSlide);
     }
 
     const closeStories = function () {
@@ -47,7 +158,8 @@ export default function stories() {
         }, 300);
     }
 
-    $('.story-item').on('click', () => openStories());
+    $('.story-item').on('click', (e) => openStories($(e.currentTarget).data('story-id')));
+
     $('.stories-slider__close').on('click', () => closeStories());
     $('.stories-slider__overlay').on('click', () => closeStories());
 
@@ -136,6 +248,7 @@ export default function stories() {
                     let previousIndex = swiper.previousIndex;
 
                     let activeSlide = swiper.slides[activeIndex];
+                    let previousSlide = swiper.slides[previousIndex];
 
                     console.group('Inner slider change');
                     console.log('Active index: ' + swiper.activeIndex);
@@ -144,6 +257,9 @@ export default function stories() {
                     console.log('Prev real index: ' + swiper.previousRealIndex);
 
                     console.log('Current slide: ', activeSlide);
+
+                    // Mark story slide as viewed
+                    markSlideAsViewed(activeSlide);
 
                     // Play current video
                     if (activeSlide.querySelector('video')) {
@@ -225,6 +341,10 @@ export default function stories() {
                 let slider = sliders[activeIndex];
 
                 startAutoPlay(slider);
+
+                let activeSlide = slider.slides[slider.activeIndex];
+
+                markSlideAsViewed(activeSlide);
             },
             touchStart: function (swiper) {
                 let activeIndex = swiper.realIndex;
