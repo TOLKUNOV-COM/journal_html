@@ -5,6 +5,7 @@ import yaml from 'js-yaml';
 import fs from 'fs';
 import path from 'path';
 import chokidar from 'chokidar';
+import {viteStaticCopy} from 'vite-plugin-static-copy';
 // import tailwindcss from 'tailwindcss';
 
 const pugOptions = { pretty: true } // FIXME: pug pretty is deprecated!
@@ -67,6 +68,15 @@ export default defineConfig({
                 });
             },
         },
+        viteStaticCopy({
+            targets: [
+                {
+                    src: 'img/platform-logos/*', // Путь к вашим изображениям
+                    dest: 'img/platform-logos' // Директория назначения
+                }
+            ],
+            // verbose: true // Включение подробного логирования
+        })
     ],
     define: {}
 });

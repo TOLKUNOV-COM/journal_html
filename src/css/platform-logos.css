@@ -8,53 +8,29 @@
 
 .platform-logos__container {
     position: relative;
-    height: 680px;
-    margin-top: 100px;
-    margin-bottom: 16px;
+    height: 940px;
+    margin-top: 0;
+
+    @apply flex items-end;
 }
 
 .platform-logos__list {
     position: absolute;
-    left: 0;
-    top: 0;
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
 
-    width: 2000px;
-    height: 780px;
+    width: 3050px;
+    bottom: 0;
+    height: calc(940px - 72px);
+    left: 50%;
+    transform: translateX(-50%);
 
-    @apply mx-auto;
+    align-self: flex-start;
 }
 
 .platform-logos__item {
-    position: absolute;
-
-    @apply flex items-center justify-center;
-
-    transform: translate(-50%, -50%);
     transition: transform .2s ease-in-out;
     border-radius: 50%;
 
-    --background-color: #3490dc;
-    --background-image: none;
-
-    background-color: var(--background-color);
-
-    &:after {
-        content: '';
-        background: var(--background-image) no-repeat center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-
     &:hover {
-        transform: translate(-50%, -50%) scale(1.05);
+        transform: scale(1.05);
     }
 }
