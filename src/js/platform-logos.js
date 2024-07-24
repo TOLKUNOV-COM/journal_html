@@ -146,7 +146,7 @@ export default () => {
 
     // let items = document.querySelectorAll('.platform-logos__item');
 
-    const paralax = function (e) {
+    const parallax = function (e) {
         let x = e.clientX / window.innerWidth;
         let y = e.clientY / window.innerHeight;
 
@@ -167,5 +167,5 @@ export default () => {
         list.style.transform = 'translate(' + a + 'px, ' + b + 'px)';
     }
 
-    window.addEventListener('mousemove', e => paralax(e));
+    window.addEventListener('mousemove', e => parallax(e));
 }
