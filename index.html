@@ -50,7 +50,7 @@
 </header>
 
 <section class="splash mb-10 lg:mb-20 mx-[10px] lg:mx-10">
-    <div class="" id="splash">
+    <div class="splash_zoom">
         <div class="grid grid-cols-12 gap-5 xl:grid-cols-[auto,380px] lg:mb-[25px]">
             <div class="col-span-12 lg:col-span-8 xl:col-span-1 relative mb-5 lg:mb-0">
                 <div class="splash-slider">
@@ -88,13 +88,13 @@
                         </div>
                     </div>
 
-                    <div class="splash-slider__pagination swiper-pagination"></div>
+                    <div class="splash-slider__pagination swiper-pagination splash_zoom_ignore"></div>
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-4 xl:col-span-1">
                 <div class="grid grid-cols-2 gap-[10px]">
                     <div class="col-span-2">
-                        <div class="font-caveat font-bold text-[26px] leading-none tracking-tight -mt-2 ml-2 mb-0.5 pl-3 relative before:rounded-full before:w-[7px] before:h-[7px] before:bg-[#E9335D] before:absolute before:top-1/2 before:left-0">
+                        <div class="splash_zoom_ignore font-caveat font-bold text-[26px] leading-none tracking-tight -mt-2 ml-2 mb-0.5 pl-3 relative before:rounded-full before:w-[7px] before:h-[7px] before:bg-[#E9335D] before:absolute before:top-1/2 before:left-0">
                             прямой эфир
                         </div>
                     </div>
@@ -223,13 +223,14 @@
 
 
 <section class="stories splash-block">
-    <div class="mx-[10px] lg:mx-10">
+    <div class="container">
         <h1 class="stories__title splash-block__title">главное в карточках</h1>
     </div>
 
-    <div class="stories-list mx-[10px] lg:mx-10">
-        <div class="swiper-wrapper">
-            
+    <div class="mx-[10px] lg:mx-10">
+        <div class="stories-list">
+            <div class="swiper-wrapper">
+                
 <div class="story-item swiper-slide" style="--background: linear-gradient(180deg, #1860CA 0%, rgba(24, 96, 202, 0.00) 55%), url(&quot;https://via.placeholder.com/350x350&quot;) #1860CA; --title-color: #fff;">
   <div class="story-item__content">
     <div class="story-item__title">Наружная реклама: почему рекомендуем</div>
@@ -265,6 +266,7 @@
     <div class="story-item__title">Новые баннеры брендов за июнь</div>
   </div>
 </div>
+            </div>
         </div>
     </div>
 </section>
