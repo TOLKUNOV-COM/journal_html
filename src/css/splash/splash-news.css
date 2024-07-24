@@ -60,14 +60,14 @@
     margin-top: -7px;
     padding: 4px 7px 7px;
     border-radius: 8px;
-    border: 1px solid transparent;
+    border: .2px solid transparent;
 
     &:hover {
         @apply text-white;
 
-        border: 1px solid rgba(255, 255, 255, 0.10);
+        border: .2px solid rgba(255, 255, 255, 0.10);
         background: rgba(255, 255, 255, 0.10);
-        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.30);
+        box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.30);
         backdrop-filter: blur(2px);
         z-index: 1;
     }

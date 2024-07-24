@@ -28,6 +28,7 @@ const calcSplashZoom = function () {
 
         $splash.css('zoom', zoom);
         $zoomIgnore.css('zoom', 1 / zoom);
+        $splash.css('--zoom-ignore-factor', 1 / zoom);
     } else {
         $splash.css('zoom', 1);
         $zoomIgnore.css('zoom', 1);
