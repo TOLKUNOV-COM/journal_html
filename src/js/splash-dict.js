@@ -9,8 +9,8 @@ export default function () {
     // let items = document.querySelectorAll('.platform-logos__item');
 
     const parallax = function (e) {
-        let x = e.clientX / window.innerWidth;
-        let y = e.clientY / window.innerHeight;
+        let x = (e.clientX - startX) / $(container).width();
+        let y = (e.clientY - startY) / $(container).height();
 
         let containerWidth = $(container).width();
         let listWidth = $(list).width();
@@ -26,8 +26,24 @@ export default function () {
         let a = ((containerWidth - listWidth) * x);
         let b = ((containerHeight - listHeight) * y);
 
-        list.style.transform = 'translate(' + -x * 60 + 'px, ' + -y * 60 + 'px)';
+        list.style.transform = 'translate(' + -x * 22 + 'px, ' + -y * 22 + 'px)';
     }
 
-    window.addEventListener('mousemove', e => parallax(e));
+    let startX, startY;
+
+    container.addEventListener('mouseenter', (e) => {
+        $(list).css('transition-duration', '0ms');
+
+        startX = e.clientX;
+        startY = e.clientY;
+    });
+
+    container.addEventListener('mouseleave', (e) => {
+        setTimeout(() => {
+            $(list).css('transition', 'transform 200ms ease-in-out');
+            $(list).css('transform', 'translate(0,0)');
+        }, 100);
+    });
+
+    container.addEventListener('mousemove', e => parallax(e));
 }
