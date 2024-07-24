@@ -46,7 +46,7 @@
     @apply inline-block;
     @apply rounded-[20px];
 
-    @apply py-[15px] px-[18px];
+    @apply pt-[13px] pb-[17px] px-[18px];
     @apply mx-[5px];
 
     @apply w-auto;

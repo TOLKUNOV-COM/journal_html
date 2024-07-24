@@ -12,4 +12,5 @@
 
 .toc__link {
     @apply inline-block leading-tight hover:text-blue-900;
+    @apply transition-all;
 }

@@ -101,6 +101,7 @@
 
     a {
         @apply text-[#1C4AEE] underline;
+        @apply transition-all;
 
         &:hover, &:active, &:focus {
             @apply text-[#FE375B];

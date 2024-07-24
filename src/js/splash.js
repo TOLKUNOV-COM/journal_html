@@ -6,6 +6,7 @@ import stories from "./stories.js";
 import mainTags from "./main-tags.js";
 import randomFacts from "./random-facts.js";
 import platformLogos from "./platform-logos.js";
+import splashDict from "./splash-dict.js";
 
 
 splashVideo();
@@ -16,6 +17,7 @@ stories();
 mainTags();
 randomFacts();
 platformLogos();
+splashDict();
 
 let $splash = $(".splash_zoom");
 let $zoomIgnore = $(".splash_zoom_ignore");

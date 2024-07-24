@@ -4,6 +4,7 @@
 
 .tags__item {
     @apply inline-block uppercase text-[9.8px] text-[#A2A5C3]/80 leading-none tracking-widest font-bold rounded-[6.5px] border border-[#A2A5C3]/20 px-[8.5px] pb-[5px] py-[6px];
+    @apply transition-all;
 
     @apply hover:text-white/80 hover:bg-blue hover:border-blue;
 }

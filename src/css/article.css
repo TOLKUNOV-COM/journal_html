@@ -20,6 +20,7 @@
 
 .article__counter {
     @apply flex items-center text-nowrap gap-[2.6px];
+    @apply transition-all;
 
     &:before {
         content: '';
@@ -31,6 +32,7 @@
         mask-position: center;
         mask-size: contain;
 
+        @apply transition-all;
         @apply bg-[#B5B7CF];
     }
 }
@@ -63,6 +65,7 @@ a.article__counter:hover {
     @apply flex items-center gap-[4px];
 
     @apply text-[#B5B7CF] text-[13px] font-bold leading-tight;
+    @apply transition-all;
 
     &:before {
         content: '';
@@ -75,6 +78,7 @@ a.article__counter:hover {
         mask-size: contain;
 
         @apply bg-[#B5B7CF];
+        @apply transition-all;
         mask-image: url("../img/icons/share.svg");
     }
 

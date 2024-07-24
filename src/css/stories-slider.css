@@ -269,8 +269,8 @@
     right: 23px;
     bottom: 23px;
 
-    text-align: center;
-    @apply block px-5 py-7 z-20 font-black leading-none uppercase;
+    @apply text-center px-4 py-4 min-h-[70px] z-20 font-black leading-normal uppercase;
+    @apply flex items-center justify-center;
     @apply pointer-events-auto;
 
     border-radius: 14px;
