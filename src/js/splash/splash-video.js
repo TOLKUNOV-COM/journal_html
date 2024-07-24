@@ -2,6 +2,10 @@ export default function () {
     const container = document.querySelector('.splash-video');
     const video = document.querySelector('.splash-video video');
 
+    if (!container) {
+        return;
+    }
+
     container.addEventListener('click', () => {
         let isActive = $(container).hasClass('splash-video_active');
         let isMuted = $(video).prop('muted');
