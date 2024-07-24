@@ -28,6 +28,7 @@
 @import "search-form.css";
 @import "platforms.css";
 @import "tags.css";
+@import "share-button.css";
 
 @tailwind base;
 @tailwind components;

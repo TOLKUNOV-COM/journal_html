@@ -9,6 +9,7 @@ import portfolioSlider from "./portfolio-slider.js";
 import toc from "./toc.js";
 import filter from "./filter.js";
 import platforms from "./platforms.js";
+import shareButton from "./share-button.js";
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
@@ -40,3 +41,4 @@ portfolioSlider();
 toc();
 filter();
 platforms();
+shareButton();
