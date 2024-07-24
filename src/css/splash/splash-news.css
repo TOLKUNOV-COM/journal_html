@@ -75,11 +75,8 @@
 
 @keyframes newsIn {
     0% {
-        transform: translate(60%, 0);
+        transform: translate(30%, 0);
         opacity: 0;
-    }
-    80% {
-        transform: translate(-5%, 0);
     }
     100% {
         transform: translate(0, 0);
