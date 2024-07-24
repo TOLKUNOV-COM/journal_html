@@ -6,6 +6,10 @@ import {startAutoPlay, stopAutoPlay, pauseAutoPlay, resumeAutoPlay} from "../hel
 export default function () {
     let el = document.querySelector('.splash-slider__slider');
 
+    if (!el) {
+        return;
+    }
+
     videoDuration(el);
 
     const autoplayDuration = 8000;

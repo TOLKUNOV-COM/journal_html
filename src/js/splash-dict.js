@@ -2,6 +2,10 @@ export default function () {
     let container = document.querySelector('.splash-dict');
     let list = document.querySelector('.splash-dict__container');
 
+    if (!list) {
+        return;
+    }
+
     // let items = document.querySelectorAll('.platform-logos__item');
 
     const parallax = function (e) {
@@ -22,7 +26,7 @@ export default function () {
         let a = ((containerWidth - listWidth) * x);
         let b = ((containerHeight - listHeight) * y);
 
-        list.style.transform = 'translate(' + -x*60 + 'px, ' + -y*60 + 'px)';
+        list.style.transform = 'translate(' + -x * 60 + 'px, ' + -y * 60 + 'px)';
     }
 
     window.addEventListener('mousemove', e => parallax(e));

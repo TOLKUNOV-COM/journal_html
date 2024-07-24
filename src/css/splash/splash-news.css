@@ -47,6 +47,9 @@
 
     @apply absolute top-[17px] left-[8px] right-[8px] bottom-0;
     z-index: 1;
+
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
 }
 
 .splash-news__item {
@@ -72,13 +75,15 @@
 
 @keyframes newsIn {
     0% {
-        transform: translate(100%, 0);
+        transform: translate(60%, 0);
+        opacity: 0;
     }
     80% {
         transform: translate(-5%, 0);
     }
     100% {
         transform: translate(0, 0);
+        opacity: 1;
     }
 }
 

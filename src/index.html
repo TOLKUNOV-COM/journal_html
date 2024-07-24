@@ -435,32 +435,112 @@
     </div>
 </section>
 
-<div class="mouse-parallax mx-auto">
-    <div class="mouse-parallax-bg"></div>
-</div>
 
+<script>
+    window.platformLogos = [
+        // Original logos
+        { size: 4, url: 'article.html', backgroundColor: '#0077FF', backgroundImage: 'img/platform-logos/vk.svg' },
+        { size: 4, url: 'article.html', backgroundColor: '#FC3F31', backgroundImage: 'img/platform-logos/yandex.svg' },
+        { size: 3, url: 'article.html', backgroundColor: '#4DABF8', backgroundImage: 'img/platform-logos/getintent.svg' },
+        { size: 3, url: 'article.html', backgroundColor: '#04E061', backgroundImage: 'img/platform-logos/avito.svg' },
 
-<section class="platform-logos splash-block">
-    <div class="platform-logos__title splash-block__title text-center leading-[90%]">рассказываем<br>про Площадки и форматы</div>
+        { size: 1, url: 'article.html', backgroundColor: '#3276D0', backgroundImage: 'img/platform-logos/adriver.svg' },
+        { size: 1, url: 'article.html', backgroundColor: '#B4273D', backgroundImage: 'img/platform-logos/otm.svg' },
+        { size: 1, url: 'article.html', backgroundColor: '#FFD929', backgroundImage: 'img/platform-logos/adfox.svg' },
+
+        { size: 2, url: 'article.html', backgroundColor: '#3B5EF2', backgroundImage: 'img/platform-logos/rambler.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#000000', backgroundImage: 'img/platform-logos/my_target.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#FF2D00', backgroundImage: 'img/platform-logos/segment.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#C11F2F', backgroundImage: 'img/platform-logos/weborama.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#43118A', backgroundImage: 'img/platform-logos/hybrid.svg' },
+
+        // Duplicate logos
+        { size: 4, url: 'article.html', backgroundColor: '#0077FF', backgroundImage: 'img/platform-logos/vk.svg' },
+        { size: 4, url: 'article.html', backgroundColor: '#FC3F31', backgroundImage: 'img/platform-logos/yandex.svg' },
+        { size: 3, url: 'article.html', backgroundColor: '#4DABF8', backgroundImage: 'img/platform-logos/getintent.svg' },
+        { size: 3, url: 'article.html', backgroundColor: '#04E061', backgroundImage: 'img/platform-logos/avito.svg' },
+
+        { size: 1, url: 'article.html', backgroundColor: '#3276D0', backgroundImage: 'img/platform-logos/adriver.svg' },
+        { size: 1, url: 'article.html', backgroundColor: '#B4273D', backgroundImage: 'img/platform-logos/otm.svg' },
+        { size: 1, url: 'article.html', backgroundColor: '#FFD929', backgroundImage: 'img/platform-logos/adfox.svg' },
+
+        { size: 2, url: 'article.html', backgroundColor: '#3B5EF2', backgroundImage: 'img/platform-logos/rambler.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#000000', backgroundImage: 'img/platform-logos/my_target.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#FF2D00', backgroundImage: 'img/platform-logos/segment.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#C11F2F', backgroundImage: 'img/platform-logos/weborama.svg' },
+        { size: 2, url: 'article.html', backgroundColor: '#43118A', backgroundImage: 'img/platform-logos/hybrid.svg' },
+    ];
+</script>
+
+<section class="platform-logos splash-block relative">
+    <div class="platform-logos__title splash-block__title text-center leading-[90%] absolute top-0 left-0 w-full z-20">рассказываем<br>про Площадки и форматы</div>
 
     <div class="platform-logos__container">
         <div class="platform-logos__list">
-            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #43118A; --background-image: url('img/platform-logos/hybrid.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #3B5EF2; --background-image: url('img/platform-logos/rambler.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="5" style="--background-color: #C11F2F; --background-image: url('img/platform-logos/weborama.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="9" style="--background-color: #0077FF; --background-image: url('img/platform-logos/vk.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="11" style="--background-color: #FC3F31; --background-image: url('img/platform-logos/yandex.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="3" style="--background-color: #FF2D00; --background-image: url('img/platform-logos/segment.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #000000; --background-image: url('img/platform-logos/my_target.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #4DABF8; --background-image: url('img/platform-logos/getintent.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="1" style="--background-color: #4DABF8; --background-image: url('img/platform-logos/getintent.svg');"></a>
-            <a href="#" class="platform-logos__item" data-size="3" style="--background-color: #04E061; --background-image: url('img/platform-logos/avito.svg');"></a>
+            <a class="platform-logos__item" data-size="4"
+               style="width: 300px; height: 300px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 1670px; top: 165px; position: absolute; background: #0077FF;"></a>
+            <a class="platform-logos__item" data-size="4"
+               style="width: 300px; height: 300px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 1080px; top: 165px; position: absolute; background: #FC3F31;"></a>
+
+            <a class="platform-logos__item" data-size="3"
+               style="width: 250px; height: 250px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 1225px; top: 517px; position: absolute; background: #4DABF8;"></a>
+            <a class="platform-logos__item" data-size="3"
+               style="width: 250px; height: 250px; padding-left: 25px; padding-right: 25px; padding-top: 16.67px; padding-bottom: 16.67px; left: 1575px; top: 525px; position: absolute; background: #04E061;"></a>
+
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 810px; top: 360px; position: absolute; background: #3B5EF2;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 810px; top: 69px; position: absolute; background: #C11F2F;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2040px; top: 360px; position: absolute; background: #FF2D00;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2040px; top: 69px; position: absolute; background: black;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2310px; top: 511px; position: absolute; background: #3B5EF2;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2310px; top: 220px; position: absolute; background: #C11F2F;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 540px; top: 511px; position: absolute; background: #FF2D00;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 540px; top: 220px; position: absolute; background: black;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2850px; top: 511px; position: absolute; background: #3B5EF2;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2580px; top: 360px; position: absolute; background: #FF2D00;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2850px; top: 220px; position: absolute; background: #C11F2F;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2580px; top: 69px; position: absolute; background: black;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 270px; top: 360px; position: absolute; background: #3B5EF2;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 270px; top: 69px; position: absolute; background: #C11F2F;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 0px; top: 511px; position: absolute; background: #FF2D00;"></a>
+            <a class="platform-logos__item" data-size="2"
+               style="width: 200px; height: 200px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 0px; top: 220px; position: absolute; background: black;"></a>
+
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 1450px; top: 325px; position: absolute; background: #3276D0;"></a>
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 28.75px; padding-right: 29.19px; left: 1005px; top: 567px; position: absolute; background: #B4273D;"></a>
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 1895px; top: 568px; position: absolute; background: #FFD929;"></a>
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 295px; top: 630px; position: absolute; background: #3276D0;"></a>
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2605px; top: 630px; position: absolute; background: #3276D0;"></a>
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 565px; top: 0px; position: absolute; background: #3276D0;"></a>
+            <a class="platform-logos__item" data-size="1"
+               style="width: 150px; height: 150px; padding-left: 17.93px; padding-right: 17.93px; padding-top: 11.95px; padding-bottom: 11.95px; left: 2335px; top: 0px; position: absolute; background: #3276D0;"></a>
+        </div>
+
+        <div class="container">
+            <a href="#" class="splash-block__button z-20 relative">Все площадки</a>
         </div>
     </div>
 
-    <div class="container">
-        <a href="#" class="splash-block__button">Все площадки</a>
-    </div>
 </section>
 
 <pug src="src/templates/includes/footer.html"></pug>
