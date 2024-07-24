@@ -124,8 +124,8 @@ export default function stories() {
 
         sliderOpened = true;
 
-        $(container).addClass('stories-slider-in');
         $('body').addClass('overflow-hidden');
+        $(container).addClass('stories-slider-in');
 
         let slider = sliders[targetIndex];
 
@@ -146,7 +146,6 @@ export default function stories() {
         let container = document.querySelector('.stories-slider');
 
         $(container).addClass('stories-slider-out');
-        $('body').removeClass('overflow-hidden');
 
         for (let slider of sliders) {
             stopAutoPlay(slider);
@@ -155,6 +154,7 @@ export default function stories() {
         setTimeout(() => {
             $(container).removeClass('stories-slider-out');
             $(container).removeClass('stories-slider-in');
+            $('body').removeClass('overflow-hidden');
         }, 300);
     }
 
