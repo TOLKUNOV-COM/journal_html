@@ -252,3 +252,30 @@
         opacity: .8;
     }
 }
+
+.materials-list_limit {
+    --max-rows: 4;
+    --card-height: 206px;
+
+    --max-height-sm: calc(var(--card-height) * var(--max-rows) + 10px * (var(--max-rows) - 1) - var(--card-height) * 0.5);
+    --max-height-md: calc(var(--card-height) * var(--max-rows) + 20px * (var(--max-rows) - 1) - var(--card-height) * 0.5);
+
+    @apply max-h-[150vh];
+    @apply sm:max-h-[var(--max-height-sm)];
+    @apply md:max-h-[var(--max-height-md)];
+
+    @apply overflow-hidden;
+
+    &:after {
+        content: "";
+
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        bottom: 0;
+        height: calc(var(--card-height) * 0.5);
+        background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .3) 80%, rgba(255, 255, 255, 0));
+
+        @apply pointer-events-none;
+    }
+}

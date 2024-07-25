@@ -70,6 +70,70 @@ newsList:
       - "+1"
     views: "500"
     style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #FCEAEE; --title-color: #BA2943; --border: 1px solid #FCEAEE; --counters-color: #BA2943; --counters-opacity: 0.3; --tag-color: rgba(186, 41, 67, 0.32); --tag-border-color: rgba(186, 41, 67, 0.05);"
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #FCEAEE; --title-color: #BA2943; --border: 1px solid #FCEAEE; --counters-color: #BA2943; --counters-opacity: 0.3; --tag-color: rgba(186, 41, 67, 0.32); --tag-border-color: rgba(186, 41, 67, 0.05);"
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #FCEAEE; --title-color: #BA2943; --border: 1px solid #FCEAEE; --counters-color: #BA2943; --counters-opacity: 0.3; --tag-color: rgba(186, 41, 67, 0.32); --tag-border-color: rgba(186, 41, 67, 0.05);"
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
+  -
+    title: "Бездымная кофеварка и маникюрный салон: что удивило на техновыставке CES 2024"
+    tags:
+      - технологии
+      - выставки
+      - "+4"
+    views: "5 478"
+    style: "--background: #FCEAEE; --title-color: #BA2943; --border: 1px solid #FCEAEE; --counters-color: #BA2943; --counters-opacity: 0.3; --tag-color: rgba(186, 41, 67, 0.32); --tag-border-color: rgba(186, 41, 67, 0.05);"
+  -
+    title: "«Ozon ОРД» тестирует автоматический сбор и передачу «вечной» статистики"
+    tags:
+      - ozon
+      - статистика
+      - "+1"
+    views: "500"
+    style: "--background: #FF2104; --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.4; --tag-color: rgba(255, 255, 255, 0.48); --tag-border-color: rgba(255, 255, 255, 0.10);"
 articlesList:
   -
     title: "Баннер на поиске в Яндекс Директ"
@@ -123,6 +187,48 @@ articlesList:
     views: "2 544"
     time: "2 мин"
     style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #E9ECEB 26.5%, rgba(233, 236, 235, 0.00) 100%); --title-color: #000; --counters-color: #000; --counters-opacity: 0.3; --tag-color: rgba(0, 0, 0, 0.8); --tag-border-color: rgba(0, 0, 0, 0.2)"
+    width: 1
+    height: 2
+  -
+    title: "Список источников вдохновения для создания эффектных кейвижуалов"
+    tags:
+      - "кейвижуал"
+      - "реклама"
+      - "иллюстрации"
+    views: "7 899"
+    time: "10 мин"
+    style: "--background: url(\"https://via.placeholder.com/300x300\"); --background-gradient: linear-gradient(0deg, #A8186B 22%, rgba(168, 24, 107, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
+    width: 2
+    height: 2
+  -
+    title: "Площадки для мобильных перфомансов"
+    tags:
+      - мобайл
+      - площадки
+    views: "100"
+    time: "1 мин"
+    style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #C5EBFF 26.5%, rgba(197, 235, 255, 0.00) 100%); --title-color: rgba(25, 48, 131, 1); --counters-color: rgba(25, 48, 131, 1); --counters-opacity: 0.3; --tag-color: rgba(25, 48, 131, 0.8); --tag-border-color: rgba(25, 48, 131, 0.2);"
+    width: 1
+    height: 2
+  -
+    title: "Список источников вдохновения для создания эффектных кейвижуалов"
+    tags:
+      - "кейвижуал"
+      - "реклама"
+      - "иллюстрации"
+    views: "7 899"
+    time: "10 мин"
+    style: "--background: url(\"https://via.placeholder.com/300x300\"); --background-gradient: linear-gradient(0deg, #A8186B 22%, rgba(168, 24, 107, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
+    width: 2
+    height: 2
+  -
+    title: "Площадки для мобильных перфомансов"
+    tags:
+      - мобайл
+      - площадки
+    views: "100"
+    time: "1 мин"
+    style: "--background: url(\"https://via.placeholder.com/400x800\"); --background-gradient: linear-gradient(0deg, #C5EBFF 26.5%, rgba(197, 235, 255, 0.00) 100%); --title-color: rgba(25, 48, 131, 1); --counters-color: rgba(25, 48, 131, 1); --counters-opacity: 0.3; --tag-color: rgba(25, 48, 131, 0.8); --tag-border-color: rgba(25, 48, 131, 0.2);"
     width: 1
     height: 2
   -

@@ -320,7 +320,7 @@
     <div class="container">
         <h2 class="splash-block__title mb-6">свежие статьи</h2>
 
-        <div class="materials-list materials-list_articles">
+        <div class="materials-list materials-list_articles materials-list_limit" style="--max-rows: 7">
             <pug src="src/templates/partials/articles.pug"></pug>
         </div>
 
@@ -368,7 +368,7 @@
     <div class="container">
         <h2 class="splash-block__title mb-[1.875rem]">Что происходит</h2>
 
-        <div class="materials-list materials-list_news">
+        <div class="materials-list materials-list_news materials-list_limit" style="--max-rows: 4">
             <pug src="src/templates/partials/news.pug"></pug>
         </div>
 
@@ -380,7 +380,7 @@
     <div class="container">
         <h2 class="comparisons__title splash-block__title">Сравниваем</h2>
 
-        <div class="comparisons__list">
+        <div class="comparisons__list comparisons__list_limit">
             <a href="#" class="comparison" style="--vs-color: #FE385B;">
                 <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --background-image: url('https://picsum.photos/id/14/285/325')">
                     <div class="comparison-item__text comparison-item__text_center">
@@ -402,6 +402,30 @@
                 <div class="comparison-item items-end justify-start" style="--background-color: #E8CEFF; --text-background-color: #7D5588;">
                     <div class="comparison-item__text comparison-item__text_center">
                         <span class="comparison-item__word">НОУТБУК</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(25, 33, 103, 1);">
+                <div class="comparison-item items-start justify-end" style="--background-color: #CD99F5; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_right">
+                        <span class="comparison-item__word">деньги</span><br><span class="comparison-item__word">в сейфе</span>
+                    </div>
+                </div>
+                <div class="comparison-item items-end justify-start" style="--background-color: #FE3D81; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_left">
+                        <span class="comparison-item__word">купленная</span><br><span class="comparison-item__word">страховка</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="comparison" style="--vs-color: rgba(254, 55, 91, 1);">
+                <div class="comparison-item items-start justify-end" style="--background-color: #FCEAEE; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">Мозг</span><br><span class="comparison-item__word">Человека</span>
+                    </div>
+                </div>
+                <div class="comparison-item items-end justify-start" style="--background-color: #E6EAFF; --text-background-color: #192167;">
+                    <div class="comparison-item__text comparison-item__text_center">
+                        <span class="comparison-item__word">искусственный</span><br><span class="comparison-item__word">интеллект</span>
                     </div>
                 </div>
             </a>

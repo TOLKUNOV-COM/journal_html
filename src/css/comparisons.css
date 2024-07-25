@@ -210,3 +210,21 @@
         padding: 3px 4px 2px;
     }
 }
+
+.comparisons__list_limit {
+    position: relative;
+
+    &:after {
+        content: "";
+
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        bottom: -4px;
+        height: calc(246px * 0.5);
+        background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .3) 80%, rgba(255, 255, 255, 0));
+        z-index: 20;
+
+        @apply pointer-events-none;
+    }
+}

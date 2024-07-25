@@ -2,15 +2,7 @@
 
     .materials-item {
         @apply p-5;
-
-        @apply sm:h-[206px];
     }
-
-    .materials-item[data-height="2"] {
-        @apply sm:h-[417px];
-        @apply md:h-[427px];
-    }
-
 
     .materials-item[data-width="1"] {
         .materials-item__gradient {
