@@ -11,6 +11,7 @@ export default function () {
 
             let fontSize = (circumference / textLength) * 0.6; // Коэффициент для подгонки размера текста
 
+            fontSize = Math.min(fontSize, 200);
             text.setAttribute('font-size', fontSize);
         }
     }
