@@ -17,4 +17,29 @@ export default function () {
 
     adjustFontSize();
     window.addEventListener('resize', adjustFontSize); // Подгонка при изменении размера окна
+
+    let items = $('.splash-counter__item');
+
+    items.addClass('hidden');
+
+    if (items.length > 0) {
+        // Шаг 3: Выбрать случайный элемент
+        var randomIndex = Math.floor(Math.random() * items.length);
+        var randomElement = items.eq(randomIndex);
+
+        // Шаг 4: Удалить класс у случайного элемента
+        randomElement.removeClass('hidden');
+    }
+
+    $('.splash-counter__refresh').on('click', function () {
+        let current = $('.splash-counter__item:not(.hidden)');
+        let next = current.next('.splash-counter__item.hidden');
+
+        if (!next.length) {
+            next = $('.splash-counter__item:first');
+        }
+
+        current.addClass('hidden');
+        next.removeClass('hidden');
+    });
 }

@@ -264,7 +264,10 @@
     @apply sm:max-h-[var(--max-height-sm)];
     @apply md:max-h-[var(--max-height-md)];
 
-    @apply overflow-hidden;
+    @apply overflow-hidden relative;
+
+    margin-top: -30px;
+    padding-top: 30px;
 
     &:after {
         content: "";

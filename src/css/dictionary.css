@@ -23,6 +23,7 @@
     @apply relative aspect-square w-full;
 
     --color: #fff;
+    --icon: none;
 
     &:before {
         content: '';
@@ -37,6 +38,7 @@
 
         mask-repeat: no-repeat;
         mask-size: contain;
+        mask-image: var(--icon);
         background-color: var(--color, #fff);
     }
 }

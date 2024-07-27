@@ -6,7 +6,7 @@
 }
 
 .random-fact {
-    @apply flex flex-col text-center;
+    @apply flex flex-col text-center items-center;
     @apply lg:min-h-[384px] h-full w-full;
     @apply md:rounded-full lg:rounded-full;
     @apply overflow-hidden relative;

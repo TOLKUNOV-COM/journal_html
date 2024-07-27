@@ -93,11 +93,21 @@
                                 </div>
                                 <div class="splash-hover-block after:rounded-full">
                                     <div class="splash-counter">
-                                        <button class="splash-counter__refresh hidden"></button>
+                                        <button class="splash-counter__refresh"></button>
 
                                         <a href="#" class="splash-counter__item splash-counter__item_articles">
                                             <svg class="fit-text-container" width="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="white">442</text>
+                                                <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="currentColor">442</text>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="splash-counter__item splash-counter__item_platforms">
+                                            <svg class="fit-text-container" width="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="currentColor">442</text>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="splash-counter__item splash-counter__item_facts">
+                                            <svg class="fit-text-container" width="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                <text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="currentColor">442</text>
                                             </svg>
                                         </a>
                                     </div>
@@ -201,7 +211,7 @@
 
 <section class="stories splash-block">
     <div class="container">
-        <h1 class="stories__title splash-block__title">главное в карточках</h1>
+        <h2 class="stories__title splash-block__title">главное в карточках</h2>
     </div>
 
     <div class="mx-[10px] lg:mx-10">
@@ -319,11 +329,17 @@
 <section class="materials splash-block mt-[62px]">
     <div class="container">
         <h2 class="splash-block__title mb-6">свежие статьи</h2>
+    </div>
 
-        <div class="materials-list materials-list_articles materials-list_limit" style="--max-rows: 7">
-            <pug src="src/templates/partials/articles.pug"></pug>
+    <div class="materials-list_limit" style="--max-rows: 7">
+        <div class="container">
+            <div class="materials-list materials-list_articles">
+                <pug src="src/templates/partials/articles.pug"></pug>
+            </div>
         </div>
+    </div>
 
+    <div class="container">
         <a href="#" class="splash-block__button">Все статьи</a>
     </div>
 </section>
@@ -367,11 +383,17 @@
 <section class="materials splash-block">
     <div class="container">
         <h2 class="splash-block__title mb-[1.875rem]">Что происходит</h2>
+    </div>
 
-        <div class="materials-list materials-list_news materials-list_limit" style="--max-rows: 4">
-            <pug src="src/templates/partials/news.pug"></pug>
+    <div class="materials-list_limit" style="--max-rows: 4">
+        <div class="container">
+            <div class="materials-list materials-list_news">
+                <pug src="src/templates/partials/news.pug"></pug>
+            </div>
         </div>
+    </div>
 
+    <div class="container">
         <a href="#" class="splash-block__button">Все новости</a>
     </div>
 </section>
