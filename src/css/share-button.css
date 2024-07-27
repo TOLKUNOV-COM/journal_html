@@ -5,7 +5,7 @@
         content: 'Ссылка скопирована';
 
         @apply absolute -top-full left-1/2 -translate-x-1/2;
-        @apply bg-black text-white text-xs text-nowrap rounded-md;
+        @apply bg-blue-900 text-white text-xs text-nowrap rounded-md;
         @apply pb-1 px-2 pt-0.5;
         @apply transition-all opacity-0;
     }

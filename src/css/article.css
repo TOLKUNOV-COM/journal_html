@@ -2,7 +2,7 @@
 }
 
 .article__title {
-    @apply font-serif text-blue-900 font-bold leading-[115%] -tracking-[0.075rem] lowercase;
+    @apply font-serif text-blue-900 font-bold leading-[115%] -tracking-[0.075rem];
     @apply text-2xl lg:text-3xl xl:text-4xl;
 
     @apply mb-5 md:mb-7;

@@ -1,6 +1,5 @@
 .materials__title {
     @apply font-serif font-bold text-blue-900 leading-tight;
-    @apply lowercase;
 
     @apply text-4xl sm:text-5xl md:text-[56px];
     letter-spacing: -1.68px;
