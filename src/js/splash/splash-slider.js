@@ -14,7 +14,7 @@ export default function () {
 
     const autoplayDuration = 8000;
 
-    const slider = new Swiper(el, {
+    const swiper = new Swiper(el, {
         speed: 1,
         // watchSlidesProgress: true,
         loop: true,
@@ -91,6 +91,30 @@ export default function () {
         }
     });
 
+    /**
+     * WAIT FOR LOAD
+     */
+    // Отключаем autoplay изначально
+    swiper.autoplay.stop();
+
+    // Получаем первое изображение
+    const firstImage = el.querySelector('.swiper-slide img');
+
+    // Запускаем autoplay после загрузки первого изображения
+    firstImage.addEventListener('load', function () {
+        console.log('Первое изображение загружено');
+        swiper.autoplay.start();
+    });
+
+    // Проверка, если изображение уже загружено (для кэшированных изображений)
+    if (firstImage.complete) {
+        console.log('Первое изображение уже загружено (из кэша)');
+        swiper.autoplay.start();
+    }
+    /**
+     * WAIT FOR LOAD
+     */
+
     // Function to calculate click percentage
     const getClickPercentage = function (event) {
         const element = event.currentTarget;
@@ -109,8 +133,8 @@ export default function () {
 
         let percentage = getClickPercentage(e);
 
-        let currentSlide = document.querySelectorAll('.splash-slider .swiper-slide')[slider.activeIndex];
-        let currentBullet = document.querySelectorAll('.splash-slider .swiper-pagination-progress')[slider.realIndex];
+        let currentSlide = document.querySelectorAll('.splash-slider .swiper-slide')[swiper.activeIndex];
+        let currentBullet = document.querySelectorAll('.splash-slider .swiper-pagination-progress')[swiper.realIndex];
 
         let duration = $(currentSlide).data('original-duration');
 
@@ -121,7 +145,7 @@ export default function () {
         let targetTimeStart = duration * percentage / 100;
         let targetTimeLeft = duration - targetTimeStart;
 
-        slider.autoplay.stop();
+        swiper.autoplay.stop();
 
         $(currentSlide).attr('data-swiper-autoplay', targetTimeLeft);
         $(currentSlide).attr('data-swiper-autoplay-offset', percentage);
@@ -132,8 +156,8 @@ export default function () {
             currentSlide.querySelector('video').currentTime = targetTimeStart / 1000;
         }
 
-        slider.autoplay.start();
+        swiper.autoplay.start();
     });
 
-    window.splashSlider = slider;
+    window.splashSlider = swiper;
 }
