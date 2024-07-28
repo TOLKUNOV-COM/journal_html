@@ -29,6 +29,7 @@
 .platform-logos__item {
     transition: transform .2s ease-in-out;
     border-radius: 50%;
+    background-size: 60% !important;
 
     &:hover {
         transform: scale(1.05);

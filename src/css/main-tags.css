@@ -41,12 +41,13 @@
 }
 
 .main-tags__item {
-    @apply text-xl font-black text-blue;
+    @apply text-sm md:text-xl font-black text-blue;
 
     @apply inline-block;
-    @apply rounded-[20px];
+    @apply rounded-[12px] md:rounded-[20px];
 
-    @apply pt-[13px] pb-[17px] px-[18px];
+    @apply pt-[6px] pb-[10px] px-[12px];
+    @apply md:pt-[13px] md:pb-[17px] md:px-[18px];
     @apply mx-[5px];
 
     @apply w-auto;
@@ -63,7 +64,7 @@
 
         @apply border-2 border-[#CDD1F2];
 
-        @apply rounded-[20px];
+        @apply rounded-[12px] md:rounded-[20px];
     }
 
     &:before {
@@ -74,7 +75,7 @@
         top: 1px;
         left: 2px;
 
-        @apply text-[1.75rem];
+        @apply text-xl md:text-[1.75rem];
         @apply font-medium;
 
         @apply mr-[10px];
