@@ -98,19 +98,40 @@ export default function () {
     swiper.autoplay.stop();
 
     // Получаем первое изображение
-    const firstImage = el.querySelector('.swiper-slide img');
+    const firstSlide = $('.splash-slider__slider .swiper-slide:first');
+    let firstImage;
 
-    // Запускаем autoplay после загрузки первого изображения
-    firstImage.addEventListener('load', function () {
-        console.log('Первое изображение загружено');
-        swiper.autoplay.start();
-    });
+    var image = firstSlide.find('img');
+    var video = firstSlide.find('video');
 
-    // Проверка, если изображение уже загружено (для кэшированных изображений)
-    if (firstImage.complete) {
-        console.log('Первое изображение уже загружено (из кэша)');
-        swiper.autoplay.start();
+    if (image.length > 0) {
+        // Запускаем autoplay после загрузки первого изображения
+        image[0].addEventListener('load', function () {
+            console.log('Первое изображение загружено');
+            swiper.autoplay.start();
+        });
+
+        // Проверка, если изображение уже загружено (для кэшированных изображений)
+        if (image[0].complete) {
+            console.log('Первое изображение уже загружено (из кэша)');
+            swiper.autoplay.start();
+        }
+    } else if (video.length > 0) {
+        // Запускаем autoplay после загрузки первого видео
+        video[0].addEventListener('canplaythrough', function () {
+            console.log('Первое видео загружено и готово к воспроизведению');
+            swiper.autoplay.start();
+        });
+
+        // Проверка, если видео уже загружено (для кэшированных видео)
+        if (video[0].readyState >= 3) {
+            console.log('Первое видео уже загружено и готово к воспроизведению (из кэша)');
+            swiper.autoplay.start();
+        }
+    } else {
+        console.log('No image or video found');
     }
+
     /**
      * WAIT FOR LOAD
      */
