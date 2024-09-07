@@ -21,6 +21,10 @@ function getPugLocals() {
 let currentLocals = getPugLocals();
 
 export default defineConfig({
+    server: {
+        host: 'localhost',
+        port: 3000,
+    },
     root: './src', // Указываем корневую директорию для исходных файлов
     build: {
         outDir: '../dist', // Указываем директорию для сборки
@@ -76,7 +80,42 @@ export default defineConfig({
                 }
             ],
             // verbose: true // Включение подробного логирования
-        })
+        }),
+        {
+            name: 'lock-file-plugin',
+            configureServer(server) {
+                const lockFilePath = path.resolve(__dirname, './dist/vite-dev.lock');
+
+                // Создание lock-файла при запуске dev-сервера
+                server.httpServer.once('listening', () => {
+                    fs.writeFileSync(lockFilePath, 'Vite Dev Server is running');
+                });
+
+                // Удаление lock-файла при завершении сервера
+                const removeLockFile = () => {
+                    if (fs.existsSync(lockFilePath)) {
+                        fs.unlinkSync(lockFilePath);
+                        console.log('Lock file removed.');
+                    }
+                };
+
+                // Обработка стандартного завершения сервера
+                server.httpServer.once('close', removeLockFile);
+
+                // Обработка сигналов завершения процесса (Ctrl + C и другие)
+                process.on('SIGINT', () => {
+                    console.log('Received SIGINT. Removing lock file...');
+                    removeLockFile();
+                    process.exit(); // Завершение процесса
+                });
+
+                process.on('SIGTERM', () => {
+                    console.log('Received SIGTERM. Removing lock file...');
+                    removeLockFile();
+                    process.exit(); // Завершение процесса
+                });
+            },
+        },
     ],
     define: {}
 });
