@@ -28,6 +28,7 @@ export default function () {
             prevEl: ".splash-slider__prev",
         },
         crabCursor: true,
+        simulateTouch: false,
         pagination: {
             el: document.querySelector('.splash-slider__pagination'),
             clickable: true,
@@ -56,7 +57,7 @@ export default function () {
                 let activeSlide = swiper.slides[swiper.activeIndex];
                 if (activeSlide.querySelector('video')) {
                     activeSlide.querySelector('video').currentTime = 0;
-                    // activeSlide.querySelector('video').play();
+                    activeSlide.querySelector('video').play();
                 }
 
                 // let prevSlide = swiper.slides[swiper.previousIndex];
@@ -99,16 +100,20 @@ export default function () {
 
     // Получаем первое изображение
     const firstSlide = $('.splash-slider__slider .swiper-slide:first');
-    let firstImage;
 
     var image = firstSlide.find('img');
     var video = firstSlide.find('video');
 
+    let isFirstLoadFired = false;
+
     if (image.length > 0) {
         // Запускаем autoplay после загрузки первого изображения
         image[0].addEventListener('load', function () {
-            console.log('Первое изображение загружено');
-            swiper.autoplay.start();
+            if (!isFirstLoadFired) {
+                console.log('Первое изображение загружено');
+                swiper.autoplay.start();
+                isFirstLoadFired = true;
+            }
         });
 
         // Проверка, если изображение уже загружено (для кэшированных изображений)
@@ -119,14 +124,19 @@ export default function () {
     } else if (video.length > 0) {
         // Запускаем autoplay после загрузки первого видео
         video[0].addEventListener('canplaythrough', function () {
-            console.log('Первое видео загружено и готово к воспроизведению');
-            swiper.autoplay.start();
+            if (!isFirstLoadFired) {
+                console.log('Первое видео загружено и готово к воспроизведению');
+                swiper.autoplay.start();
+                isFirstLoadFired = true;
+                video[0].play();
+            }
         });
 
         // Проверка, если видео уже загружено (для кэшированных видео)
         if (video[0].readyState >= 3) {
             console.log('Первое видео уже загружено и готово к воспроизведению (из кэша)');
             swiper.autoplay.start();
+            video[0].play();
         }
     } else {
         console.log('No image or video found');
@@ -136,15 +146,15 @@ export default function () {
      * WAIT FOR LOAD
      */
 
-    // Function to calculate click percentage
+        // Function to calculate click percentage
     const getClickPercentage = function (event) {
-        const element = event.currentTarget;
-        const rect = element.getBoundingClientRect();
-        const x = event.clientX - rect.left; // X coordinate within the element
-        const width = rect.width;
+            const element = event.currentTarget;
+            const rect = element.getBoundingClientRect();
+            const x = event.clientX - rect.left; // X coordinate within the element
+            const width = rect.width;
 
-        return (x / width) * 100;
-    }
+            return (x / width) * 100;
+        }
 
     $('.splash-slider .swiper-pagination-bullet').on('click', function (e) {
         // Check if this bullet is not active
@@ -175,6 +185,7 @@ export default function () {
 
         if (currentSlide.querySelector('video')) {
             currentSlide.querySelector('video').currentTime = targetTimeStart / 1000;
+            currentSlide.querySelector('video').play();
         }
 
         swiper.autoplay.start();
