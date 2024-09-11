@@ -85,9 +85,6 @@ const updateStoriesListViewed = function () {
         for (let slideId of storySlideIds) {
             let value = storyId + '_' + slideId;
 
-            console.log(viewedStories);
-            console.log(value);
-
             if (!viewedStories.includes(value)) {
                 return;
             }

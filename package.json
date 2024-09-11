@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.36",
+    "@fancyapps/ui": "^4.0.31",
     "chokidar": "^3.6.0",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
