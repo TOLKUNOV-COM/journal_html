@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="./assets/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+
+  <script type="module" crossorigin src="./main.js"></script>
+  <link rel="stylesheet" crossorigin href="./main.css">
+</head>
+<body>
+<div id="app"></div>
+
+<header class="header">
+<div class="container">
+<div class="flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-6">
+<div class="header__item header__item_logo z-50">
+<a href="index.html" class="header__logo"></a>
+</div>
+<nav class="header__item_menu header__menu flex-1">
+<a class="header__link" href="news.html">Новости</a>
+<a class="header__link" href="news.html">Статьи</a>
+<a class="header__link header__link_active" href="facts.html">Факты</a>
+<a class="header__link" href="comparison.html">Сравнения</a>
+<a class="header__link" href="dictionary.html">Словарик</a>
+<a class="header__link" href="platforms.html">Площадки</a>
+</nav>
+<div class="header__item header__item_buttons z-20">
+<div class="flex items-center flex-row flex-nowrap gap-[10px]">
+<a href="search.html" class="button button-icon-left header__button header__button_search">
+<span class="max-xl:hidden">Поиск</span>
+</a>
+<a href="#" class="button button-icon-right header__button header__button_telegram">
+<span class="max-xl:hidden">
+<span class="text-white">ТЕЛЕГРАМ-канал</span>
+<span class="text-white opacity-40">1,6к</span>
+</span>
+</a>
+<div class="tham tham-e-spin tham-w-7 ml-2 sm:ml-6 lg:hidden" id="header_menu_toggle">
+<div class="tham-box">
+<div class="tham-inner bg-blue-dark"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-4 md:gap-6 lg:gap-10 mb-10 mt-7">
+            <div class="col-span-12 md:col-span-4 lg:col-span-3 max-md:hidden">
+                <a href="news.html" class="text-blue-dark text-[10px] font-black leading-normal tracking-widest uppercase inline-flex items-center gap-2 transition-all hover:text-[#FE375B]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="8" viewBox="0 0 21 8" fill="none">
+                        <path d="M20 4.5H20.5V3.5H20V4.5ZM0.646446 3.64645C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM20 3.5L1 3.5V4.5L20 4.5V3.5Z"
+                              fill="currentColor"/>
+                    </svg>
+                    назад</a>
+            </div>
+            <div class="col-span-12 md:col-span-8 lg:col-span-6">
+                <div class="flex flex-row flex-nowrap items-start">
+                    <div class="tags">
+                        <a href="#" class="tags__item">статьи</a>
+                        <a href="#" class="tags__item">разборы</a>
+                    </div>
+                    <div class="text-[#B5B7CF] text-[13px] font-bold lowercase flex items-center leading-6">
+                        <svg class="mr-[5px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.54673 1.84131C6.88569 1.84131 7.16048 2.11609 7.16048 2.45506V3.47798H12.4796V2.45506C12.4796 2.11609 12.7544 1.84131 13.0934 1.84131C13.4324 1.84131 13.7071 2.11609 13.7071 2.45506V3.47798H14.7301C16.4249 3.47798 17.7988 4.8519 17.7988 6.54673V7.16048H1.84131V6.54673C1.84131 4.8519 3.21523 3.47798 4.91006 3.47798H5.93298V2.45506C5.93298 2.11609 6.20776 1.84131 6.54673 1.84131Z"
+                                  fill="#B5B7CF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M17.7988 14.7301V8.38798H1.84131V14.7301C1.84131 16.4249 3.21523 17.7988 4.91006 17.7988H14.7301C16.4249 17.7988 17.7988 16.4249 17.7988 14.7301ZM4.91006 10.4338C4.57109 10.4338 4.29631 10.7086 4.29631 11.0476C4.29631 11.3865 4.57109 11.6613 4.91006 11.6613H6.54673C6.88569 11.6613 7.16048 11.3865 7.16048 11.0476C7.16048 10.7086 6.88569 10.4338 6.54673 10.4338H4.91006ZM9.00173 10.4338C8.66276 10.4338 8.38798 10.7086 8.38798 11.0476C8.38798 11.3865 8.66276 11.6613 9.00173 11.6613H10.6384C10.9774 11.6613 11.2521 11.3865 11.2521 11.0476C11.2521 10.7086 10.9774 10.4338 10.6384 10.4338H9.00173ZM13.0934 10.4338C12.7544 10.4338 12.4796 10.7086 12.4796 11.0476C12.4796 11.3865 12.7544 11.6613 13.0934 11.6613H14.7301C15.069 11.6613 15.3438 11.3865 15.3438 11.0476C15.3438 10.7086 15.069 10.4338 14.7301 10.4338H13.0934ZM4.91006 13.7071C4.57109 13.7071 4.29631 13.9819 4.29631 14.3209C4.29631 14.6599 4.57109 14.9346 4.91006 14.9346H6.54673C6.88569 14.9346 7.16048 14.6599 7.16048 14.3209C7.16048 13.9819 6.88569 13.7071 6.54673 13.7071H4.91006ZM9.00173 13.7071C8.66276 13.7071 8.38798 13.9819 8.38798 14.3209C8.38798 14.6599 8.66276 14.9346 9.00173 14.9346H10.6384C10.9774 14.9346 11.2521 14.6599 11.2521 14.3209C11.2521 13.9819 10.9774 13.7071 10.6384 13.7071H9.00173ZM13.0934 13.7071C12.7544 13.7071 12.4796 13.9819 12.4796 14.3209C12.4796 14.6599 12.7544 14.9346 13.0934 14.9346H14.7301C15.069 14.9346 15.3438 14.6599 15.3438 14.3209C15.3438 13.9819 15.069 13.7071 14.7301 13.7071H13.0934Z"
+                                  fill="#B5B7CF"/>
+                        </svg>
+                        27 декабря 2024
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 max-lg:hidden"></div>
+        </div>
+        <script>
+            alert(window.devicePixelRatio);
+        </script>
+        <div class="grid grid-cols-12 gap-4 md:gap-6 lg:gap-10 mb-16">
+            <div class="col-span-3 md:col-span-4 lg:col-span-3 max-md:hidden">
+                <nav class="toc hidden sticky top-[15px] bg-[#F8F9FF] rounded-2xl text-[#A2A5C3]">
+                    <p class="text-[10px] font-black leading-none tracking-widest pb-[13px] uppercase">навигация по статье</p>
+
+                    <ul class="toc__list list-none"></ul>
+                </nav>
+            </div>
+            <div class="col-span-12 md:col-span-8 lg:col-span-6">
+                <article class="article">
+                    <div class="article__header">
+                        <h1 class="article__title">4&nbsp;бесплатных аналога Dev Mode в&nbsp;Figma</h1>
+
+                        <div class="flex flex-row my-5 md:my-7">
+                            <div class="article__counters flex-1">
+                                <div class="article__counter article__counter_views">23 144</div>
+                                <a href="#" class="article__counter article__counter_comments">2</a>
+                                <a href="#" class="article__counter article__counter_bookmarks">1</a>
+                                <div class="article__counter article__counter_time">5 мин</div>
+                            </div>
+                            <a href="#" class="article__share share-button" data-url="https://ya.ru"><span class="max-sm:hidden">Поделиться</span></a>
+                        </div>
+                    </div>
+                    <div class="article__content">
+                        <div class="content-block">
+
+                            <figure>
+                                <a href="https://picsum.photos/id/1/1000/500" data-fancybox data-caption="Иллюстрация: Полина Честнова для TOLKUNOV ЖУРНАЛ">
+                                    <img src="https://picsum.photos/id/1/560/305" alt="Иллюстрация: Полина Честнова для TOLKUNOV ЖУРНАЛ">
+                                </a>
+                                <figcaption>Иллюстрация: Полина Честнова для TOLKUNOV ЖУРНАЛ</figcaption>
+                            </figure>
+
+                            <p>31 января Dev Mode в Figma стал доступен только для пользователей с подпиской. Если вы не работаете в корпорации или просто не хотите оформлять подписку, придётся искать
+                                другой
+                                способ выгрузить код из макета.
+                                <br><br>Собрали четыре доступных решения, которые могут вам помочь.</p>
+
+                            <h2>Стандартные функции Figma</h2>
+                            <h3>Стандартные функции Figma</h3>
+
+                            <p>До появления <code>Dev Mode</code> в Figma на боковой панели настроек была вкладка <code>Properties</code> — на ней отображались все CSS-стили, которые доступны для
+                                выделенного
+                                элемента. Эта функция никуда не делась, и ей до сих пор можно пользоваться, но работать она стала непоследовательно.<br><br>Вкладка Properties будет вам видна, если у
+                                вас
+                                нет
+                                доступа на редактирование макета:</p>
+
+                            <figure>
+                                <img src="https://picsum.photos/id/1/560/305" alt="Описание изображения">
+                                <figcaption>Иллюстрация: Полина Честнова для TOLKUNOV ЖУРНАЛ</figcaption>
+                            </figure>
+
+                            <p>Если доступ есть, то этой вкладки у вас не будет и придётся копировать CSS-стили вручную и наугад:<br></p>
+                            <ol>
+                                <li>Выделите любой объект на макете.</li>
+                                <li>Кликните по нему правой кнопкой мыши и перейдите<br><code>Copy/Paste as</code> → <code>Copy as code</code> → <code>CSS, iOS или Android</code>.</li>
+                                <li>Вставьте полученные строки в ваш редактор кода.</li>
+                            </ol>
+
+                            <div class="embed">
+                                <iframe src="https://player.vimeo.com/video/146022717?color=0c88dd&title=0&byline=0&portrait=0&badge=0" class="" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <h2>Плагин Figma to Code</h2>
+
+                            <p>Полностью бесплатный плагин с открытым исходным кодом, который может вывести всю вёрстку вашего макета на трёх языках.</p>
+
+                            <h3>Как пользоваться</h3>
+
+                            <ol>
+                                <li>Установите плагин <a href="#">по ссылке.</a></li>
+                                <li>Нажмите правой кнопкой мыши по макету и перейдите Plugins → Figma to Code.</li>
+                                <li>Выделите любой объект на макете, и в появившемся окне отобразится его код.</li>
+                                <li>При необходимости вы можете изменить язык: HTML, Flutter, SwiftUI, CSS-фреймворк Tailwind.</li>
+                            </ol>
+
+                            <h2>Плагин Inspect Styles</h2>
+
+                            <p>Достаточно удобный плагин с возможностью настраивать результат выдачи. Его сделал российский разработчик, поэтому он доступен на русском языке</p>
+
+                            <h3>Как пользоваться</h3>
+
+                            <ul>
+                                <li>Установите плагин по ссылке.</li>
+                                <li>Нажмите правой кнопкой мыши по макету и перейдите Plugins → Inspect Styles.</li>
+                                <li>В появившемся окне во вкладке «Основное» плагин показывает свойства всех шрифтов на странице и предлагает сделать два из них главными.</li>
+                                <li>Во вкладке «Стили» — CSS-код для выделенных элементов. Если выделить фрейм с иконкой, то плагин выдаст SVG-код, который можно сразу скопировать.</li>
+                                <li>Во вкладке «Настройки» можно поменять, например, единицы измерения на rem, добавить технические комментарии, изменить вывод свойства line-height.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-span-3 max-lg:hidden">
+                <div class="sticky top-0 h-dvh w-full">
+                    <div class="absolute bottom-[10px] left-0 w-full bg-blue-600 rounded-2xl text-white p-[10px]">
+                        <div class="font-semibold text-[18px] leading-tight mb-[10px]">от слов к делу</div>
+                        <div class="text-[13px] leading-[145%] mb-[26px]">Это блог продакшена TOLKUNOV. Мы не только пишем,но и делаем баннеры и видео для медийной и наружной рекламы</div>
+                        <a href="https://tolkunov.com/"
+                           class="inline-block bg-white rounded-2xl pt-[14px] pb-[16px] px-[20px] text-blue-600 font-medium leading-none lowercase transition-all hover:opacity-85">Перейти
+                            на сайт <span class="font-sf-pro-display relative -top-[1px]">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="materials splash-block mt-[62px]">
+    <div class="container">
+        <h2 class="splash-block__title mb-6">Это интересно</h2>
+
+        <div class="materials-list materials-list_articles">
+            <a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/400x800&quot;); --background-gradient: linear-gradient(0deg, #E9ECEB 26.5%, rgba(233, 236, 235, 0.00) 100%); --title-color: #000; --counters-color: #000; --counters-opacity: 0.3; --tag-color: rgba(0, 0, 0, 0.8); --tag-border-color: rgba(0, 0, 0, 0.2)" data-height="2" data-width="1" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">3D</div>
+      <div class="materials-item__tag">реклама</div>
+    </div>
+    <div class="materials-item__title">3D в рекламных кампаниях на свежих примерах</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">2 544</div>
+      <div class="materials-item__time">2 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/300x300&quot;); --background-gradient: linear-gradient(0deg, #A8186B 22%, rgba(168, 24, 107, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);" data-height="2" data-width="2" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">кейвижуал</div>
+      <div class="materials-item__tag">реклама</div>
+      <div class="materials-item__tag">иллюстрации</div>
+    </div>
+    <div class="materials-item__title">Список источников вдохновения для создания эффектных кейвижуалов</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">7 899</div>
+      <div class="materials-item__time">10 мин</div>
+    </div>
+  </div></a><a class="materials-item" style="--background: url(&quot;https://via.placeholder.com/400x800&quot;); --background-gradient: linear-gradient(0deg, #C5EBFF 26.5%, rgba(197, 235, 255, 0.00) 100%); --title-color: rgba(25, 48, 131, 1); --counters-color: rgba(25, 48, 131, 1); --counters-opacity: 0.3; --tag-color: rgba(25, 48, 131, 0.8); --tag-border-color: rgba(25, 48, 131, 0.2);" data-height="2" data-width="1" href="#">
+  <div class="materials-item__gradient"></div>
+  <div class="materials-item__content">
+    <div class="materials-item__tags">
+      <div class="materials-item__tag">мобайл</div>
+      <div class="materials-item__tag">площадки</div>
+    </div>
+    <div class="materials-item__title">Площадки для мобильных перфомансов</div>
+    <div class="materials-item__counters">
+      <div class="materials-item__views">100</div>
+      <div class="materials-item__time">1 мин</div>
+    </div>
+  </div></a>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<section class="subscribe-widget bg-[#FAFBFF] text-blue-900 rounded-2xl p-7">
+<div class="grid grid-cols-12 gap-5">
+<div class="col-span-12 lg:col-span-6 xl:col-span-5 text-blue-900 flex flex-col flex-nowrap">
+<div class="text-3xl mb-3 font-bold leading-none tracking-tight lowercase">Самое интересное — <br class="max-lg:hidden">вышлем на почту!</div>
+<div class="leading-tight opacity-70 mt-auto">Мы присылаем отличные материалы и никогда не спамим. Отписаться можно в любой момент</div>
+</div>
+<div class="col-span-12 lg:col-span-6 xl:col-span-7">
+<form action="#">
+<div class="my-2 text-xs font-medium leading-normal lowercase">ваш Email</div>
+<input type="email" name="email" placeholder="tolkunov@yandex.ru" required class="bg-transparent w-full py-3 border-b border-b-[rgba(22, 31, 106, .3)] focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md placeholder-[rgba(22, 31, 106, .3)] text-xl lowercase mb-[10px]">
+<label for="agree" class="relative checkbox">
+<input type="checkbox" required id="agree" name="agree"/>
+<span>я даю согласие на <a href="#" class="underline">обработку персональных данных</a></span>
+</label>
+<div class="mt-7">
+<button type="submit" class="px-5 pt-3.5 pb-4 bg-rose-500 rounded-2xl transition-all hover:drop-shadow-lg">
+<span class="text-white font-medium lowercase leading-none">подписаться</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</div>
+
+<footer class="footer">
+<div class="container relative">
+<div class="footer__mockup z-1"></div>
+</div>
+<div class="container overflow-hidden relative z-2 pt-[136px]">
+<div class="footer__counters grid grid-cols-[1fr,1fr] lg:grid-cols-[256px,1fr,256px] md:mx-[10px] max-md:gap-5">
+<div class="w-full lg:w-auto order-2 lg:order-1 flex justify-center lg:justify-start">
+<a href="https://tolkunov.com/portfolio" class="footer__counter footer__counter_portfolio">703</a>
+</div>
+<div class="order-1 col-span-2 lg:col-span-1 lg:order-2 flex lg:items-end px-3 md:mx-2">
+<div class="text-white text-center flex-1 relative lg:-bottom-3 max-lg:mb-7 max-lg:mt-10">
+<div class="font-serif font-bold leading-tight text-4xl xl:text-5xl mb-4">От слов к делу</div>
+<div class="font-medium max-w-[400px] mx-auto mb-6 leading-[145%]">Мы не только пишем, но и делаем баннеры и видео для медийной и наружной рекламы</div>
+<a class="footer-inner__button transition-all duration-300 hover:opacity-85" href="https://tolkunov.com/">перейти НА САЙТ <span class="font-sf-pro-display relative -top-[1px]">↗</span></a>
+</div>
+</div>
+<div class="w-full lg:w-auto order-3 lg:order-3 flex justify-center lg:justify-end">
+<a href="https://tolkunov.com/reviews" class="footer__counter footer__counter_reviews">210</a>
+</div>
+</div>
+</div>
+<div class="portfolio-slider">
+<div class="portfolio-slider__list">
+<div class="swiper-wrapper">
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+<a href="#" class="swiper-slide portfolio-slider__item">
+<img src="https://placehold.it/340x190/fff" alt="">
+</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="grid items-center gap-4 grid-cols-2 lg:grid-cols-[200px,1fr,200px] mb-6">
+<div class="order-2 lg:order-1 flex items-center justify-center lg:justify-start">
+<a href="#" class="button button-icon-right footer__button_telegram px-3 hover:opacity-85">1,6к</a>
+</div>
+<div class="order-1 max-lg:col-span-2 lg:order-2">
+<nav class="flex flex-wrap justify-center gap-1.5 text-white font-black tracking-widest uppercase text-[10px] max-lg:mb-5">
+<a class="rounded-[10px] px-3 pt-[7px] pb-[6px] hover:bg-white transition-all duration-300 hover:text-blue-600" href="#">Новости</a>
+<a class="rounded-[10px] px-3 pt-[7px] pb-[6px] hover:bg-white transition-all duration-300 hover:text-blue-600" href="#">Статьи</a>
+<a class="rounded-[10px] px-3 pt-[7px] pb-[6px] hover:bg-white transition-all duration-300 hover:text-blue-600 opacity-60 hover:opacity-100" href="#">Факты</a>
+<a class="rounded-[10px] px-3 pt-[7px] pb-[6px] hover:bg-white transition-all duration-300 hover:text-blue-600" href="#">Сравнения</a>
+<a class="rounded-[10px] px-3 pt-[7px] pb-[6px] hover:bg-white transition-all duration-300 hover:text-blue-600" href="#">Словарик</a>
+<a class="rounded-[10px] px-3 pt-[7px] pb-[6px] hover:bg-white transition-all duration-300 hover:text-blue-600" href="#">Площадки</a>
+</nav>
+</div>
+<div class="order-3 lg:order-3 flex items-center justify-center lg:justify-end">
+<a href="#" class="button button-icon-left footer__button_search hover:opacity-85">Поиск</a>
+</div>
+</div>
+<div class="text-center">
+<a href="#" class="footer__logo inline-block hover:scale-105 transition-transform"></a>
+</div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</body>
+</html>
