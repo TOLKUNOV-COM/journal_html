@@ -40,7 +40,6 @@ export default defineConfig({
                 platforms: path.resolve(__dirname, './src/platforms.html'),
                 policy: path.resolve(__dirname, './src/policy.html'),
                 search: path.resolve(__dirname, './src/search.html'),
-                test: path.resolve(__dirname, './src/test.html'),
                 // splash:  path.resolve(__dirname, './src/js/splash.js'),
                 // main:  path.resolve(__dirname, './src/js/main.js'),
             },
