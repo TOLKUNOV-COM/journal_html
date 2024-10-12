@@ -4,6 +4,11 @@
         @apply p-5;
     }
 
+    .materials-item__gradient {
+        border-bottom-left-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+    }
+
     .materials-item[data-width="1"] {
         .materials-item__gradient {
             @apply sm:top-[36%];
