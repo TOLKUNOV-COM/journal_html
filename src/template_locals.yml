@@ -144,7 +144,7 @@ articlesList:
       - поиск
     views: "23 144"
     time: "5 мин"
-    image: "https://dummyimage.com/300x300"
+    image: "https://dummyimage.com/800x800"
     style: "--box-shadow-color: rgba(22, 31, 106, 0.90); --background-gradient: linear-gradient(0deg, #333E3F 22%, rgba(51, 62, 63, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
     width: 2
     height: 2
@@ -203,7 +203,7 @@ articlesList:
       - "иллюстрации"
     views: "7 899"
     time: "10 мин"
-    image: "https://dummyimage.com/300x300"
+    image: "https://dummyimage.com/800x800"
     style: "--background-gradient: linear-gradient(0deg, #A8186B 22%, rgba(168, 24, 107, 0.00) 100%); --title-color: #fff; --counters-color: #fff; --counters-opacity: 0.3; --tag-color: rgba(255, 255, 255, 0.8); --tag-border-color: rgba(255, 255, 255, 0.2);"
     width: 2
     height: 2

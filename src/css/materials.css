@@ -111,14 +111,16 @@
 }
 
 .materials-item__image {
-    @apply absolute top-0 left-0 w-full h-full;
+    @apply absolute top-1/2 left-1/2 w-full h-full;
     @apply object-cover object-center;
     @apply transition-transform;
+
+    transform: translate(-50%, -50%);
 }
 
 .materials-item:hover {
     .materials-item__image {
-        transform: scale(105%);
+        transform: translate(-50%, -50%) scale(105%);
     }
 
     .materials-item__bg {
