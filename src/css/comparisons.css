@@ -26,14 +26,10 @@
     @apply p-[20px] sm:p-[30px];
 
     --background-color: #E6EAFF;
-    --background-image: none;
     --text-color: #fff;
     --text-background-color: #192167;
 
-    background: var(--background-color) var(--background-image);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: var(--background-color);
 }
 
 .comparison-item:first-child {
@@ -113,7 +109,15 @@
     }
 }
 
+.comparison-item__image {
+    @apply absolute top-0 left-0 w-full h-full;
+    @apply object-cover object-center;
+
+    @apply rounded-[30px] sm:rounded-[50px];
+}
+
 .comparison-item__text {
+    @apply relative;
     @apply font-black leading-tight uppercase tracking-widest;
 
     font-size: clamp(10px, 2vw, 20px);
@@ -179,6 +183,10 @@
     .comparison-item {
         @apply sm:h-full sm:aspect-square h-full w-full;
         @apply p-[10px];
+        @apply rounded-2xl;
+    }
+
+    .comparison-item__image {
         @apply rounded-2xl;
     }
 
