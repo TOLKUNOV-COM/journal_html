@@ -112,6 +112,22 @@ export default function stories() {
 
     let sliderOpened = false;
 
+    const getScrollbarWidth = function () {
+        return window.innerWidth - document.documentElement.clientWidth;
+    }
+
+    const openModalScrollFix = function () {
+        const scrollbarWidth = getScrollbarWidth();
+
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+        document.body.style.overflow = 'hidden'; // Блокируем скролл
+    }
+
+    const closeModalScrollFix = function () {
+        document.body.style.paddingRight = ''; // Сбрасываем отступ
+        document.body.style.overflow = ''; // Восстанавливаем скролл
+    }
+
     const openStories = function (storyId) {
         let container = document.querySelector('.stories-slider');
 
@@ -121,7 +137,7 @@ export default function stories() {
 
         sliderOpened = true;
 
-        $('body').addClass('overflow-hidden');
+        openModalScrollFix();
         $(container).addClass('stories-slider-in');
 
         let slider = sliders[targetIndex];
@@ -151,7 +167,7 @@ export default function stories() {
         setTimeout(() => {
             $(container).removeClass('stories-slider-out');
             $(container).removeClass('stories-slider-in');
-            $('body').removeClass('overflow-hidden');
+            closeModalScrollFix();
         }, 300);
     }
 

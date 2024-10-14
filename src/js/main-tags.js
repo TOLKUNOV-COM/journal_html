@@ -97,4 +97,18 @@ export default function mainTags() {
                 }
             }, 100);
         });
+
+    // Функция для фиксации ширины блока .main-tags
+    function fixMainTagsWidth() {
+        const mainTags = document.querySelector('.main-tags');
+        if (mainTags) {
+            const width = document.documentElement.clientWidth - 2; // Получаем текущую ширину блока
+            mainTags.style.width = `${width}px`; // Фиксируем ширину в пикселях
+        }
+    }
+
+    fixMainTagsWidth();
+
+    // Вызываем функцию при изменении размера окна
+    window.addEventListener('resize', fixMainTagsWidth);
 }
