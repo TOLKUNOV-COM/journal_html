@@ -198,6 +198,30 @@
     </div>
 </section>
 
+<section class="stories splash-block">
+    <div class="container">
+        <h2 class="stories__title splash-block__title">главное в карточках</h2>
+    </div>
+
+    <div class="flex flex-row gap-[10px] mx-[10px] lg:mx-10">
+        <div class="border border-slate-200 shadow rounded-md p-4 w-[285px] h-[285px]">
+            <div class="animate-pulse flex space-x-4">
+                <div class="flex-1 space-y-6 py-1">
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-slate-200 shadow rounded-md p-4 w-[285px] h-[285px]">
+            <div class="animate-pulse flex space-x-4">
+                <div class="flex-1 space-y-6 py-1">
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="stories splash-block">
     <div class="container">
@@ -228,17 +252,8 @@
                             <button class="stories-slider__close md:hidden"></button>
 
                             <div class="story__wrapper swiper-wrapper">
-                                <div class="story__slide swiper-slide" data-story-id="1" data-slide-id="3">
-                                    <video autoplay muted>
-                                        <!-- May not work in the future, just change source -->
-                                        <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">
-                                    </video>
-
-                                    <div class="story__button story__next swiper-button-next"></div>
-                                    <div class="story__button story__prev swiper-button-prev"></div>
-                                </div>
                                 <div class="story__slide swiper-slide" data-story-id="1" data-slide-id="1">
-                                    <img src="https://dummyimage.com/300x500/fff"/>
+                                    <img data-src="https://dummyimage.com/300x500/fff" class="lazyload"/>
 
                                     <a href="#" class="story__link">ПЕРЕЙТИ НА СТРАНИЦУ</a>
 
@@ -246,15 +261,9 @@
                                     <div class="story__button story__prev swiper-button-prev"></div>
                                 </div>
                                 <div class="story__slide swiper-slide" data-story-id="1" data-slide-id="2">
-                                    <img src="https://picsum.photos/450/800"/>
+                                    <img data-src="https://picsum.photos/450/800" class="lazyload"/>
 
                                     <a href="#" class="story__link">ПЕРЕЙТИ НА СТРАНИЦУ</a>
-
-                                    <div class="story__button story__next swiper-button-next"></div>
-                                    <div class="story__button story__prev swiper-button-prev"></div>
-                                </div>
-                                <div class="story__slide swiper-slide" data-story-id="1" data-slide-id="4">
-                                    <img src="https://picsum.photos/450/810"/>
 
                                     <div class="story__button story__next swiper-button-next"></div>
                                     <div class="story__button story__prev swiper-button-prev"></div>
@@ -273,22 +282,19 @@
 
                             <div class="story__wrapper swiper-wrapper">
                                 <div class="story__slide swiper-slide" data-story-id="2" data-slide-id="5">
-                                    <img src="https://picsum.photos/450/800"/>
+                                    <img data-src="https://picsum.photos/450/800" class="lazyload"/>
 
                                     <div class="story__button story__next swiper-button-next"></div>
                                     <div class="story__button story__prev swiper-button-prev"></div>
                                 </div>
                                 <div class="story__slide swiper-slide" data-story-id="2" data-slide-id="6">
-                                    <video autoplay muted>
-                                        <!-- May not work in the future, just change source -->
-                                        <source src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1" type="video/mp4">
-                                    </video>
+                                    <video autoplay muted class="lazyload" data-src="https://exit109.com/~dnn/clips/RW20seconds_1.mp4#t=.1"></video>
 
                                     <div class="story__button story__next swiper-button-next"></div>
                                     <div class="story__button story__prev swiper-button-prev"></div>
                                 </div>
                                 <div class="story__slide swiper-slide" data-story-id="2" data-slide-id="7">
-                                    <img src="https://picsum.photos/450/810"/>
+                                    <img data-src="https://picsum.photos/450/810" class="lazyload"/>
 
                                     <div class="story__button story__next swiper-button-next"></div>
                                     <div class="story__button story__prev swiper-button-prev"></div>

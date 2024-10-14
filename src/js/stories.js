@@ -97,13 +97,13 @@ const updateStoriesListViewed = function () {
 window.markSlideAsViewed = markSlideAsViewed;
 window.getViewedStories = getViewedStories;
 
-updateStoriesListViewed();
-
 /**
  * End Story views methods
  */
 
 export default function stories() {
+    updateStoriesListViewed();
+
     const asd = new Swiper('.stories-list', {
         slidesPerView: 'auto',
         spaceBetween: 0,
@@ -160,35 +160,43 @@ export default function stories() {
     $('.stories-slider__close').on('click', () => closeStories());
     $('.stories-slider__overlay').on('click', () => closeStories());
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27) {
-                // Ваш код, который выполняется при нажатии на ESC
-                closeStories();
-            }
-        });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27) {
+            // Ваш код, который выполняется при нажатии на ESC
+            closeStories();
+        }
     });
 
     const initStory = function (el) {
         videoDuration(el);
 
         const sliderEl = el.querySelector(".story__slider");
+        let isManualChange = false;
 
         $(sliderEl).find('.swiper-button-next').on('click', function () {
+            isManualChange = true;
+
             if (slider.slideNext() === false) {
                 if (mainSlider.slideNext() === false) {
                     closeStories();
                 }
             }
+
+            isManualChange = false;
         });
 
         $(sliderEl).find('.swiper-button-prev').on('click', function () {
+            isManualChange = true;
+
             if (slider.slidePrev() === false) {
                 if (mainSlider.slidePrev() === false) {
                     slider.autoplay.start();
                 }
             }
+
+            isManualChange = false;
         });
+
 
         const slider = new Swiper(sliderEl, {
             speed: 1,
@@ -280,13 +288,14 @@ export default function stories() {
                         }
                     }
 
-                    if (activeIndex === 0 && previousIndex === swiper.slides.length - 1) {
+                    // Когда последний слайд переключается на первый, значит текущая карусель закончена и пора вращать куб или закрыть слайдер
+                    if (activeIndex === 0 && previousIndex === swiper.slides.length - 1 && !isManualChange) {
                         if (mainSlider.slideNext() === false) {
                             closeStories();
                         }
                     }
                 },
-            }
+            },
         });
 
         return slider;
@@ -361,6 +370,5 @@ export default function stories() {
     });
 
     window.sliders = sliders;
-    window.stories = stories;
     window.mainSlider = mainSlider;
 }

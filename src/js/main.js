@@ -11,6 +11,7 @@ import filter from "./filter.js";
 import platforms from "./platforms.js";
 import shareButton from "./share-button.js";
 import content from "./content.js";
+import 'lazysizes';
 
 // import '../css/main.css'
 // import javascriptLogo from './javascript.svg'
