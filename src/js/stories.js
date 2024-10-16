@@ -126,6 +126,8 @@ export default function stories() {
     const closeModalScrollFix = function () {
         document.body.style.paddingRight = ''; // Сбрасываем отступ
         document.body.style.overflow = ''; // Восстанавливаем скролл
+
+        $(window).trigger('resize');
     }
 
     const openStories = function (storyId) {
@@ -279,6 +281,8 @@ export default function stories() {
 
                     console.log('Current slide: ', activeSlide);
 
+                    console.groupEnd();
+
                     // Mark story slide as viewed
                     markSlideAsViewed(activeSlide);
 
@@ -287,8 +291,6 @@ export default function stories() {
                         activeSlide.querySelector('video').currentTime = 0;
                         activeSlide.querySelector('video').play();
                     }
-
-                    console.groupEnd();
 
                     // Pause other videos
                     let slides = swiper.slides;
@@ -387,4 +389,17 @@ export default function stories() {
 
     window.sliders = sliders;
     window.mainSlider = mainSlider;
+
+    // Обновляем Swiper после загрузки изображений
+    document.addEventListener('lazyloaded', function (e) {
+        if (typeof window.sliders === 'object') {
+            for (let slider of window.sliders) {
+                slider.update();
+            }
+        }
+
+        if (typeof window.mainSlider === 'object') {
+            mainSlider.update();
+        }
+    });
 }
