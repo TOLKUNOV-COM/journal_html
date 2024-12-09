@@ -21,7 +21,7 @@
         --gap-figure-top: var(--gap-bigger);
     }
 
-    & > :first-child {
+    &:first-child > :first-child {
         @apply mt-0;
     }
 
@@ -43,6 +43,14 @@
 
     p, ul, ol {
         margin-top: var(--gap-small);
+        margin-bottom: var(--gap-normal);
+    }
+
+    h1 {
+        @apply text-3xl md:text-4xl;
+        @apply font-serif font-bold leading-[115%] -tracking-[0.075rem];
+
+        margin-top: var(--gap-bigger);
         margin-bottom: var(--gap-normal);
     }
 

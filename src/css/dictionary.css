@@ -11,10 +11,9 @@
 .dictionary__word {
     @apply px-[14px] py-[10px] sm:p-[20px];
 
+    @apply inline-block text-nowrap;
     @apply text-base sm:text-[16px] md:text-[20px] lg:text-[24px];
     line-height: 116%; /* 27.6px */
-
-    display: inline-block;
 }
 
 .dictionary__icon {
