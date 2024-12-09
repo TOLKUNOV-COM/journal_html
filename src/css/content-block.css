@@ -1,4 +1,5 @@
-.content-block {
+.content-block, .ck-content {
+    @apply font-sans;
     @apply text-blue-900;
     @apply text-base md:text-[18px];
     @apply leading-[1.55];

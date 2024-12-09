@@ -42,6 +42,8 @@ export default defineConfig({
                 search: path.resolve(__dirname, './src/search.html'),
                 // splash:  path.resolve(__dirname, './src/js/splash.js'),
                 // main:  path.resolve(__dirname, './src/js/main.js'),
+                'content-block': path.resolve(__dirname, './src/css/content-block.css'),
+                fonts: path.resolve(__dirname, './src/fonts/stylesheet.css'),
             },
             output: {
                 entryFileNames: '[name].js', // Имена файлов без хэша для JS
