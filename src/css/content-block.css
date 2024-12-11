@@ -145,6 +145,8 @@
         overflow: hidden;
         padding: 0 1.5em;
 
+        margin: var(--gap-medium) 0;
+
         & > p:last-of-type {
             margin-bottom: var(--gap-small);
         }
