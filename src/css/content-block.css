@@ -30,7 +30,7 @@
         @apply rounded-[14px] w-full;
     }
 
-    figure {
+    .image {
         margin: var(--gap-figure-top) 0 var(--gap-figure-buttom);
     }
 
@@ -114,6 +114,67 @@
 
         &:hover, &:active, &:focus {
             @apply text-[#FE375B];
+        }
+    }
+
+    pre {
+        padding: .75em;
+        margin: var(--gap-normal) 0;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        direction: ltr;
+        font-style: normal;
+        min-width: 300px;
+        tab-size: 4;
+        text-align: left;
+        white-space: pre-wrap;
+    }
+
+    hr {
+        background: #dedede;
+        border: none;
+        height: 2px;
+        margin: var(--gap-medium) 0;
+    }
+
+    blockquote {
+        @apply rounded;
+
+        border-left: 5px solid #ccc;
+        font-style: normal;
+        overflow: hidden;
+        padding: 0 1.5em;
+
+        & > p:last-of-type {
+            margin-bottom: var(--gap-small);
+        }
+    }
+
+    .table {
+        margin: var(--gap-medium) 0;
+
+        & table {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            line-height: 1.4;
+
+            border: 1px double #b3b3b3;
+            border-collapse: collapse;
+            border-spacing: 0;
+
+            & td,
+            & th {
+                min-width: 50px;
+                padding: .5em;
+                border: 1px solid #bfbfbf;
+                vertical-align: top;
+            }
+
+            & th {
+                font-weight: bold;
+                background: rgba(0, 0, 0, .05);
+            }
         }
     }
 }
