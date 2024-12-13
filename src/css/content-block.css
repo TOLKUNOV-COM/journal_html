@@ -175,6 +175,18 @@
                 padding: .5em;
                 border: 1px solid #bfbfbf;
                 vertical-align: top;
+
+                & p {
+                    margin-bottom: var(--gap-small);
+                }
+
+                & > p:first-child {
+                    margin-top: 0;
+                }
+
+                & > p:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             & th {
