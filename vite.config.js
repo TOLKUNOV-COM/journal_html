@@ -1,6 +1,6 @@
 import {defineConfig} from 'vite';
 import vue from '@vitejs/plugin-vue'
-import pugPlugin from 'vite-plugin-pug';
+import handlebars from 'vite-plugin-handlebars';
 import yaml from 'js-yaml';
 import fs from 'fs';
 import path from 'path';
@@ -8,7 +8,6 @@ import chokidar from 'chokidar';
 import {viteStaticCopy} from 'vite-plugin-static-copy';
 // import tailwindcss from 'tailwindcss';
 
-const pugOptions = { pretty: true } // FIXME: pug pretty is deprecated!
 
 // Чтение и парсинг YAML файла
 const pugLocalsFilePath = path.resolve(__dirname, './src/template_locals.yml');
@@ -61,15 +60,24 @@ export default defineConfig({
     base: '',
     plugins: [
         vue(),
-        pugPlugin(pugOptions, currentLocals),
+        handlebars({
+            context: currentLocals,
+            partialDirectory: path.resolve(__dirname, 'src/partials'),
+            helpers: {
+                isArray: (value) => Array.isArray(value),
+                json: (context) => JSON.stringify(context),
+                inc: (value) => parseInt(value) + 1,
+                slice: (array, start, end) => array.slice(start, end),
+            }
+        }),
         {
             name: 'watch-yaml',
             configureServer(server) {
                 chokidar.watch(pugLocalsFilePath).on('change', () => {
-                    console.log('template_local.yml changed, reloading Pug templates...');
+                    console.log('template_local.yml changed, reloading Handlebars templates...');
                     currentLocals = getPugLocals();
 
-                    // Пересобрать все Pug-шаблоны
+                    // Пересобрать все Handlebars-шаблоны
                     server.restart();
                 });
             },

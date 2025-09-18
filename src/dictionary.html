@@ -11,7 +11,7 @@
 <body>
 <div id="app"></div>
 
-<pug src="src/templates/includes/header.html"></pug>
+{{> header }}
 
 <main class="page">
     <section class="materials mb-12 lg:mb-24">
@@ -70,9 +70,9 @@
     </section>
 </main>
 
-<pug src="src/templates/includes/subscribe.html"></pug>
+{{> subscribe }}
 
-<pug src="src/templates/includes/footer.html"></pug>
+{{> footer }}
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 

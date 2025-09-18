@@ -1,0 +1,22 @@
+{{#each articlesList}}
+<a class="materials-item" style="{{style}}" data-height="{{height}}" data-width="{{width}}" href="article.html">
+    <div class="materials-item__bg">
+        {{#if image}}
+        <img class="materials-item__image" src="{{image}}" alt="">
+        {{/if}}
+    </div>
+    <div class="materials-item__gradient"></div>
+    <div class="materials-item__content">
+        <div class="materials-item__tags">
+            {{#each tags}}
+            <div class="materials-item__tag">{{this}}</div>
+            {{/each}}
+        </div>
+        <div class="materials-item__title">{{{title}}}</div>
+        <div class="materials-item__counters">
+            <div class="materials-item__views">{{views}}</div>
+            <div class="materials-item__time">{{time}}</div>
+        </div>
+    </div>
+</a>
+{{/each}}
