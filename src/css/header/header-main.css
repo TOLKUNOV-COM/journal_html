@@ -31,13 +31,13 @@
 
     &:hover, &:focus-visible {
         @apply bg-[#E9EEFE];
-        @apply text-[#2856F6];
+        @apply text-[#FD375B];
     }
 }
 
 .header__main:hover .header__toggle {
     @apply lg:scale-125;
-    @apply lg:text-[#2856F6];
+    @apply lg:text-[#FD375B];
     @apply lg:bg-[#E9EEFE];
 
     .icon {
@@ -46,7 +46,7 @@
 }
 
 .header[data-open="true"] .header__toggle {
-    @apply lg:text-[#2856F6];
+    @apply lg:text-[#FD375B];
     @apply lg:bg-[#E9EEFE];
 
     .icon_state_open {
