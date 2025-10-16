@@ -6,6 +6,7 @@ export default {
             sans: ['Craftwork Sans', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
             serif: ['Craftwork Grotesk', 'serif'],
             caveat: ['Caveat', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
+            glina: ['Glina Script', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
             'sf-pro-display': ['SFProDisplay', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
         },
         container: {
@@ -35,6 +36,7 @@ export default {
             'lg': '1020px',  // Средние устройства
             'xl': '1240px', // Большие устройства
             '2xl': '1640px', // Большие устройства
+            '3xl': '1640px', // Большие устройства
         },
         extend: {
             colors: {
@@ -48,6 +50,13 @@ export default {
                 },
                 rose: {
                     500: '#FE375B'
+                },
+                slate: {
+                    40: '#F4F6FA',
+                    400: '#8891B2',
+                },
+                gray: {
+                    400: '#9CA3AF',
                 },
                 primary: '#161F6A',
                 // secondary: '#14171A',
@@ -68,10 +77,23 @@ export default {
             },
             boxShadow: {
                 'white-button': '0 0 10px 5px rgba(255, 255, 255, .3)',
-            }
+            },
+            fontSize: {
+                'tiny': '10px',
+            },
+            lineHeight: {
+                '3.5': '14px',
+            },
+            height: {
+                '4.5': '18px',
+                '13': '52px',
+            },
+            spacing: {
+                '5.5': '22px',
+            },
         },
     },
     plugins: [
-        require('tailwind-hamburgers'),
+        // require('tailwind-hamburgers'),
     ],
 }

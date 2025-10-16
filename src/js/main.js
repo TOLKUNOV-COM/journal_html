@@ -3,7 +3,10 @@
 //
 // createApp(App).mount('#app')
 
-import header from "./header.js";
+import "./header/b-header.js";
+import "./header/b-header-sticky.js";
+import "./header/b-header-verticals.js";
+import "./header/b-footer-case.js";
 import materials from "./materials.js";
 import portfolioSlider from "./portfolio-slider.js";
 import toc from "./toc.js";
@@ -37,7 +40,6 @@ import lazySizes from 'lazysizes';
 //
 // setupCounter(document.querySelector('#counter'))
 
-header();
 materials();
 portfolioSlider();
 toc();

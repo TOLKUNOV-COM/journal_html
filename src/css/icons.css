@@ -1,0 +1,58 @@
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+}
+
+.icon-logo {
+    mask-image: url("../img/logo.svg");
+    background-color: currentColor;
+}
+
+.icon-logo-academy {
+    background-image: url("../img/logo-academy.svg");
+}
+
+.icon-logo-market {
+    background-image: url("../img/logo-market.svg");
+}
+
+.icon-refresh {
+    mask-image: url("../img/icons/refresh.svg");
+    background-color: currentColor;
+}
+
+.icon-search {
+    mask-image: url("../img/icons/search.svg");
+    background-color: currentColor;
+}
+
+/* header icons */
+.icon-menu-toggle {
+    mask-image: url("../img/icons/menu-toggle.svg");
+    background-color: currentColor;
+}
+
+.icon-order-button {
+    mask-image: url("../img/icons/order-button.svg");
+    background-color: currentColor;
+}
+
+.icon-telegram-full {
+    mask-image: url("../img/icons/telegram-full.svg");
+    background-color: currentColor;
+}
+
+.icon-x-mark {
+    mask-image: url("../img/icons/x-mark.svg");
+    background-color: currentColor;
+}
+
+.icon-menu-link {
+    mask-image: url("../img/icons/menu-link.svg");
+    background-color: currentColor;
+}
