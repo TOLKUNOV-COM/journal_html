@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 $(document).ready(function() {
     // Инициализируем каждый header verticals swiper отдельно
     $('.header-verticals-swiper').each(function() {
@@ -67,5 +69,3 @@ $(document).ready(function() {
         });
     });
 });
-
-

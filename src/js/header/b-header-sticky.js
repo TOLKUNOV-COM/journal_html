@@ -163,5 +163,3 @@ $(document).ready(function() {
         handleScroll();
     });
 });
-
-
