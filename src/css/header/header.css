@@ -30,7 +30,7 @@
     @apply max-w-[1540px];
     @apply m-3 md:m-4 lg:m-3 xl:m-4;
     /*@apply mb-10 md:mb-14 xl:mb-20;*/
-    @apply mb-10;
+    @apply mb-14;
     @apply 3xl:mx-auto;
 
     /* Постоянная sticky позиция с top вместо margin-top */
