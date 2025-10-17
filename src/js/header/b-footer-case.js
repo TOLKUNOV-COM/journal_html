@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Инициализируем каждый блок отдельно
-    $('.footer-case__refresh').each(function() {
+    $('.footer-case__refresh').each(function () {
         const $refreshButton = $(this);
         const $container = $refreshButton.closest('.footer-case-container');
         let isLoading = false;
@@ -40,39 +40,39 @@ $(document).ready(function() {
                 dataType: 'html',
                 timeout: 10000
             })
-            .done(function(html) {
-                // Получаем все текущие кейсы в данном контейнере
-                const $oldCases = $container.find('.footer-case');
+                .done(function (html) {
+                    // Получаем все текущие кейсы в данном контейнере
+                    const $oldCases = $container.find('.footer-case');
 
-                // Парсим новый HTML и устанавливаем data-active
-                const $newCase = $(html).attr('data-active', 'false');
+                    // Парсим новый HTML и устанавливаем data-active
+                    const $newCase = $(html).attr('data-active', 'false');
 
-                // Вставляем новый кейс в контейнер (пока скрытый)
-                $container.append($newCase);
+                    // Вставляем новый кейс в контейнер (пока скрытый)
+                    $container.append($newCase);
 
-                // Шаг 1: Скрываем старые кейсы
-                $oldCases.attr('data-active', 'false');
+                    // Шаг 1: Скрываем старые кейсы
+                    $oldCases.attr('data-active', 'false');
 
-                // Шаг 2: Через 150ms (половина анимации) показываем новый кейс
-                setTimeout(() => {
-                    $newCase.attr('data-active', 'true');
-                }, 150);
+                    // Шаг 2: Через 150ms (половина анимации) показываем новый кейс
+                    setTimeout(() => {
+                        $newCase.attr('data-active', 'true');
+                    }, 150);
 
-                // Шаг 3: Удаляем старые кейсы через полное время анимации (300ms)
-                setTimeout(() => {
-                    $oldCases.remove();
-                }, 300);
-            })
-            .fail(function(xhr, status, error) {
-                console.error('Ошибка загрузки нового кейса:', error);
-            })
-            .always(function() {
-                setLoadingState(false);
-            });
+                    // Шаг 3: Удаляем старые кейсы через полное время анимации (300ms)
+                    setTimeout(() => {
+                        $oldCases.remove();
+                    }, 300);
+                })
+                .fail(function (xhr, status, error) {
+                    console.error('Ошибка загрузки нового кейса:', error);
+                })
+                .always(function () {
+                    setLoadingState(false);
+                });
         }
 
         // Обработчик кнопки обновления для данного блока
-        $refreshButton.on('click', function() {
+        $refreshButton.on('click', function () {
             const refreshUrl = $(this).data('refresh-url');
 
             if (!refreshUrl) {
@@ -83,4 +83,8 @@ $(document).ready(function() {
             loadNewCase(refreshUrl);
         });
     });
+
+    if (!(location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+        $('.footer-case__refresh').trigger('click');
+    }
 });
