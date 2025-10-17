@@ -30,7 +30,7 @@
     @apply outline-none border-none;
 
     &:hover, &:focus-visible {
-        @apply bg-[#E9EEFE];
+        @apply bg-[#FEF2F4];
         @apply text-[#FD375B];
     }
 }
@@ -38,7 +38,7 @@
 .header__main:hover .header__toggle {
     @apply lg:scale-125;
     @apply lg:text-[#FD375B];
-    @apply lg:bg-[#E9EEFE];
+    @apply lg:bg-[#FEF2F4];
 
     .icon {
         @apply lg:size-4;
@@ -47,7 +47,7 @@
 
 .header[data-open="true"] .header__toggle {
     @apply lg:text-[#FD375B];
-    @apply lg:bg-[#E9EEFE];
+    @apply lg:bg-[#FEF2F4];
 
     .icon_state_open {
         @apply max-lg:hidden;
