@@ -76,6 +76,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+    /*background: #FEF2F4; !* фон выделения *!*/
+    /*color: #000;         !* цвет текста при выделении *!*/
+}
+
+
 /*a {*/
 /*    font-weight: 500;*/
 /*    color: #646cff;*/
